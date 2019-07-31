@@ -2,8 +2,9 @@
  * A client library for the eXist-db Native XML Database.
  *
  * @author Wolfgang Meier
+ * https://github.com/wolfgangmm/existdb-node
  */
-var Query = require("./query");
+var Query = require("./util/query");
 var fs = require("fs");
 var http = require("http");
 var path = require("path");

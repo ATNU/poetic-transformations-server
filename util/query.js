@@ -1,5 +1,8 @@
 /**
 * Execute an XQuery on the server and process the results.
+ *
+ * @author Wolfgang Meier
+ *
 */
 var http = require("http");
 var util = require("util");
