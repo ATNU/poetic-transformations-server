@@ -33,6 +33,7 @@ router.get(
         const URL = URI + name;
         console.log(URL);
 
+        //----- GET call and send response
             http.get(URL, (resp) => {
                 let data = '';
 
