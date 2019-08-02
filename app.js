@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 
 //List routers
 const getResourceRouter = require('./routes/getResource');
+const getInventoryRouter = require('./routes/getInventory');
 
 var app = express();
 app.use(logger('dev'));
@@ -14,6 +15,7 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 //Set routes
-app.use('/getResource', getResourceRouter);
+app.use('/doc', getResourceRouter);
+app.use('/inv', getInventoryRouter);
 
 module.exports = app;

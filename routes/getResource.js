@@ -1,10 +1,13 @@
 const express = require('express');
 const router = express.Router();
 const {check, validationResult} = require('express-validator');
+const http = require('http');
+const URI = require('../util/connection.js').URI;
 
 
 /**
  *  GET a single resource given it's filename as a query parameter
+ *  /doc/:filename
  *
  *  */
 router.get(
@@ -22,47 +25,43 @@ router.get(
     {
         console.log('invalid parameter found');
         res.status(400).json({errors: errors.array() });
-        return;
     }
 
-    const name = req.params.filename;
-
-
-    //------ Connect to eXist-db API
-    var Connection = require("../index.js");
-    const options = require('../util/connectionOptions.js');
-    var connection = new Connection(options);
-
-
-    //----- GET request to eXist-db API
-    connection.get(name, function(result, err) {
-    if (err) {
-        res.status(502);
-        res.send('Cannot connect to database');
-    }
 
     else {
+        const name = req.params.filename;
+        const URL = URI + name;
+        console.log(URL);
 
-        //----- Send file or error
-        let data = [];
-        result.on("data", function (chunk) {
-            data.push(chunk);
-        });
-        result.on("end", function () {
-            console.log(data.join(""));
-            res.send(data.join(""));
-        });
+            http.get(URL, (resp) => {
+                let data = '';
 
-        result.on("error", function (err) {
-            console.log("error fetching file: " + err);
-                res.status(404);
-                res.send('Cannot find file');
-        });
+                //a chunk of data has been received, add to data
+                resp.on('data', (chunk) => {
+                    data += chunk;
+                });
+
+                //end of response so check status and send
+                resp.on('end', () => {
+
+                    //can't find document
+                    if (resp.statusCode === 404) {
+                        res.status(404);
+                        res.send('Cannot find document');
+                    }
+
+                    //can find document
+                    else {
+                        res.status(200);
+                        res.send(data);
+                    }
+                });
+            });
+
     }
-
 });
 
-});
+
 
 
 
