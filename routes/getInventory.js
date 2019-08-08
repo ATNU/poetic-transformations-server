@@ -6,9 +6,9 @@ const query = fs.readFileSync('./queries/getInventory.xql', 'UTF-8');
 const URI = require('../util/connection.js').URIQuery;
 
 /**
- * GET information (author, title) for all files stored in the database.
+ * GET information for all files stored in the database.
  *
- * /inventory
+ * /inv
  */
 router.get('/', function(req, res) {
 
@@ -16,6 +16,7 @@ router.get('/', function(req, res) {
     console.log('inventory route reached');
 
     const URL = URI + query;
+
 
     http.get(URL, (resp) => {
         let data = '';

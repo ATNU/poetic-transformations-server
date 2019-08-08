@@ -36,7 +36,7 @@ Code: `Cannot find document`
 ---
 
 # Get inventory
-Access an inventory with key information for each file in database. Currently returns title and author.
+Access an inventory with key information for each file in database. 
 
 ##URL
 /inv
@@ -47,13 +47,24 @@ Access an inventory with key information for each file in database. Currently re
 
 ##Sample response
 ```
-<exist:result xmlns:exist="http://exist.sourceforge.net/NS/exist" exist:hits="4" exist:start="1" exist:count="4"
-	exist:compilation-time="1" exist:execution-time="1">
-	<title xmlns="http://www.tei-c.org/ns/1.0">Pakistan (draft: M1)</title>
-	<author xmlns="http://www.tei-c.org/ns/1.0">Moniza Alvi</author>
-	<title xmlns="http://www.tei-c.org/ns/1.0">Pakistan (draft: M2)</title>
-	<author xmlns="http://www.tei-c.org/ns/1.0">Moniza Alvi</author>
-</exist:result>
+<exist:result xmlns:exist="http://exist.sourceforge.net/NS/exist" exist:hits="1" exist:start="1" exist:count="1"
+	exist:compilation-time="4" exist:execution-time="4">
+	<texts>
+		<text>
+			<path> "/db/transformations/M5.xml"</path>
+			<filename>"/db/transformations/M5.xml"</filename>
+			<title>Pakistan (draft: M5)</title>
+			<author>Moniza Alvi</author>
+			<idno>M5</idno>
+		</text>
+		<text>
+			<path> "/db/transformations/M6.xml"</path>
+			<filename>"/db/transformations/M6.xml UTF-8"</filename>
+			<title>Pakistan (draft: M6)</title>
+			<author>Moniza Alvi</author>
+			<idno>M6</idno>
+		</text>
+		...
 
 ```
 

@@ -2,23 +2,22 @@ const express = require('express');
 const router = express.Router();
 const {check, validationResult} = require('express-validator');
 const http = require('http');
-const URI = require('../util/connection.js').URI;
-
+const URI = require('../util/connection.js').URINoDB;
 
 /**
  *  GET a single resource given it's filename as a query parameter
- *  /doc/:filename
+ *  /doc/:path
  *
  *  */
 router.get(
-    '/:filename',
-    validate(),
+    '/:path',
+   // validate(),
     function(req, res) {
 
         //testing
     console.log("Get route reached");
-    console.log(req.params.filename);
-
+    console.log(req.params.path);
+/*
     //------ Validate query
     const errors = validationResult(req);
     if (!errors.isEmpty()) //there are errors
@@ -28,8 +27,8 @@ router.get(
     }
 
 
-    else {
-        const name = req.params.filename;
+    else {*/
+        const name = req.params.path;
         const URL = URI + name;
         console.log(URL);
 
@@ -59,7 +58,7 @@ router.get(
                 });
             });
 
-    }
+   // }
 });
 
 
