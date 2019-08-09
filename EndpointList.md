@@ -36,7 +36,7 @@ Code: `Cannot find document`
 ---
 
 # Get inventory
-Access an inventory with key information for each file in database. 
+Access an inventory with key information for each file in database. CURRENTLY THE FILENAME IS NOT BEING SEPARATED CORRECTLY
 
 ##URL
 /inv
@@ -68,3 +68,6 @@ Access an inventory with key information for each file in database.
 
 ```
 
+---
+# Search
+Searches across all poems 

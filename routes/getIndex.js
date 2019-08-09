@@ -2,8 +2,9 @@ const express = require('express');
 const router = express.Router();
 const http = require('http');
 const fs = require('fs');
-const query = fs.readFileSync('./queries/getInventory.xql', 'UTF-8');
+const query = fs.readFileSync('./queries/getIndex.xql', 'UTF-8');
 const URI = require('../util/connection.js').URIQuery;
+
 
 /**
  * GET information for all files stored in the database.
@@ -14,8 +15,12 @@ router.get('/', function(req, res) {
 
     //testing
     console.log('inventory route reached');
+    //URL encode query
+    const encodedQuery = encodeURI(query);
+    console.log(encodedQuery);
 
-    const URL = URI + query;
+    const URL = URI + encodedQuery;
+
 
 
     http.get(URL, (resp) => {
