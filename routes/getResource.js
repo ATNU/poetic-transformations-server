@@ -11,6 +11,7 @@ const URI = require('../util/connection.js').URINoDB;
  *  */
 router.get(
     '/:path',
+
    // validate(),
     function(req, res) {
 
