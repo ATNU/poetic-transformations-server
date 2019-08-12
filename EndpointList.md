@@ -1,8 +1,9 @@
-# Get a document
-Provide a document name and receive XML file
+# View a single version of a poem
+Provide a document path and receive XML file in full. The path should be retrieved from
+the information sent in the version index. The path must be URL encoded before sending.
 
 ## URL
-/doc/:filename
+/doc/:path
 
 ## Method
 GET
@@ -35,39 +36,94 @@ Code: `Cannot find document`
  
 ---
 
-# Get inventory
-Access an inventory with key information for each file in database. CURRENTLY THE FILENAME IS NOT BEING SEPARATED CORRECTLY
+# View poem index
+Get an index of all poems stored (not versions of poems).
 
 ##URL
-/inv
+/index
 
 ##Success response
+Code: `200 OK`
+Content: XML file
 
 ##Error response
 
 ##Sample response
 ```
-<exist:result xmlns:exist="http://exist.sourceforge.net/NS/exist" exist:hits="1" exist:start="1" exist:count="1"
-	exist:compilation-time="4" exist:execution-time="4">
-	<texts>
-		<text>
-			<path> "/db/transformations/M5.xml"</path>
-			<filename>"/db/transformations/M5.xml"</filename>
-			<title>Pakistan (draft: M5)</title>
-			<author>Moniza Alvi</author>
-			<idno>M5</idno>
-		</text>
-		<text>
-			<path> "/db/transformations/M6.xml"</path>
-			<filename>"/db/transformations/M6.xml UTF-8"</filename>
-			<title>Pakistan (draft: M6)</title>
-			<author>Moniza Alvi</author>
-			<idno>M6</idno>
-		</text>
-		...
+<exist:result xmlns:exist="http://exist.sourceforge.net/NS/exist" exist:hits="2" exist:start="1" exist:count="2"
+	exist:compilation-time="8" exist:execution-time="8">
+	<text>
+		<title>Pakistan</title>
+		<author>Moniza Alvi</author>
+		<versions>2</versions>
+	</text>
+</exist:result>
 
 ```
 
 ---
-# Search
-Searches across all poems 
+# View version index
+Get an index of all versions of the supplied poem (using the title supplied in call
+to /index).
+
+##URL
+/index/title
+
+##Success response
+Code: `200 OK`
+Content: XML file
+
+##Error response
+
+##Sample response
+```
+<exist:result xmlns:exist="http://exist.sourceforge.net/NS/exist" exist:hits="2" exist:start="1" exist:count="2"
+	exist:compilation-time="2" exist:execution-time="2">
+	<version>
+		<originalTitle>Pakistan</originalTitle>
+		<versionTitle>Pakistan (draft: M1)</versionTitle>
+		<author>Moniza Alvi</author>
+		<filename>/db/transformations/M1.xml</filename>
+	</version>
+	<version>
+		<originalTitle>Pakistan</originalTitle>
+		<versionTitle>Pakistan (draft: M2)</versionTitle>
+		<author>Moniza Alvi</author>
+		<filename>/db/transformations/M2.xml</filename>
+	</version>
+</exist:result>
+```
+
+---
+
+#Search
+Search across all poems and return a snippet.
+
+##URL
+/search/searchphrase
+
+##Success response
+Code: `200 OK`
+Content: XML file
+
+```
+<title>{title}</title>
+<author>{author}</author>
+<idno>{idno}</idno>
+    <p>
+        <span class='previous'>{text prior to search phrase}</span>
+        <span class='hi'>{search term itself}</span>
+        <span class='following'>{text after the search phrase}</span>
+    </p>
+    <p>
+        <span class='previous'>{text prior to search phrase}</span>
+        <span class='hi'>{search term itself}</span>
+        <span class='following'>{text after the search phrase}</span>
+    </p>
+<title>{title}</title> ... 
+```
+
+
+##Error response
+
+##Sample response

@@ -9,8 +9,7 @@ declare option exist:serialize "method=xhtml media-type=text/text/html indent=ye
             let $filename := fn:replace($path, ".+/(.+)$", "$1")
             return
                 <text>
-                    <path> "{$path}"</path>
-                    <filename>"{$filename}"</filename>
+                    <path>"{$filename}"</path>
                     <title> {$resource//tei:title/text()} </title>
                     <author> {$resource//tei:author/text()} </author>
                     <idno> {$resource//tei:idno/text()} </idno>

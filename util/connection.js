@@ -3,7 +3,7 @@
  */
 
 module.exports = {
-        URINoDB: 'http://192.168.99.100:8080/exist/rest/db/transformations/',
+        URINoDB: 'http://192.168.99.100:8080/exist/rest',
         URI: 'http://192.168.99.100:8080/exist/rest/db/transformations/',
         URIQuery: 'http://192.168.99.100:8080/exist/rest/db/transformations?_query=',
 };
