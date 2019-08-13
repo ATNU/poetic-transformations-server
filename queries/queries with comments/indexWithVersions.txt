@@ -1,0 +1,30 @@
+xquery version "3.1";
+declare namespace tei = "http://www.tei-c.org/ns/1.0";
+
+let $collection:=collection(/db/transformations)
+
+//get list of all unique original titles tagged in the collection
+let $originalTitles:=$collection//tei:originTitle
+let $uniqueOriginals:=distinct-values($originalTitles)
+
+//for each origin title...
+for $hit in $uniqueOriginals
+
+//1. get the author
+let $authors := $collection/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt[tei:originTitle=$hit]/tei:author
+let $distinct-author := distinct-values($authors)
+
+//get all the versions of that poem in the collection
+let $versions :=$collection/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt[tei:originTitle=$hit]
+
+//2. and count the number of versions
+let $count := count($versions)
+
+//3. present using HTML tags
+return (
+    <text>
+        <title>{$hit}</title>
+        <author>{$distinct-author}</author>
+        <versions>{$count}</versions>
+    </text>
+)
