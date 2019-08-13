@@ -5,13 +5,17 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 //get all texts where the origin title is 'Pakistan'
 let $versions :=collection(/db/transformations)/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt[tei:originTitle='Pakistan']
 
-//for each version found retrieve key details and present using HTML tags
+//for each version found retrieve key details and present using HTML tags. Some data is accessed through the whole document.
+
+let $path := base-uri($version)
+let $document := doc($path)
+
 for $version in $versions
 return (
     <version>
         <originalTitle>{$version//tei:originTitle/text()}</originalTitle>
         <versionTitle>{$version//tei:title/text()}</versionTitle>
         <author>{$version//tei:author/text()}</author>
-        <filename>{base-uri($version)}</filename>
+        <filename>{$path}</filename>
     </version>
 )

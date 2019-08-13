@@ -1,13 +1,17 @@
 xquery version "3.1";
 declare namespace tei = "http://www.tei-c.org/ns/1.0";
 
-let $versions :=collection(/db/transformations)/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt[tei:originTitle='Pakistan']
+let $versions :=collection(/db/transformations)/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt[tei:idno = 'Alvi1']
+
 for $version in $versions
+let $path := base-uri($version)
+let $document := doc($path)
 return (
     <version>
-        <originalTitle>{$version//tei:originTitle/text()}</originalTitle>
-        <versionTitle>{$version//tei:title/text()}</versionTitle>
-        <author>{$version//tei:author/text()}</author>
-        <filename>{base-uri($version)}</filename>
+        <poemID>{$version//tei:idno[@type='PTpoem']}</poemID>
+        <versionID>{$version//tei:idno[@type='PTid']}</versionID>
+        <versionTitle>{$document//tei:title/text()}</versionTitle>
+        <author>{$document//tei:author/text()}</author>
+        <filename>{$path}</filename>
     </version>
 )

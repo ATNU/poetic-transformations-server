@@ -66,14 +66,17 @@ router.get('/:title', function(req, res) {
     const title = req.params.title;
     //todo remove whitespace
     const querySetup = 'xquery version "3.1";declare namespace tei = "http://www.tei-c.org/ns/1.0";';
-    const queryStatement = 'let $versions :=collection(/db/transformations)/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt[tei:originTitle= "' + title + '"]' +
+    const queryStatement = 'let $versions :=collection(/db/transformations)/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt[tei:idno= "' + title + '"]' +
         'for $version in $versions\n' +
+        'let $path := base-uri($version)\n' +
+        'let $document := doc($path)' +
         'return (\n' +
         '    <version>\n' +
-        '    <originalTitle>{$version//tei:originTitle/text()}</originalTitle>\n' +
-        '    <versionTitle>{$version//tei:title/text()}</versionTitle>\n' +
-        '    <author>{$version//tei:author/text()}</author>\n' +
-        '    <path>{base-uri($version)}</path>\n' +
+        '    <poemID>{$version//tei:idno[@type="PTpoem"]}</poemID>' +
+        '<versionID>{$version//tei:idno[@type="PTid"]}</versionID>' +
+        '<versionTitle>{$document//tei:title/text()}</versionTitle>' +
+        '<author>{$document//tei:author/text()}</author>' +
+        '<filename>{$path}</filename>' +
         '    </version>\n' +
         '    )';
     const query = querySetup + queryStatement;

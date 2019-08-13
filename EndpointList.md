@@ -37,7 +37,7 @@ Code: `Cannot find document`
 ---
 
 # View poem index
-Get an index of all poems stored (not versions of poems).
+Get an index of all poems stored and how many versions aof that poem are available to view.
 
 ##URL
 /index
@@ -63,8 +63,7 @@ Content: XML file
 
 ---
 # View version index
-Get an index of all versions of the supplied poem (using the title supplied in call
-to /index).
+Get an index of all versions of a particular poem (using idno element, type PTpoem). 
 
 ##URL
 /index/title
@@ -79,17 +78,19 @@ Content: XML file
 ```
 <exist:result xmlns:exist="http://exist.sourceforge.net/NS/exist" exist:hits="2" exist:start="1" exist:count="2"
 	exist:compilation-time="2" exist:execution-time="2">
+<version>
+		<poemID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTpoem">Alvi1</idno></poemID>
+		<versionID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTid">B</idno></versionID>
+		<versionTitle>Must We Go?(published: B)</versionTitle>
+		<author>Moniza Alvi</author>
+		<filename>/db/transformations/B.xml</filename>
+	</version>
 	<version>
-		<originalTitle>Pakistan</originalTitle>
+		<poemID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTpoem">Alvi1</idno></poemID>
+		<versionID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTid">M1</idno></versionID>
 		<versionTitle>Pakistan (draft: M1)</versionTitle>
 		<author>Moniza Alvi</author>
 		<filename>/db/transformations/M1.xml</filename>
-	</version>
-	<version>
-		<originalTitle>Pakistan</originalTitle>
-		<versionTitle>Pakistan (draft: M2)</versionTitle>
-		<author>Moniza Alvi</author>
-		<filename>/db/transformations/M2.xml</filename>
 	</version>
 </exist:result>
 ```
@@ -97,7 +98,10 @@ Content: XML file
 ---
 
 #Search
-Search across all poems and return a snippet.
+Search across all poems and return key details and a snippet surrounding the search phrase. Search phrase should be surrounded by double quotation marks and URL encoded. e.g. 
+the phrase ```'the apple and the pear'``` should be submitted as ```"the apple and the pear"``` thus after URL encoding ``` %22the%20apple%20and%20the%20pear%22``` . Searching is non case sensitive and searches for the whole phrase submitted. 
+
+It is possible to use wildcards. In future this endpoint could be developed to cater for more sophisticated and/or queries.
 
 ##URL
 /search/searchphrase
@@ -112,12 +116,12 @@ Content: XML file
 <idno>{idno}</idno>
     <p>
         <span class='previous'>{text prior to search phrase}</span>
-        <span class='hi'>{search term itself}</span>
+        <span class='hi'>{search phrase}</span>
         <span class='following'>{text after the search phrase}</span>
     </p>
     <p>
         <span class='previous'>{text prior to search phrase}</span>
-        <span class='hi'>{search term itself}</span>
+        <span class='hi'>{search phrase}</span>
         <span class='following'>{text after the search phrase}</span>
     </p>
 <title>{title}</title> ... 
