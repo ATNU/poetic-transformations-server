@@ -2,8 +2,13 @@
  * Values needed to create a connection to the eXist-db API to submit a resource request or query
  */
 
+
+const IP = process.env.IP;
+
 module.exports = {
-        URINoDB: 'http://192.168.99.100:8080/exist/rest',
-        URI: 'http://192.168.99.100:8080/exist/rest/db/transformations/',
-        URIQuery: 'http://192.168.99.100:8080/exist/rest/db/transformations?_query=',
+
+
+        URINoDB: 'http://' + IP + ':8080/exist/rest',
+        URI: 'http://' + IP + ':8080/exist/rest/db/transformations/',
+        URIQuery: 'http://' + IP + ':8080/exist/rest/db/transformations?_query=',
 };
