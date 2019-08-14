@@ -65,17 +65,17 @@ router.get('/:title', function(req, res) {
     //----- generate database API call
     const title = req.params.title;
     //todo remove whitespace
-    const querySetup = 'xquery version "3.1";declare namespace tei = "http://www.tei-c.org/ns/1.0";';
-    const queryStatement = 'let $versions :=collection(/db/transformations)/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt[tei:idno= "' + title + '"]' +
+    const querySetup = 'xquery version "3.1";declare default element namespace "http://www.tei-c.org/ns/1.0";';
+    const queryStatement = 'let $versions :=collection(/db/transformations)/TEI/teiHeader/fileDesc/publicationStmt[idno= "' + title + '"]' +
         'for $version in $versions\n' +
         'let $path := base-uri($version)\n' +
         'let $document := doc($path)' +
         'return (\n' +
         '    <version>\n' +
-        '    <poemID>{$version//tei:idno[@type="PTpoem"]}</poemID>' +
-        '<versionID>{$version//tei:idno[@type="PTid"]}</versionID>' +
-        '<versionTitle>{$document//tei:title/text()}</versionTitle>' +
-        '<author>{$document//tei:author/text()}</author>' +
+        '    <poemID>{$version//idno[@type="PTpoem"]}</poemID>' +
+        '<versionID>{$version//idno[@type="PTid"]}</versionID>' +
+        '<versionTitle>{$document//title/text()}</versionTitle>' +
+        '<author>{$document//author/text()}</author>' +
         '<filename>{$path}</filename>' +
         '    </version>\n' +
         '    )';

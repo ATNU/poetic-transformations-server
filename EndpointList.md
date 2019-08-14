@@ -1,6 +1,6 @@
 # View a single version of a poem
 Provide a document path and receive XML file in full. The path should be retrieved from
-the information sent in the version index. The path must be URL encoded before sending.
+the information sent in the version index. The path must be URL encoded before sending. The <exist:result> tag contains a 'exist:hits' tag that describes the total number of hits.
 
 ## URL
 /doc/:path
@@ -15,6 +15,7 @@ Content: XML file
 ##Error response
 Code: `404 Not Found`
 Code: `Cannot find document`
+Incorrect filename submitted
 
 ##Sample response
 
@@ -37,7 +38,7 @@ Code: `Cannot find document`
 ---
 
 # View poem index
-Get an index of all poems stored and how many versions aof that poem are available to view.
+Get an index of all poems stored and how many versions of that poem are available to view. The ```<exist:result>``` tag contains a ```'exist:hits'``` tag that describes the total number of hits.
 
 ##URL
 /index
@@ -51,11 +52,16 @@ Content: XML file
 ##Sample response
 ```
 <exist:result xmlns:exist="http://exist.sourceforge.net/NS/exist" exist:hits="2" exist:start="1" exist:count="2"
-	exist:compilation-time="8" exist:execution-time="8">
+	exist:compilation-time="6" exist:execution-time="6">
 	<text>
-		<title>Pakistan</title>
+		<poemID>Alvi1</poemID>
 		<author>Moniza Alvi</author>
-		<versions>2</versions>
+		<versions>11</versions>
+	</text>
+	<text>
+		<poemID>Alvi2 TEST</poemID>
+		<author>Moniza Alvi TEST</author>
+		<versions>1</versions>
 	</text>
 </exist:result>
 
@@ -63,7 +69,7 @@ Content: XML file
 
 ---
 # View version index
-Get an index of all versions of a particular poem (using idno element, type PTpoem). 
+Get an index of all versions of a particular poem (using poem ID from the poem index). The <exist:result> tag contains a 'exist:hits' tag that describes the total number of hits.
 
 ##URL
 /index/title
@@ -99,7 +105,7 @@ Content: XML file
 
 #Search
 Search across all poems and return key details and a snippet surrounding the search phrase. Search phrase should be surrounded by double quotation marks and URL encoded. e.g. 
-the phrase ```'the apple and the pear'``` should be submitted as ```"the apple and the pear"``` thus after URL encoding ``` %22the%20apple%20and%20the%20pear%22``` . Searching is non case sensitive and searches for the whole phrase submitted. 
+the phrase ```'the apple and the pear'``` should be submitted as ```"the apple and the pear"``` thus after URL encoding ``` %22the%20apple%20and%20the%20pear%22``` . Searching is non case sensitive and searches for the whole phrase submitted. The <exist:result> tag contains a 'exist:hits' tag that describes the total number of hits.
 
 It is possible to use wildcards. In future this endpoint could be developed to cater for more sophisticated and/or queries.
 
@@ -111,6 +117,8 @@ Code: `200 OK`
 Content: XML file
 
 ```
+<exist:result xmlns:exist="http://exist.sourceforge.net/NS/exist" exist:hits="24" exist:start="1" exist:count="24"
+	exist:compilation-time="56" exist:execution-time="56">
 <title>{title}</title>
 <author>{author}</author>
 <idno>{idno}</idno>
@@ -129,5 +137,11 @@ Content: XML file
 
 
 ##Error response
+Code: `400`
+Likely to be caused by an invalid search term e.g. search/"
+
+Code: `404`
+Likely to be caused by a call to search/ with no search term
+
 
 ##Sample response

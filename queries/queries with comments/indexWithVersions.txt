@@ -4,27 +4,27 @@ declare namespace tei = "http://www.tei-c.org/ns/1.0";
 let $collection:=collection(/db/transformations)
 
 //get list of all unique original titles tagged in the collection
-let $originalTitles:=$collection//tei:originTitle
-let $uniqueOriginals:=distinct-values($originalTitles)
+let $originalTitles:=$collection/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt/tei:idno[@type="PTpoem"]
+let $poemIDs:=distinct-values($originalTitles)
 
 //for each origin title...
-for $hit in $uniqueOriginals
+for $ID in $poemIDs
 
-//1. get the author
-let $authors := $collection/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt[tei:originTitle=$hit]/tei:author
-let $distinct-author := distinct-values($authors)
-
-//get all the versions of that poem in the collection
-let $versions :=$collection/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt[tei:originTitle=$hit]
-
-//2. and count the number of versions
+//count number of versions
+let $versions :=$collection/tei:TEI/tei:teiHeader/tei:fileDesc/tei:publicationStmt[tei:idno=$ID]
 let $count := count($versions)
 
-//3. present using HTML tags
+//get all authors for the versions and find distinct ones (there should only be one)
+let $authors := for $version in $versions
+                    let $path := base-uri($version)
+                    let $document := doc($path)
+                    return $document//tei:author
+
 return (
+
     <text>
-        <title>{$hit}</title>
-        <author>{$distinct-author}</author>
+        <poemID>{$ID}</poemID>
+        <author> {distinct-values($authors)}  </author>
         <versions>{$count}</versions>
     </text>
 )

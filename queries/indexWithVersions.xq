@@ -1,21 +1,25 @@
 xquery version "3.1";
-declare namespace tei = "http://www.tei-c.org/ns/1.0";
+declare default element namespace "http://www.tei-c.org/ns/1.0";
 
 let $collection:=collection(/db/transformations)
-let $originalTitles:=$collection//tei:originTitle
-let $uniqueOriginals:=distinct-values($originalTitles)
+let $originalTitles:=$collection/TEI/teiHeader/fileDesc/publicationStmt/idno[@type="PTpoem"]
+let $poemIDs:=distinct-values($originalTitles)
 
-for $hit in $uniqueOriginals
-let $authors := $collection/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt[tei:originTitle=$hit]/tei:author
-let $distinct-author := distinct-values($authors)
 
-let $versions :=$collection/tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt[tei:originTitle=$hit]
+for $ID in $poemIDs
+let $versions :=$collection/TEI/teiHeader/fileDesc/publicationStmt[idno=$ID]
 let $count := count($versions)
 
+let $authors := for $version in $versions
+let $path := base-uri($version)
+let $document := doc($path)
+return $document//author
+
 return (
+
     <text>
-        <title>{$hit}</title>
-        <author>{$distinct-author}</author>
+        <poemID>{$ID}</poemID>
+        <author> {distinct-values($authors)}  </author>
         <versions>{$count}</versions>
     </text>
 )
