@@ -1,6 +1,6 @@
 # View a single version of a poem
 Provide a document path and receive XML file in full. The path should be retrieved from
-the information sent in the version index. The path must be URL encoded before sending. The <exist:result> tag contains a 'exist:hits' tag that describes the total number of hits.
+the information sent in the version index. The path must be URL encoded before sending. The ```<exist:result>``` tag contains a ```'exist:hits'``` tag that describes the total number of hits.
 
 ## URL
 /doc/:path
@@ -38,7 +38,7 @@ Incorrect filename submitted
 ---
 
 # View poem index
-Get an index of all poems stored and how many versions of that poem are available to view. The ```<exist:result>``` tag contains a ```'exist:hits'``` tag that describes the total number of hits.
+Get an index of all poems stored and how many versions of that poem are available to view. The poem ID can be used to view all versions. The ```<exist:result>``` tag contains a ```'exist:hits'``` tag that describes the total number of hits.
 
 ##URL
 /index
@@ -69,7 +69,7 @@ Content: XML file
 
 ---
 # View version index
-Get an index of all versions of a particular poem (using poem ID from the poem index). The <exist:result> tag contains a 'exist:hits' tag that describes the total number of hits.
+Get an index of all versions of a particular poem (using poem ID from the poem index). The ```<exist:result>``` tag contains a ```'exist:hits'``` tag that describes the total number of hits. The filename can be used to view a single version in full.
 
 ##URL
 /index/title
@@ -105,7 +105,7 @@ Content: XML file
 
 #Search
 Search across all poems and return key details and a snippet surrounding the search phrase. Search phrase should be surrounded by double quotation marks and URL encoded. e.g. 
-the phrase ```'the apple and the pear'``` should be submitted as ```"the apple and the pear"``` thus after URL encoding ``` %22the%20apple%20and%20the%20pear%22``` . Searching is non case sensitive and searches for the whole phrase submitted. The <exist:result> tag contains a 'exist:hits' tag that describes the total number of hits.
+the phrase ```'the apple and the pear'``` should be submitted as ```"the apple and the pear"``` thus after URL encoding ``` %22the%20apple%20and%20the%20pear%22``` . Searching is non case sensitive and searches for the whole phrase submitted. The <exist:result> tag contains a 'exist:hits' tag that describes the total number of hits. The filename can be used to view a single version in full.
 
 It is possible to use wildcards. In future this endpoint could be developed to cater for more sophisticated and/or queries.
 
@@ -144,4 +144,4 @@ Code: `404`
 Likely to be caused by a call to search/ with no search term
 
 
-##Sample response
+

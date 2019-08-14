@@ -19,6 +19,7 @@ router.get('/:searchTerm', function(req, res) {
         "<author> {$resource//tei:author/text()} </author>," +
         "<poemID> {$resource//tei:idno[@type='PTpoem']/text()} </poemID>," +
         "<versionID> {$resource//tei:idno[@type='PTid']/text()} </versionID>," +
+        "<filename>{base-uri($resource)}</filename>,"
             "kwic:summarize($resource, <config width='100'/>))&_howmany=100";
     const query = querySetup + queryStatement;
     // full address to call
