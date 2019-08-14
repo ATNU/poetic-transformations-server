@@ -15,12 +15,14 @@ router.get('/:searchTerm', function(req, res) {
 
 //xquery version and TEI namespace
     const querySetup = "xquery version '3.1';import module namespace kwic='http://exist-db.org/xquery/kwic';declare namespace tei= 'http://www.tei-c.org/ns/1.0';";
-    const queryStatement = "for $resource in collection('/db/transformations')//tei:TEI[ft:query(.," + "'" + search + "')] return  ( <title> {$resource//tei:title/text()} </title>," +
+    const queryStatement = "for $resource in collection('/db/transformations')//tei:TEI[ft:query(.," + "'" + search + "')]" +
+   " return  (" +
+        "<title> {$resource//tei:title/text()} </title>," +
         "<author> {$resource//tei:author/text()} </author>," +
         "<poemID> {$resource//tei:idno[@type='PTpoem']/text()} </poemID>," +
-        "<versionID> {$resource//tei:idno[@type='PTid']/text()} </versionID>," +
-        "<filename>{base-uri($resource)}</filename>,"
-            "kwic:summarize($resource, <config width='100'/>))&_howmany=100";
+    "<versionID> {$resource//tei:idno[@type='PTid']/text()} </versionID>," +
+    "<filename>{base-uri($resource)}</filename>," +
+    "kwic:summarize($resource, <config width='100'/>))&_howmany=100";
     const query = querySetup + queryStatement;
     // full address to call
     const URL = encodeURI(URI + query);
