@@ -7,10 +7,7 @@ const similarity = require('../util/cosine-similarity.js');
 
 router.get('/', function(req, res) {
 
-    const one = {
-
-        The black
-    } cat";
+    const one = "The black and white cat";
     const two = "The black cat";
 
     console.log(similarity(one, two));
