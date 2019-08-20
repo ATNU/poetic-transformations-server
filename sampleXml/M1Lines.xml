@@ -1,0 +1,60 @@
+<exist:result xmlns:exist="http://exist.sourceforge.net/NS/exist" exist:hits="23" exist:start="1" exist:count="23" exist:compilation-time="1" exist:execution-time="1">
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.1" rend="underline">Pakistan, they said to her.
+        <note type="authorial">title!</note>
+    </l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.2">But what was Pakistan? A country,</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.3">a bolt-hole, a land of bone?</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.4">It held out very different sets of arms</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.5">offered its hard or soft embrace.</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.6">The filling up with Pakistan</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.7">brimming over, spilling.</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.8">To the East and West,</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.9">wh
+        <subst change="#change-b">
+            <del>ichever</del>
+            <add place="above">erever</add>
+        </subst>
+        <del change="#change-b">way</del> you looked,
+    </l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.10">Pakistan persisted.</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.11">But
+        <subst change="#change-b">
+            <del>the 'country'</del>
+            <add place="above">it</add>
+        </subst> wasn't half-empty
+    </l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.12">and what was there</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.13">couldn't be poured away.</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.14">Would there really be
+        <subst change="#change-b">
+            <del>mass movement</del>
+            <add place="above">
+                <subst change="#change-b">
+                    <del>migration</del>
+                    <add place="above" rend="caret">marches</add>
+                </subst>
+            </add>
+        </subst>
+    </l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.15">the other way.</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.16">Was
+        <subst change="#change-b">
+            <del>the promised land</del>
+            <add place="above" rend="caret">Pakistan</add>
+        </subst> a resting tiger
+    </l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.17">front paws, back paws.</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.18">
+        <del change="#change-b">Pakistan</del> lay in wait.
+    </l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.19">In the breadth of a hair</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.20">in the journey of an ant</l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.21" corresp="#M1.A">
+        <del change="#change-b">in the salting of
+                     lassi</del>
+    </l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.22">
+        <del change="#change-b">and kneading of dough</del>
+    </l>
+    <l xmlns="http://www.tei-c.org/ns/1.0" xml:id="M1.23" rend="centre-right">Pakistan!</l>
+</exist:result>

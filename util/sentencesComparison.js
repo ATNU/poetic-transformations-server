@@ -21,7 +21,7 @@ module.exports = function (fileOne, fileTwo) {
 
         //get first sentence and remove punctuation
         let sentenceObjectOne = fileOne[i];
-        let sentenceOneWithPunc = sentenceObjectOne.line;
+        let sentenceOneWithPunc = sentenceObjectOne._text;
         let sentenceFromFileOne = sentenceOneWithPunc.replace( /[^\w\s]/g, "");
         console.log("sentence one: " + sentenceFromFileOne, '\n');
 
@@ -36,7 +36,7 @@ module.exports = function (fileOne, fileTwo) {
 
             //get second sentence and remove punctuation
             let sentenceObjectTwo = fileTwo[j];
-            let sentenceTwoWithPunc = sentenceObjectTwo.line;
+            let sentenceTwoWithPunc = sentenceObjectTwo._text;
             let sentenceFromFileTwo = sentenceTwoWithPunc.replace( /[^\w\s]/g, "");
             console.log("sentence two: " + sentenceFromFileTwo, '\n');
 
