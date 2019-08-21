@@ -1,12 +1,16 @@
 
 const similarity = require('../util/cosine-similarity.js');
 
-
+/**
+ * Takes 'files' in the form of lists of JSON objects
+ * @param fileOne
+ * @param fileTwo
+ * @returns {*[]} 2 JSON lists of line objects
+ */
 module.exports = function (fileOne, fileTwo) {
 
     const fileOneLength = fileOne.length;
     const fileTwoLength = fileTwo.length;
-
 
     //variable to keep track of the next spine index to assign
     let spineIndexCounter = 1;
@@ -49,7 +53,7 @@ module.exports = function (fileOne, fileTwo) {
             {
                 console.log("similarity score indicates a match", '\n');
                 //if sentence 1 has a spine index already then assign this to sentence 2 as well and move on to next sentence from file 1
-                if (sentenceObjectOne.hasOwnProperty('spineIndex'))
+                if (sentenceObjectOne.hasOwnProperty('spineIndex') && sentenceObjectOne.spineIndex !== "")
                 {
                     console.log("sentence one already has a spine index so copy to sentence two");
                     //add the spine index from sentence 1 to sentence 2
@@ -58,7 +62,7 @@ module.exports = function (fileOne, fileTwo) {
                 }
 
                 //else if sentence 2 has a spine index already then assign this to sentence 1 and move on to next sentence from file 1
-                else if (sentenceObjectTwo.hasOwnProperty('spineIndex'))
+                else if (sentenceObjectTwo.hasOwnProperty('spineIndex') && sentenceObjectOne.spineIndex !== "")
                 {
                     console.log("sentence two already has a spine index so copy to sentence one");
                     //add the spine index from sentence 2 to sentence 1
