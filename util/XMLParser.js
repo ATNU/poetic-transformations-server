@@ -10,6 +10,10 @@ function parseXml(xml) {
         return json;
 }
 
+function jsonReadyToQuery(unparsed) {
+    return JSON.parse(unparsed);
+}
+
 /**
  * Extract poem body from a json representation of the xml
  * @param json (string)

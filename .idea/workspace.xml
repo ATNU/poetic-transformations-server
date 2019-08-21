@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/sampleXml/M1Lines.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/XMLParserTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/XMLParser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/JSONParser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/updateWithSpineIndex.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sample xml/B.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sampleXml/B.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/sentencesComparisonTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/sentencesComparisonTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/sentencesComparison.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/sentencesComparison.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/XMLParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/XMLParser.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +18,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.69413316">
+    <splitter split-orientation="horizontal" split-proportion="0.41724616">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -54,26 +49,31 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/util/XMLParser.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-169">
-                  <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sampleXml/B.xml">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="-765" />
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/util/sentencesComparison.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="38" column="61" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="61" />
+                <state relative-caret-position="383">
+                  <caret line="55" column="106" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="106" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/util/JSONParser.js">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/util/updateWithSpineIndex.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="765">
+                  <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -83,19 +83,10 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/queries/queries with comments/getVersionIndex.txt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/sentencesComparisonTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2771">
-                  <caret line="163" column="7" lean-forward="true" selection-start-line="163" selection-start-column="7" selection-end-line="163" selection-end-column="7" />
+                <state relative-caret-position="-408">
+                  <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -103,8 +94,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/XMLParserTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4">
-                  <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
+                <state relative-caret-position="51">
+                  <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="54" />
                 </state>
               </provider>
             </entry>
@@ -112,8 +103,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sampleXml/M1Lines.xml">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
+                <state relative-caret-position="332">
                   <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/util/XMLParser.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="221">
+                  <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
@@ -190,9 +190,10 @@
         <option value="$PROJECT_DIR$/util/JSONSentences.js" />
         <option value="$PROJECT_DIR$/test/JSONSentencesTest.js" />
         <option value="$PROJECT_DIR$/test/XMLParserTest.js" />
-        <option value="$PROJECT_DIR$/util/XMLParser.js" />
-        <option value="$PROJECT_DIR$/util/sentencesComparison.js" />
         <option value="$PROJECT_DIR$/test/sentencesComparisonTest.js" />
+        <option value="$PROJECT_DIR$/util/sentencesComparison.js" />
+        <option value="$PROJECT_DIR$/util/XMLParser.js" />
+        <option value="$PROJECT_DIR$/util/updateWithSpineIndex.js" />
       </list>
     </option>
   </component>
@@ -203,10 +204,10 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="57" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -410,7 +411,7 @@
       <workItem from="1564481354888" duration="258000" />
       <workItem from="1564492246091" duration="35614000" />
       <workItem from="1565175861962" duration="40569000" />
-      <workItem from="1566209683991" duration="28277000" />
+      <workItem from="1566209683991" duration="34035000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -510,50 +511,65 @@
       <option name="project" value="LOCAL" />
       <updated>1566219506666</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="XML conversion">
+      <created>1566314439496</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1566314439496</updated>
+    </task>
+    <task id="LOCAL-00016" summary="added spine index to sentenceComparison.js">
+      <created>1566375156257</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1566375156257</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="parse_XML - 2019.08.20 at 15h 26m 32s.xml">
-      <configuration name="parse XML" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="parse_XML_should_handle_error - 2019.08.20 at 15h 27m 40s.xml">
-      <configuration name="parse XML.should handle error" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="parse_XML_should_handle_error - 2019.08.20 at 15h 27m 50s.xml">
-      <configuration name="parse XML.should handle error" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="convert_to_JSON - 2019.08.20 at 15h 46m 52s.xml">
-      <configuration name="convert to JSON" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="parse_XML_should_handle_error - 2019.08.20 at 15h 48m 23s.xml">
-      <configuration name="parse XML.should handle error" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="parse_XML - 2019.08.20 at 15h 48m 44s.xml">
-      <configuration name="parse XML" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="convert_to_JSON - 2019.08.20 at 15h 54m 33s.xml">
-      <configuration name="convert to JSON" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_1_correctly - 2019.08.20 at 16h 11m 23s.xml">
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_1_correctly - 2019.08.21 at 08h 57m 17s.xml">
       <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 1 correctly" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.20 at 16h 11m 31s.xml">
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_1_correctly - 2019.08.21 at 08h 57m 45s.xml">
+      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 1 correctly" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_1_correctly - 2019.08.21 at 08h 58m 39s.xml">
+      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 1 correctly" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 01m 38s.xml">
       <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes - 2019.08.20 at 16h 16m 10s.xml">
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 01m 52s.xml">
+      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 02m 29s.xml">
+      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 03m 08s.xml">
+      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 07m 47s.xml">
+      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 09m 52s.xml">
+      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes - 2019.08.21 at 09h 10m 35s.xml">
       <configuration name="sentences comparison with no previously assigned indexes" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118012000" />
+    <option name="totallyTimeSpent" value="123770000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="57" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7920561" visible="true" weight="0.1913646" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7924528" visible="true" weight="0.1426868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.20794393" side_tool="true" visible="true" weight="0.1913646" />
+      <window_info id="npm" order="2" sideWeight="0.20754717" side_tool="true" visible="true" weight="0.1426868" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -561,15 +577,15 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.07258938" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4123149" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.24240062" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" visible="true" weight="0.17381138" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3281372" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32719395" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.248104" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -632,11 +648,11 @@
     <MESSAGE value="update queries with default namespace" />
     <MESSAGE value="cosine comparison on 2 sentences works" />
     <MESSAGE value="comparison on 2 lists of sentence objects works and is tested (apart from maintaining uniqueness of spine indices)" />
-    <option name="LAST_COMMIT_MESSAGE" value="comparison on 2 lists of sentence objects works and is tested (apart from maintaining uniqueness of spine indices)" />
+    <MESSAGE value="XML conversion" />
+    <MESSAGE value="added spine index to sentenceComparison.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="added spine index to sentenceComparison.js" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controllers/getResource.js" />
-    <entry file="file://$PROJECT_DIR$/routes/users.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -854,13 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/queries/queries with comments/getVersionIndex.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/search.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -872,27 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-492">
           <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/XMLParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-169">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/XMLParserTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sampleXml/M1Lines.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -910,17 +898,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/sentencesComparison.js">
+    <entry file="file://$PROJECT_DIR$/sampleXml/M1Lines.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="38" column="61" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="61" />
+        <state relative-caret-position="332">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queries/queries with comments/getVersionIndex.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/sentencesComparisonTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2771">
-          <caret line="163" column="7" lean-forward="true" selection-start-line="163" selection-start-column="7" selection-end-line="163" selection-end-column="7" />
+        <state relative-caret-position="-408">
+          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/XMLParserTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/XMLParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/JSONParser.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/sentencesComparison.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="55" column="106" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/updateWithSpineIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
         </state>
       </provider>
     </entry>
