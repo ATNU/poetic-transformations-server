@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/util/JSONParser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/updateWithSpineIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/spineIndex.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/JSONParserTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/compareFilesTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/saveToCSVTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/updateWithSpineIndexTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/compareFiles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/saveToCSV.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/getIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/getIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/XMLParserTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/XMLParserTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/sentencesComparisonTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/sentencesComparisonTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/JSONParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/JSONParser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/XMLParser.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/XMLParser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/sentencesComparison.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/sentencesComparison.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/updateWithSpineIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/updateWithSpineIndex.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,62 +31,14 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41724616">
+    <splitter split-orientation="horizontal" split-proportion="0.501648">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/getResource.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-492">
-                  <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/util/cosine-similarity.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/comparison.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sampleXml/B.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-765" />
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/util/sentencesComparison.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="383">
-                  <caret line="55" column="106" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="106" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/util/JSONParser.js">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/util/updateWithSpineIndex.js">
+            <entry file="file://$PROJECT_DIR$/util/compareFiles.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="765">
-                  <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+                <state relative-caret-position="368">
+                  <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -83,37 +48,37 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/sentencesComparisonTest.js">
+            <entry file="file://$PROJECT_DIR$/util/XMLParser.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-408">
-                  <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+                <state>
+                  <caret selection-end-line="1" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/XMLParserTest.js">
+            <entry file="file://$PROJECT_DIR$/test/updateWithSpineIndexTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="54" />
+                <state relative-caret-position="-102">
+                  <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sampleXml/M1Lines.xml">
+            <entry file="file://$PROJECT_DIR$/test/compareFilesTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="332">
-                  <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/util/XMLParser.js">
+            <entry file="file://$PROJECT_DIR$/routes/getIndex.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+                <state relative-caret-position="-357">
+                  <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -145,14 +110,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/query.js" />
-        <option value="$PROJECT_DIR$/routes/get.js" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/controllers/getResource.js" />
-        <option value="$PROJECT_DIR$/routes/users.js" />
-        <option value="$PROJECT_DIR$/util/connectionOptionsQueries.js" />
-        <option value="$PROJECT_DIR$/util/connectionOptions.js" />
         <option value="$PROJECT_DIR$/util/query.js" />
         <option value="$PROJECT_DIR$/query.xql" />
         <option value="$PROJECT_DIR$/.dockerignore" />
@@ -172,7 +129,6 @@
         <option value="$PROJECT_DIR$/queries/queries with comments/getVersionIndex.txt" />
         <option value="$PROJECT_DIR$/queries/queries with comments/indexWithVersions.txt" />
         <option value="$PROJECT_DIR$/queries/indexWithVersions.xq" />
-        <option value="$PROJECT_DIR$/routes/getIndex.js" />
         <option value="$PROJECT_DIR$/queries/getVersionIndex.xq" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/queries/search.xql" />
@@ -189,11 +145,22 @@
         <option value="$PROJECT_DIR$/sampleXml/M1Lines.js" />
         <option value="$PROJECT_DIR$/util/JSONSentences.js" />
         <option value="$PROJECT_DIR$/test/JSONSentencesTest.js" />
+        <option value="$PROJECT_DIR$/routes/getIndex.js" />
         <option value="$PROJECT_DIR$/test/XMLParserTest.js" />
         <option value="$PROJECT_DIR$/test/sentencesComparisonTest.js" />
         <option value="$PROJECT_DIR$/util/sentencesComparison.js" />
         <option value="$PROJECT_DIR$/util/XMLParser.js" />
         <option value="$PROJECT_DIR$/util/updateWithSpineIndex.js" />
+        <option value="$PROJECT_DIR$/util/JSONParser.js" />
+        <option value="$PROJECT_DIR$/JSONResultSample.xml" />
+        <option value="$PROJECT_DIR$/sampleXml/JSONForConversion" />
+        <option value="$PROJECT_DIR$/test/JSONParserTest.js" />
+        <option value="$PROJECT_DIR$/test/updateWithSpineIndexTest.js" />
+        <option value="$PROJECT_DIR$/test/saveToCSVTest.js" />
+        <option value="$PROJECT_DIR$/util/saveToCSV.js" />
+        <option value="$PROJECT_DIR$/data/spineIndex.csv" />
+        <option value="$PROJECT_DIR$/test/compareFilesTest.js" />
+        <option value="$PROJECT_DIR$/util/compareFiles.js" />
       </list>
     </option>
   </component>
@@ -229,13 +196,12 @@
             <path>
               <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
-              <item name="queries" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
               <item name="queries" type="462c0819:PsiDirectoryNode" />
-              <item name="queries with comments" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
@@ -272,7 +238,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sampleXml" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -284,17 +250,18 @@
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\sample xml" />
-      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries\queries with comments" />
-      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries\archived" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries\queries with comments" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\util" />
       <recent name="C:\Users\nkc124\GitHub\transformations-server-express" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\sampleXml" />
+      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\sample xml" />
+      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries\queries with comments" />
+      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -309,8 +276,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.sentences comparison with no previously assigned indexes">
-    <configuration name="convert to JSON" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Mocha.generating comparison list.should get list of versions">
+    <configuration name="converting JSON to XML" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -319,13 +286,13 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/XMLParserTest.js</test-file>
+      <test-file>$PROJECT_DIR$/test/JSONParserTest.js</test-file>
       <test-names>
-        <name value="convert to JSON" />
+        <name value="converting JSON to XML" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="parse XML" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="generating comparison list" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -334,28 +301,13 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/XMLParserTest.js</test-file>
+      <test-file>$PROJECT_DIR$/test/compareFilesTest.js</test-file>
       <test-names>
-        <name value="parse XML" />
+        <name value="generating comparison list" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="sentences comparison with no previously assigned indexes" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/sentencesComparisonTest.js</test-file>
-      <test-names>
-        <name value="sentences comparison with no previously assigned indexes" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 1 correctly" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="generating comparison list.should get list of versions" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -364,14 +316,14 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/sentencesComparisonTest.js</test-file>
+      <test-file>$PROJECT_DIR$/test/compareFilesTest.js</test-file>
       <test-names>
-        <name value="sentences comparison with no previously assigned indexes" />
-        <name value="should label file 1 sentence 1 correctly" />
+        <name value="generating comparison list" />
+        <name value="should get list of versions" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="saves correctly" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -379,21 +331,35 @@
       <pass-parent-env>true</pass-parent-env>
       <ui>bdd</ui>
       <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/sentencesComparisonTest.js</test-file>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/saveToCSVTest.js</test-file>
       <test-names>
-        <name value="sentences comparison with no previously assigned indexes" />
-        <name value="should label file 1 sentence 2 correctly" />
+        <name value="saves correctly" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="update original" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/updateWithSpineIndexTest.js</test-file>
+      <test-names>
+        <name value="update original" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.sentences comparison with no previously assigned indexes" />
-        <item itemvalue="Mocha.sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" />
-        <item itemvalue="Mocha.sentences comparison with no previously assigned indexes.should label file 1 sentence 1 correctly" />
-        <item itemvalue="Mocha.convert to JSON" />
-        <item itemvalue="Mocha.parse XML" />
+        <item itemvalue="Mocha.generating comparison list.should get list of versions" />
+        <item itemvalue="Mocha.generating comparison list" />
+        <item itemvalue="Mocha.saves correctly" />
+        <item itemvalue="Mocha.update original" />
+        <item itemvalue="Mocha.converting JSON to XML" />
       </list>
     </recent_temporary>
   </component>
@@ -529,63 +495,71 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_1_correctly - 2019.08.21 at 08h 57m 17s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 1 correctly" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list - 2019.08.22 at 13h 28m 54s.xml">
+      <configuration name="generating comparison list" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_1_correctly - 2019.08.21 at 08h 57m 45s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 1 correctly" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list - 2019.08.22 at 13h 29m 11s.xml">
+      <configuration name="generating comparison list" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_1_correctly - 2019.08.21 at 08h 58m 39s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 1 correctly" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list - 2019.08.22 at 13h 36m 13s.xml">
+      <configuration name="generating comparison list" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 01m 38s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list - 2019.08.22 at 13h 36m 30s.xml">
+      <configuration name="generating comparison list" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 01m 52s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list - 2019.08.22 at 13h 37m 43s.xml">
+      <configuration name="generating comparison list" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 02m 29s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list_should_get_list_of_versions - 2019.08.22 at 13h 38m 58s.xml">
+      <configuration name="generating comparison list.should get list of versions" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 03m 08s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list_should_get_list_of_versions - 2019.08.22 at 13h 43m 00s.xml">
+      <configuration name="generating comparison list.should get list of versions" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 07m 47s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list_should_get_list_of_versions - 2019.08.22 at 13h 43m 44s.xml">
+      <configuration name="generating comparison list.should get list of versions" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes_should_label_file_1_sentence_2_correctly - 2019.08.21 at 09h 09m 52s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes.should label file 1 sentence 2 correctly" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list_should_get_list_of_versions - 2019.08.22 at 13h 44m 59s.xml">
+      <configuration name="generating comparison list.should get list of versions" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes - 2019.08.21 at 09h 10m 35s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="generating_comparison_list_should_get_list_of_versions - 2019.08.22 at 13h 45m 40s.xml">
+      <configuration name="generating comparison list.should get list of versions" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123770000" />
+    <option name="totallyTimeSpent" value="142472000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7924528" visible="true" weight="0.1426868" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79171896" visible="true" weight="0.1913646" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.20754717" side_tool="true" visible="true" weight="0.1426868" />
+      <window_info id="npm" order="2" sideWeight="0.20828106" side_tool="true" weight="0.1426868" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4123149" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.41386783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" visible="true" weight="0.17381138" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" visible="true" weight="0.17334779" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32719395" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32502708" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.248104" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -599,27 +573,27 @@
       <window_info anchor="right" id="Database" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6765016" visible="true" weight="0.186407" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79171896" visible="true" weight="0.1426868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.32349843" side_tool="true" visible="true" weight="0.186407" />
+      <window_info id="npm" order="2" sideWeight="0.20828106" side_tool="true" visible="true" weight="0.1426868" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32969603" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.26032737" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3289166" />
-      <window_info anchor="bottom" id="Database Changes" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.37879968" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.17381138" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3257989" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.248104" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32969603" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -653,49 +627,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="added spine index to sentenceComparison.js" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="201" column="14" selection-start-line="201" selection-start-column="14" selection-end-line="201" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="209" selection-start-line="209" selection-end-line="209" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/connectionOptionsQueries.js" />
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.15.3/core-modules/_http_client.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="114" column="12" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="334" column="11" selection-start-line="334" selection-start-column="11" selection-end-line="334" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/query.js" />
-    <entry file="file://$PROJECT_DIR$/.dockerignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docker-compose-prod.yaml" />
-    <entry file="file://$PROJECT_DIR$/docker-compose-dev.yaml" />
-    <entry file="file://$PROJECT_DIR$/Dockerfile.dev" />
     <entry file="file://$PROJECT_DIR$/../ePRASE/docker-compose.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -760,13 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/getVersionIndex.xq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -844,11 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sampleXml/B.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-765" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -863,13 +782,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1662">
-          <caret line="4" column="76" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/search.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -877,31 +789,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getResource.js">
+    <entry file="file://$PROJECT_DIR$/sampleXml/M1Lines.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-492">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+        <state relative-caret-position="425">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/cosine-similarity.js">
+    <entry file="file://$PROJECT_DIR$/sampleXml/B.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="53" column="39" selection-start-line="53" selection-start-column="39" selection-end-line="53" selection-end-column="39" />
+        <state relative-caret-position="-153" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/getResource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/comparison.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sampleXml/M1Lines.xml">
+    <entry file="file://$PROJECT_DIR$/util/cosine-similarity.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        <state relative-caret-position="341">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/XMLParserTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="30" selection-start-line="25" selection-start-column="4" selection-end-line="28" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/updateWithSpineIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/sentencesComparisonTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1360">
+          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/XMLParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampleXml/JSONForConversion">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="4965" selection-start-column="4965" selection-end-column="4965" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JSONResultSample.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="9839" selection-start-column="9839" selection-end-column="9930" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampleXml/M1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampleXml/M2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-67">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/sentencesComparison.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-581">
+          <caret line="43" column="21" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/JSONParserTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/saveToCSVTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="58" selection-start-column="58" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/spineIndex.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/JSONParser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/saveToCSV.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/updateWithSpineIndexTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -912,41 +928,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/sentencesComparisonTest.js">
+    <entry file="file://$PROJECT_DIR$/queries/getVersionIndex.xq">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+        <state relative-caret-position="238">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/XMLParserTest.js">
+    <entry file="file://$PROJECT_DIR$/test/compareFilesTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="4" selection-end-column="54" />
+        <state relative-caret-position="170">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/XMLParser.js">
+    <entry file="file://$PROJECT_DIR$/routes/getIndex.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
+        <state relative-caret-position="-357">
+          <caret line="3" column="25" lean-forward="true" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/JSONParser.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/sentencesComparison.js">
+    <entry file="file://$PROJECT_DIR$/util/compareFiles.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="55" column="106" lean-forward="true" selection-start-line="55" selection-start-column="15" selection-end-line="55" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/updateWithSpineIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        <state relative-caret-position="368">
+          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
         </state>
       </provider>
     </entry>

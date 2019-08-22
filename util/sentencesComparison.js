@@ -1,4 +1,4 @@
-
+const _ = require ('underscore');
 const similarity = require('../util/cosine-similarity.js');
 
 /**
@@ -26,7 +26,25 @@ module.exports = function (fileOne, fileTwo) {
         //get first sentence and remove punctuation
         let sentenceObjectOne = fileOne[i];
         let sentenceOneWithPunc = sentenceObjectOne._text;
-        let sentenceFromFileOne = sentenceOneWithPunc.replace( /[^\w\s]/g, "");
+        let sentenceFromFileOne;
+
+        //todo check why the text element of a line might be undefined - at present these are just excluded
+
+        //check if text is a list before removing punctuation (list indicates additions and deletions)
+        if (_.isArray(sentenceOneWithPunc)) {
+            sentenceFromFileOne = removePuncAndCombine(sentenceOneWithPunc).toString();
+        }
+        else if(sentenceOneWithPunc !== undefined) {
+            sentenceFromFileOne = sentenceOneWithPunc.replace( /[^\w\s]/g, "").toString();
+        }
+
+        else { //can't work with an undefined element so assign next spine index and move on
+            sentenceObjectOne.spineIndex = spineIndexCounter;
+            spineIndexCounter++;
+            continue;
+             }
+
+
         console.log("sentence one: " + sentenceFromFileOne, '\n');
 
         //compare with each sentence in the second text
@@ -41,7 +59,20 @@ module.exports = function (fileOne, fileTwo) {
             //get second sentence and remove punctuation
             let sentenceObjectTwo = fileTwo[j];
             let sentenceTwoWithPunc = sentenceObjectTwo._text;
-            let sentenceFromFileTwo = sentenceTwoWithPunc.replace( /[^\w\s]/g, "");
+            let sentenceFromFileTwo;
+
+            //check if text is a list before removing punctuation (list indicates additions and deletions)
+            if (_.isArray(sentenceTwoWithPunc)) {
+                sentenceFromFileTwo = removePuncAndCombine(sentenceTwoWithPunc).toString();
+            }
+            else if (sentenceTwoWithPunc !== undefined) {
+                sentenceFromFileTwo = sentenceTwoWithPunc.replace( /[^\w\s]/g, "").toString();
+            }
+
+            else {
+                break;
+            }
+
             console.log("sentence two: " + sentenceFromFileTwo, '\n');
 
             //----- compare sentences and assign spine indexes
@@ -99,3 +130,14 @@ module.exports = function (fileOne, fileTwo) {
 
 };
 
+
+function removePuncAndCombine(list) {
+    let whole = [];
+
+    for (let i = 0; i < list.length; i++) {
+        const part = list[i];
+        const noPunc = part.replace( /[^\w\s]/g, "");
+        whole.push(noPunc);
+    }
+    return whole;
+}

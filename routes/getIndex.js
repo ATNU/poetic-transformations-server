@@ -5,7 +5,8 @@ const fs = require('fs');
 const indexQuery = fs.readFileSync('./queries/indexWithVersions.xq', 'UTF-8');
 const URI = require('../util/connection.js').URIQuery;
 const URINoDB = require('../util/connection.js').URINoDB;
-
+const xml2js = require('xml2js');
+const parser = new xml2js.Parser();
 
 /**
  * GET information for all files stored in the database.
@@ -43,8 +44,13 @@ router.get('/', function(req, res) {
 
             //can find document
             else {
+                let json;
+                //convert data to JSON
+                     parser.parseString(data, function (err, result) {
+                    json=result;
+                });
                 res.status(200);
-                res.send(data);
+                res.send(json);
             }
         });
 
@@ -103,8 +109,13 @@ router.get('/:title', function(req, res) {
 
             //can find document
             else {
+                let json;
+                //convert data to JSON
+                parser.parseString(data, function (err, result) {
+                    json=result;
+                });
                 res.status(200);
-                res.send(data);
+                res.send(json);
             }
         });
 

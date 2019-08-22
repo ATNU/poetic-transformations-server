@@ -7,22 +7,20 @@ const xmlToJson = require('xml-js');
  */
 function parseXml(xml) {
         const json= xmlToJson.xml2json(xml, {compact: true, spaces: 4});
-        return json;
+
+        return JSON.parse(json);
 }
 
-function jsonReadyToQuery(unparsed) {
-    return JSON.parse(unparsed);
-}
 
 /**
- * Extract poem body from a json representation of the xml
+ * Extract line objects from a json representation of the xml
  * @param json (string)
  * @returns lines (JSON)
  */
 function getLines(json) {
     try {
-        const parsed = JSON.parse(json);
-        const lines = parsed["exist:result"]["l"];
+       // const parsed = JSON.parse(json);
+        const lines = json["TEI"]["text"]["body"]["div"]["lg"];
         return lines;
     } catch(err) {
     console.log(err);
@@ -37,13 +35,25 @@ function getLines(json) {
  */
 const idTextMap = (lines) => {
     const map = [];
-    for (let index = 0; index < lines.length; index++)  {
-        const lineBlock = lines[index];
-        const xmlId = lineBlock._attributes["xml:id"];
-        const text = lineBlock._text;
-        const line = {"xml:id": xmlId, "_text": text};
-        map.push(line);
+
+    //each text block
+    for (let k = 0; k < lines.length ; k++) {
+    const block = lines[k]["l"];
+
+    //each line object
+        for (let m = 0; m < block.length; m++) {
+            const line = block[m];
+
+            //todo add spineIndex
+
+            const xmlId = line._attributes["xml:id"];
+            const text = line._text;
+            const newLine = {"xml:id": xmlId, "_text": text};
+            map.push(newLine);
+
+        }
     }
+
     return map;
 }
 
