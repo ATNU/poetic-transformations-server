@@ -1,3 +1,4 @@
+
 /**
  * Values needed to create a connection to the eXist-db API to submit a resource request or query
  */

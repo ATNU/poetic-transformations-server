@@ -9,6 +9,7 @@ require('dotenv').config();
 const getResourceRouter = require('./routes/getResource');
 const getIndexRouter = require('./routes/getIndex');
 const searchRouter = require('./routes/search');
+const comparison = require('./routes/comparison.js');
 
 var app = express();
 app.use(logger('dev'));
@@ -21,5 +22,6 @@ app.use(bodyParser.json());
 app.use('/doc', getResourceRouter);
 app.use('/index', getIndexRouter);
 app.use('/search', searchRouter);
+app.use('/comp', comparison);
 
 module.exports = app;

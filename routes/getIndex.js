@@ -5,7 +5,8 @@ const fs = require('fs');
 const indexQuery = fs.readFileSync('./queries/indexWithVersions.xq', 'UTF-8');
 const URI = require('../util/connection.js').URIQuery;
 const URINoDB = require('../util/connection.js').URINoDB;
-
+const xml2js = require('xml2js');
+const parser = new xml2js.Parser();
 
 /**
  * GET information for all files stored in the database.
@@ -18,10 +19,10 @@ router.get('/', function(req, res) {
     console.log('inventory route reached');
     //URL encode query
     const encodedQuery = encodeURI(indexQuery);
-    console.log(encodedQuery);
 
     const URL = URI + encodedQuery;
 
+    console.log(URL);
 
 
     http.get(URL, (resp) => {
@@ -43,7 +44,13 @@ router.get('/', function(req, res) {
 
             //can find document
             else {
+                let json;
+                /*//convert data to JSON
+                     parser.parseString(data, function (err, result) {
+                    json=result;
+                }); */
                 res.status(200);
+                console.log(data);
                 res.send(data);
             }
         });
@@ -81,7 +88,8 @@ router.get('/:title', function(req, res) {
         '    )';
     const query = querySetup + queryStatement;
     //full address to call
-    const URL = encodeURI(URI + query);
+    const encodedQuery = encodeURI(query);
+    const URL = URI + encodedQuery;
     console.log(URL);
 
     http.get(URL, (resp) => {
@@ -103,6 +111,11 @@ router.get('/:title', function(req, res) {
 
             //can find document
             else {
+                let json;
+               /* //convert data to JSON
+                parser.parseString(data, function (err, result) {
+                    json=result;
+                });*/
                 res.status(200);
                 res.send(data);
             }
@@ -113,6 +126,8 @@ router.get('/:title', function(req, res) {
         res.send('Error: ' + err.message);
     });
 });
+
+
 
 
 module.exports = router;
