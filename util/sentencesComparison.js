@@ -7,7 +7,7 @@ const similarity = require('../util/cosine-similarity.js');
  * @param fileTwo
  * @returns {*[]} 2 JSON lists of line objects
  */
-module.exports = function (fileOne, fileTwo) {
+        module.exports = function (fileOne, fileTwo) {
 
     const fileOneLength = fileOne.length;
     const fileTwoLength = fileTwo.length;
@@ -28,7 +28,6 @@ module.exports = function (fileOne, fileTwo) {
         let sentenceOneWithPunc = sentenceObjectOne._text;
         let sentenceFromFileOne;
 
-        //todo check why the text element of a line might be undefined - at present these are just excluded
 
         //check if text is a list before removing punctuation (list indicates additions and deletions)
         if (_.isArray(sentenceOneWithPunc)) {
@@ -45,16 +44,12 @@ module.exports = function (fileOne, fileTwo) {
              }
 
 
-        //console.log("sentence one: " + sentenceFromFileOne, '\n');
+
 
         //compare with each sentence in the second text
         let j;
         for (j=0; j < fileTwoLength; j++)
         {
-            //todo exclude a sentence from file 2 if it has already been matched with one in file one
-            //todo consider whether that spine index has already been assigned in that file to prevent duplicates
-
-            //console.log("File two sentence number: " + j);
 
             //get second sentence and remove punctuation
             let sentenceObjectTwo = fileTwo[j];
@@ -73,7 +68,6 @@ module.exports = function (fileOne, fileTwo) {
                 break;
             }
 
-           // console.log("sentence two: " + sentenceFromFileTwo, '\n');
 
             //----- compare sentences and assign spine indexes
             const similarityScore = similarity(sentenceFromFileOne, sentenceFromFileTwo);

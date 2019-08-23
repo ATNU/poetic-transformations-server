@@ -5,7 +5,7 @@ const generate = require('../util/compareFiles.js').generateSpineIndex;
 
 describe('generating comparison list', function() {
     it('should make list', function() {
-    const versionList = [ { filename: 'B.xml' },
+    const versionList = [
         { filename: 'M1.xml' },
         { filename: 'M2.xml' },
         { filename: 'M3.xml' },
@@ -14,7 +14,8 @@ describe('generating comparison list', function() {
         { filename: 'M6.xml' },
         { filename: 'P1.xml' },
         { filename: 'P2.xml' },
-        { filename: 'P3.xml' } ];
+        { filename: 'P3.xml' },
+        { filename: 'B.xml' }];
     console.log(comparisonList(versionList));
     });
     it('should get list of versions', function() {
@@ -41,6 +42,6 @@ describe('generating comparison list', function() {
         });
 
     it('should generate correctly', function() {
-        console.log(generate("title"));
+        generate("title");
     })
 });

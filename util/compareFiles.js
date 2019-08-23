@@ -9,17 +9,17 @@ const save = require('./saveToCSV.js').saveToFile;
  *
  * @param length
  */
-function comparisonList(versionList) {
+function comparisonList(length) {
 
     let comparisons = [];
 
     let count = 0;
 
-    for (let i = 0; i < versionList.length; i++) {
-        for (let j = i+1; j < versionList.length; j++ ) {
+    for (let m = 0; m < length; m++) {
+        for (let n = m + 1; n < length; n++) {
             comparisons[count] = {
-                i:versionList[i].filename,
-                j: versionList[j].filename
+                i: m,
+                ii: n
             };
             count++;
         }
@@ -29,56 +29,68 @@ function comparisonList(versionList) {
 }
 
 function generateSpineIndex(title) {
-    const comparisons = comparisonList(extractFilename(getListOfVersions()));
+    //const comparisons = comparisonList(extractFilename(getListOfVersions()));
 
-    //for each item in comp list (if it isn't empty), get file at first and second index points and compare
-    for (let k = 0; k < comparisons.length; k++) {
-        if (comparisons[k] === undefined) {
-            continue;
-        }
-            else {
+    //create list of a map for each file to update and retrieve from for comparisons
+    const mapped = generateMapObjects(getListOfVersions());
 
-                const xml1 = fs.readFileSync("./data/" + comparisons[k].i);
-                const xml2 = fs.readFileSync("./data/" + comparisons[k].j);
-                const one = map(lines(parse(xml1)));
-                const two = map(lines(parse(xml2)));
+    const comparisonIndex = comparisonList(mapped.length);
 
-                const results = compare(one, two);
-                save(results[0]);
-                save(results[1]);
-            }
+    //for each line in comparison index get the 2 json objects indicated by the i and ii values
+    for (let k = 0; k < comparisonIndex.length; k++) {
+        if (comparisonIndex[k] !== undefined) {
+
+            const index1 = comparisonIndex[k].i;
+            const index2 = comparisonIndex[k].ii;
+
+            let one = mapped[index1];
+            let two = mapped[index2];
+
+
+            console.log(mapped[index1][0]["xml:id"]);
+            console.log(mapped[index2][0]["xml:id"]);
+            const results = compare(one, two);
+
+            //update main list of spine indexes for future comparisons to use
+            one = results[0];
+            two = results[1];
+
+            //append to CSV file
+            save(results[0]);
+            save(results[1]);
         }
     }
+}
 
 
 function getListOfVersions() {
 //todo get http call to work
- /*   const querySetup = 'xquery version "3.1"; declare default element namespace "http://www.tei-c.org/ns/1.0";';
-    const queryStatement = 'let $versions :=collection(/db/transformations)/TEI/teiHeader/fileDesc/publicationStmt[idno= "' + title + '"]' +
-        'for $version in $versions let $path := base-uri($version) let $document := doc($path) return (<filename>{$path}</filename>)';
-    const query = querySetup + queryStatement;
-    //full address to call
-    console.log("query:" + query);
-    const encodedQuery = encodeURI(query);
-    const URL = 'http://192.168.99.100:8080/exist/rest/db/transformations?_query=' + encodedQuery;
-    console.log(URL);
+    /*   const querySetup = 'xquery version "3.1"; declare default element namespace "http://www.tei-c.org/ns/1.0";';
+       const queryStatement = 'let $versions :=collection(/db/transformations)/TEI/teiHeader/fileDesc/publicationStmt[idno= "' + title + '"]' +
+           'for $version in $versions let $path := base-uri($version) let $document := doc($path) return (<filename>{$path}</filename>)';
+       const query = querySetup + queryStatement;
+       //full address to call
+       console.log("query:" + query);
+       const encodedQuery = encodeURI(query);
+       const URL = 'http://192.168.99.100:8080/exist/rest/db/transformations?_query=' + encodedQuery;
+       console.log(URL);
 
-    const resulting = getVersions.getVersions(options, (result) = > {
-        return result;
-    }); */
-return versions  = [
+       const resulting = getVersions.getVersions(options, (result) = > {
+           return result;
+       }); */
+    return versions = [
 
-     {filename: '/db/transformations/M1.xml'},
-     {filename: '/db/transformations/M2.xml'},
-     {filename: '/db/transformations/M3.xml'},
-     {filename: '/db/transformations/M4.xml'},
-     {filename: '/db/transformations/M5.xml'},
-     {filename: '/db/transformations/M6.xml'},
-     {filename: '/db/transformations/P1.xml'},
-     {filename: '/db/transformations/P2.xml'},
-     {filename: '/db/transformations/P3.xml'},
-    {filename: '/db/transformations/B.xml'}
- ]
+        {filename: '/db/transformations/M1.xml'},
+        {filename: '/db/transformations/M2.xml'},
+        {filename: '/db/transformations/M3.xml'}/*,
+        {filename: '/db/transformations/M4.xml'},
+        {filename: '/db/transformations/M5.xml'},
+        {filename: '/db/transformations/M6.xml'},
+        {filename: '/db/transformations/P1.xml'},
+        {filename: '/db/transformations/P2.xml'},
+        {filename: '/db/transformations/P3.xml'},
+        {filename: '/db/transformations/B.xml'}*/
+    ]
 
 }
 
@@ -87,11 +99,24 @@ function extractFilename(versions) {
     const namesOnly = [];
     for (let i = 0; i < versions.length; i++) {
         const name = versions[i]["filename"].replace('\/db\/transformations\/', '');
-        namesOnly.push({filename: name });
+        namesOnly.push({filename: name});
     }
     return namesOnly;
 }
 
+function generateMapObjects(versions) {
+    let mappedList = [];
+
+    for (let i = 0; i < versions.length; i++) {
+        const name = versions[i]["filename"].replace("/db/transformations/", "");
+
+        //get xml and convert
+        const xml = fs.readFileSync("./data/" + name);
+        const mapped = map(lines(parse(xml)));
+        mappedList.push(mapped);
+    }
+    return mappedList;
+}
 
 module.exports.extractFilename = extractFilename;
 module.exports.comparisonList = comparisonList;
