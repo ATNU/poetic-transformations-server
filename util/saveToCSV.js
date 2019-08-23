@@ -1,6 +1,7 @@
 
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const csvWriter = createCsvWriter({
+    append: 'true',
     path: './data/spineIndex.csv',
     header: [
         {id: 'spineIndex', title: 'SPINE INDEX'},

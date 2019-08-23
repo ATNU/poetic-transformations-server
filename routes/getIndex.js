@@ -19,10 +19,10 @@ router.get('/', function(req, res) {
     console.log('inventory route reached');
     //URL encode query
     const encodedQuery = encodeURI(indexQuery);
-    console.log(encodedQuery);
 
     const URL = URI + encodedQuery;
 
+    console.log(URL);
 
 
     http.get(URL, (resp) => {
@@ -45,12 +45,13 @@ router.get('/', function(req, res) {
             //can find document
             else {
                 let json;
-                //convert data to JSON
+                /*//convert data to JSON
                      parser.parseString(data, function (err, result) {
                     json=result;
-                });
+                }); */
                 res.status(200);
-                res.send(json);
+                console.log(data);
+                res.send(data);
             }
         });
 
@@ -87,7 +88,8 @@ router.get('/:title', function(req, res) {
         '    )';
     const query = querySetup + queryStatement;
     //full address to call
-    const URL = encodeURI(URI + query);
+    const encodedQuery = encodeURI(query);
+    const URL = URI + encodedQuery;
     console.log(URL);
 
     http.get(URL, (resp) => {
@@ -110,12 +112,12 @@ router.get('/:title', function(req, res) {
             //can find document
             else {
                 let json;
-                //convert data to JSON
+               /* //convert data to JSON
                 parser.parseString(data, function (err, result) {
                     json=result;
-                });
+                });*/
                 res.status(200);
-                res.send(json);
+                res.send(data);
             }
         });
 
@@ -124,6 +126,8 @@ router.get('/:title', function(req, res) {
         res.send('Error: ' + err.message);
     });
 });
+
+
 
 
 module.exports = router;

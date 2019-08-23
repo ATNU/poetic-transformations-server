@@ -3,6 +3,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const bodyParser = require('body-parser');
 
+require('dotenv').config();
+
 //List routers
 const getResourceRouter = require('./routes/getResource');
 const getIndexRouter = require('./routes/getIndex');
