@@ -126,10 +126,26 @@ module.exports = function (fileOne, fileTwo) {
 
     }
 
-    return [fileOne, fileTwo];
+    const one = removeBlankSpineIndexes(fileOne);
+    const two = removeBlankSpineIndexes(fileTwo);
+
+    return [one, two];
 
 };
 
+function removeBlankSpineIndexes(list) {
+    let corrected = [];
+for (let i=0; i<list.length; i++) {
+  //only keep if there is a value set for spine index
+    if ((list[i].spineIndex === undefined) || list[i].spineIndex === "") {
+        continue;
+    }
+    else {
+        corrected.push(list[i]);
+    }
+}
+return corrected;
+}
 
 function removePuncAndCombine(list) {
     let whole = [];
