@@ -1,9 +1,9 @@
 # View a single version of a poem
-Provide a document path and receive XML file in full. The path should be retrieved from
-the information sent in the version index. The path must be URL encoded before sending. The ```<exist:result>``` tag contains a ```'exist:hits'``` tag that describes the total number of hits.
+Provide a document name and receive XML file in full. The path should be retrieved from
+the information sent in the version index. The path must be URL encoded before sending. 
 
 ## URL
-/doc/:path
+/doc/:filename
 
 ## Method
 GET
@@ -89,14 +89,14 @@ Content: XML file
 		<versionID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTid">B</idno></versionID>
 		<versionTitle>Must We Go?(published: B)</versionTitle>
 		<author>Moniza Alvi</author>
-		<filename>/db/transformations/B.xml</filename>
+		<filename>B.xml</filename>
 	</version>
 	<version>
 		<poemID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTpoem">Alvi1</idno></poemID>
 		<versionID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTid">M1</idno></versionID>
 		<versionTitle>Pakistan (draft: M1)</versionTitle>
 		<author>Moniza Alvi</author>
-		<filename>/db/transformations/M1.xml</filename>
+		<filename>M1.xml</filename>
 	</version>
 </exist:result>
 ```
@@ -122,6 +122,7 @@ Content: XML file
 <title>{title}</title>
 <author>{author}</author>
 <idno>{idno}</idno>
+<filename>{filename}</filename>
     <p>
         <span class='previous'>{text prior to search phrase}</span>
         <span class='hi'>{search phrase}</span>

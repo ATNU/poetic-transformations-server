@@ -4,9 +4,8 @@ const http = require('http');
 const URI = require('../util/connection.js').URINoDB;
 
 /**
- *  GET a single resource given it's filename as a query parameter
+ *  GET a single version of a poem given it's filename as a query parameter. Returns XML.
  *  /doc/:path
- *
  *  */
 router.get(
     '/:path',

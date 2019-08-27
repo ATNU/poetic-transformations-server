@@ -9,7 +9,7 @@ const xml2js = require('xml2js');
 const parser = new xml2js.Parser();
 
 /**
- * GET information for all files stored in the database.
+ * GET poem ID, author and number of versions for all poems stored in the database. Returns XML.
  *
  * /inv
  */
@@ -63,7 +63,9 @@ router.get('/', function(req, res) {
 });
 
 /**
- * Get all versions of a poem given the title
+ * Get version ID, poem ID, version title, author and filename for all versions of a particular poem. Returns XML.
+ *
+ * /inv/:title
  */
 router.get('/:title', function(req, res) {
     //testing
