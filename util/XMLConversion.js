@@ -48,8 +48,6 @@ const idTextMap = (lines) => {
         for (let m = 0; m < block.length; m++) {
             const line = block[m];
 
-            //todo add spineIndex
-
             const xmlId = line._attributes["xml:id"];
             const text = line._text;
             const newLine = {"xml:id": xmlId, "_text": text};

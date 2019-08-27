@@ -69,7 +69,7 @@ Content: XML file
 
 ---
 # View version index
-Get an index of all versions of a particular poem (using poem ID from the poem index). The ```<exist:result>``` tag contains a ```'exist:hits'``` tag that describes the total number of hits. The filename can be used to view a single version in full.
+Get an index of all versions of a particular poem (using poem ID from the poem index). The ```<exist:result>``` tag contains a ```'exist:hits'``` tag that describes the total number of hits. The filename can be used to view a single version in full. If details are missing only the closing tag is provided.
 
 ##URL
 /index/title
@@ -89,6 +89,9 @@ Content: XML file
 		<versionID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTid">B</idno></versionID>
 		<versionTitle>Must We Go?(published: B)</versionTitle>
 		<author>Moniza Alvi</author>
+		<authority>Poetic Transformations Project</authority>
+        <source>Alvi (Moniza) Archive, Newcastle University Special Collections, GB 186 MA/5.</source>
+        <type>Manuscript</type>
 		<filename>B.xml</filename>
 	</version>
 	<version>
@@ -96,6 +99,9 @@ Content: XML file
 		<versionID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTid">M1</idno></versionID>
 		<versionTitle>Pakistan (draft: M1)</versionTitle>
 		<author>Moniza Alvi</author>
+		<authority>Poetic Transformations Project</authority>
+        </source>
+        <type>Manuscript</type>
 		<filename>M1.xml</filename>
 	</version>
 </exist:result>

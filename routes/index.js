@@ -73,7 +73,6 @@ router.get('/:title', function(req, res) {
 
     //----- generate database API call
     const title = req.params.title;
-    //todo remove whitespace
     const querySetup = 'xquery version "3.1";declare default element namespace "http://www.tei-c.org/ns/1.0";';
     const queryStatement = 'let $versions :=collection(/db/transformations)/TEI/teiHeader/fileDesc/publicationStmt[idno= "' + title + '"]' +
         'for $version in $versions\n' +
@@ -86,6 +85,9 @@ router.get('/:title', function(req, res) {
         '<versionID>{$version//idno[@type="PTid"]}</versionID>' +
         '<versionTitle>{$document//title/text()}</versionTitle>' +
         '<author>{$document//author/text()}</author>' +
+        '<authority>{$document//authority/text()}</authority>'+
+        '<source>{$document//sourceDesc/p/text()}</source>'+
+        '<type>{$document//keywords/term/text()}</type>'+
         '<filename>{$name}</filename>' +
         '    </version>\n' +
         '    )';

@@ -51,9 +51,6 @@ router.get('/:searchTerm', function(req, res) {
 
             //results
             else {
-                //todo if no results then send empty rather than xml
-
-
                 res.status(resp.statusCode);
                 res.send(data);
             }
