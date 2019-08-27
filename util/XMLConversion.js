@@ -1,19 +1,18 @@
 const xmlToJson = require('xml-js');
 
 /**
- * Convert supplied xml to a string representation of a json object
+ * Convert supplied xml to a string representation of a JSON object
  * @param xml
  * @returns {string}
  */
 function parseXml(xml) {
         const json= xmlToJson.xml2json(xml, {compact: true, spaces: 4});
-
         return JSON.parse(json);
 }
 
 
 /**
- * Extract line objects from a json representation of the xml
+ * Extract line objects from a JSON representation of the xml
  * @param json (string)
  * @returns lines (JSON)
  */

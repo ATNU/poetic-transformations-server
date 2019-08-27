@@ -1,7 +1,7 @@
-const comparisonList = require('../util/compareFiles').comparisonList;
-const versionList = require('../util/compareFiles.js').versionList;
-const extract = require('../util/compareFiles.js').extractFilename;
-const generate = require('../util/compareFiles.js').generateSpineIndex;
+const comparisonList = require('../util/createSpineIndexForPoem').comparisonList;
+const versionList = require('../util/createSpineIndexForPoem.js').versionList;
+const extract = require('../util/createSpineIndexForPoem.js').extractFilename;
+const generate = require('../util/createSpineIndexForPoem.js').generateSpineIndex;
 
 describe('generating comparison list', function() {
     it('should make list', function() {

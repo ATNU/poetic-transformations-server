@@ -1,8 +1,8 @@
 const assert = require('assert');
 const fs = require('fs');
-const convert = require('../util/XMLParser.js').parseXml;
-const getLines = require('../util/XMLParser.js').getLines;
-const map = require('../util/XMLParser.js').idTextMap;
+const convert = require('../util/XMLConversion').parseXml;
+const getLines = require('../util/XMLConversion').getLines;
+const map = require('../util/XMLConversion').idTextMap;
 
 
 describe('parse XML', function () {

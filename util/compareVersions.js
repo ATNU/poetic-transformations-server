@@ -1,67 +1,68 @@
 const _ = require ('underscore');
 const similarity = require('../util/cosine-similarity.js');
 
+//variable to keep track of the next spine index to assign
+let spineIndexCounter = 1;
+
 /**
- * Takes 'files' in the form of lists of JSON objects
- * @param fileOne
- * @param fileTwo
- * @returns {*[]} 2 JSON lists of line objects
+ * Takes two versions and compares each sentence in version 1 to each sentence in version 2. Each version should be a JSON object in the form:
+ * [
+            { "xml:id": 1.1, "_text":"To place myself in my grandmother's shoes,"},
+            { "xml:id": 1.2, "_text": "her chappals paired in the bedroom cool"}
+        ]}
+ * Function creates and assigns a spine index field for each JSON object. Spine indexes are not created where the _text field of the JSON object is undefined. This happens where
+ * there is an XML tag at the beginning of the line.
+ * @param version1
+ * @param version2
+ * @returns
  */
-        module.exports = function (fileOne, fileTwo) {
+        module.exports = function (version1, version2) {
 
-    const fileOneLength = fileOne.length;
-    const fileTwoLength = fileTwo.length;
-
-    //variable to keep track of the next spine index to assign
-    let spineIndexCounter = 1;
-
+    const version1Length = version1.length;
+    const version2Length = version2.length;
 
     //----- comparison loops
     //for each sentence in the first text
     let i;
-    for (i = 0; i < fileOneLength; i++) {
-
-        //console.log("File one sentence number: " + i);
+    for (i = 0; i < version1Length; i++) {
 
         //get first sentence and remove punctuation
-        let sentenceObjectOne = fileOne[i];
+        let sentenceObjectOne = version1[i];
         let sentenceOneWithPunc = sentenceObjectOne._text;
-        let sentenceFromFileOne;
+        let sentenceFromVersion1;
 
 
-        //check if text is a list before removing punctuation (list indicates additions and deletions)
+        //check if text is a list before removing punctuation (list indicates additions and deletions in the XML which break the line into a list)
         if (_.isArray(sentenceOneWithPunc)) {
-            sentenceFromFileOne = removePuncAndCombine(sentenceOneWithPunc).toString();
-        }
-        else if(sentenceOneWithPunc !== undefined) {
-            sentenceFromFileOne = sentenceOneWithPunc.replace( /[^\w\s]/g, "").toString();
+            sentenceFromVersion1 = removePuncAndCombine(sentenceOneWithPunc).toString();
         }
 
-        else { //can't work with an undefined element so assign next spine index and move on
-            sentenceObjectOne.spineIndex = spineIndexCounter;
-            spineIndexCounter++;
+        //if the sentence object or text component are undefined don't assign spine index as we can't look at this text
+        else if (sentenceOneWithPunc === undefined) {
             continue;
-             }
+        }
 
-
+        else  {
+            sentenceFromVersion1 = sentenceOneWithPunc.replace( /[^\w\s]/g, "").toString();
+        }
 
 
         //compare with each sentence in the second text
         let j;
-        for (j=0; j < fileTwoLength; j++)
+        for (j=0; j < version2Length; j++)
         {
 
             //get second sentence and remove punctuation
-            let sentenceObjectTwo = fileTwo[j];
+            let sentenceObjectTwo = version2[j];
             let sentenceTwoWithPunc = sentenceObjectTwo._text;
-            let sentenceFromFileTwo;
+            let sentenceFromVersion2;
 
             //check if text is a list before removing punctuation (list indicates additions and deletions)
             if (_.isArray(sentenceTwoWithPunc)) {
-                sentenceFromFileTwo = removePuncAndCombine(sentenceTwoWithPunc).toString();
+                sentenceFromVersion2 = removePuncAndCombine(sentenceTwoWithPunc).toString();
             }
             else if (sentenceTwoWithPunc !== undefined) {
-                sentenceFromFileTwo = sentenceTwoWithPunc.replace( /[^\w\s]/g, "").toString();
+                sentenceFromVersion2 = sentenceTwoWithPunc.replace( /[^\w\s]/g, "").toString();
             }
 
             else {
@@ -70,34 +71,25 @@ const similarity = require('../util/cosine-similarity.js');
 
 
             //----- compare sentences and assign spine indexes
-            const similarityScore = similarity(sentenceFromFileOne, sentenceFromFileTwo);
+            const similarityScore = similarity(sentenceFromVersion1, sentenceFromVersion2);
 
-            console.log ("similarity score: " + similarityScore, '\n');
-
-            if (similarityScore >= 0.8)
+            //0.7 seems to work as a cut-off for this poem
+            if (similarityScore >= 0.7)
             {
-                //console.log("similarity score indicates a match", '\n');
                 //if sentence 1 has a spine index already then assign this to sentence 2 as well and move on to next sentence from file 1
                 if (sentenceObjectOne.hasOwnProperty('spineIndex') && sentenceObjectOne.spineIndex !== "")
                 {
-                    //console.log("sentence one already has a spine index so copy to sentence two");
-                    //add the spine index from sentence 1 to sentence 2
-                    //don't need to increment spineIndex counter
                     sentenceObjectTwo.spineIndex = sentenceObjectOne.spineIndex;
                 }
 
                 //else if sentence 2 has a spine index already then assign this to sentence 1 and move on to next sentence from file 1
                 else if (sentenceObjectTwo.hasOwnProperty('spineIndex') && sentenceObjectOne.spineIndex !== "")
                 {
-                    //console.log("sentence two already has a spine index so copy to sentence one");
-                    //add the spine index from sentence 2 to sentence 1
-                    //don't need to increment spine index
                     sentenceObjectOne.spineIndex = sentenceObjectTwo.spineIndex;
                 }
 
                 //else neither sentence has a spine index yet so assign the next one on counter
                 else {
-                    //console.log("neither sentence has a spine index yet so a new one will be assigned");
                     sentenceObjectOne.spineIndex = spineIndexCounter;
                     sentenceObjectTwo.spineIndex = spineIndexCounter;
                     spineIndexCounter++;
@@ -106,24 +98,24 @@ const similarity = require('../util/cosine-similarity.js');
                 break;
             }
 
-            //----- if the similarity isn't high enough then move on to next sentence in file 2
+            //if the similarity isn't high enough then move on to next sentence in file 2
 
         }
 
         // ----- if reach this point then no sentences in file  match the sentence from file 1, so just assign the next spine index to sentence one if it doesn't already have one
-
         if (!sentenceObjectOne.hasOwnProperty('spineIndex'))
         {
+            console.log("spine index is " + sentenceObjectOne.spineIndex + " new spine index is " + spineIndexCounter);
             sentenceObjectOne.spineIndex = spineIndexCounter;
             spineIndexCounter++;
         }
 
     }
 
-    const one = removeBlankSpineIndexes(fileOne);
-    const two = removeBlankSpineIndexes(fileTwo);
+   const editedVersion1 = removeBlankSpineIndexes(version1);
+   const editedVersion2 = removeBlankSpineIndexes(version2);
 
-    return [one, two];
+    return [editedVersion1, editedVersion2];
 
 };
 

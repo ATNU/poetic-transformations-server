@@ -1,8 +1,8 @@
 const assert = require('assert');
-const comparison = require('../util/sentencesComparison.js');
-const convert = require('../util/XMLParser.js').parseXml;
-const getLines = require('../util/XMLParser.js').getLines;
-const map = require('../util/XMLParser.js').idTextMap;
+const comparison = require('../util/compareVersions.js');
+const convert = require('../util/XMLConversion').parseXml;
+const getLines = require('../util/XMLConversion').getLines;
+const map = require('../util/XMLConversion').idTextMap;
 const fs = require('fs');
 
 describe('sentences comparison with no previously assigned indexes', function () {
