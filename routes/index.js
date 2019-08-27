@@ -77,13 +77,14 @@ router.get('/:title', function(req, res) {
         'for $version in $versions\n' +
         'let $path := base-uri($version)\n' +
         'let $document := doc($path)' +
+        'let $name := replace($path, "/db/transformations/", "")' +
         'return (\n' +
         '    <version>\n' +
         '    <poemID>{$version//idno[@type="PTpoem"]}</poemID>' +
         '<versionID>{$version//idno[@type="PTid"]}</versionID>' +
         '<versionTitle>{$document//title/text()}</versionTitle>' +
         '<author>{$document//author/text()}</author>' +
-        '<filename>{$path}</filename>' +
+        '<filename>{$name}</filename>' +
         '    </version>\n' +
         '    )';
     const query = querySetup + queryStatement;

@@ -6,8 +6,8 @@ const bodyParser = require('body-parser');
 require('dotenv').config();
 
 //List routers
-const getResourceRouter = require('./routes/getResource');
-const getIndexRouter = require('./routes/getIndex');
+const getResourceRouter = require('./routes/resource');
+const getIndexRouter = require('./routes');
 const searchRouter = require('./routes/search');
 const comparison = require('./routes/comparison.js');
 

@@ -6,12 +6,13 @@ let $versions :=collection(/db/transformations)/TEI/teiHeader/fileDesc/publicati
 for $version in $versions
 let $path := base-uri($version)
 let $document := doc($path)
+let $name := replace($path, '/db/transformations/', '')
 return (
     <version>
         <poemID>{$version//idno[@type='PTpoem']}</poemID>
         <versionID>{$version//idno[@type='PTid']}</versionID>
         <versionTitle>{$document//title/text()}</versionTitle>
         <author>{$document//author/text()}</author>
-        <filename>{$path}</filename>
+        <filename>{$name}</filename>
     </version>
 )
