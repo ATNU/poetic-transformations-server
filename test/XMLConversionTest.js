@@ -9,14 +9,7 @@ describe('parse XML', function () {
     it('should return correct string', function () {
         const xml = '<text><title>Test Poem</title><body><line>line one</line><line>line2</line></body></text>';
         const result = convert(xml);
-        assert.strictEqual(result, '{\n    "text": {\n        "title": {\n            "_text": "Test Poem"\n        },\n        "body": {\n            "line": [\n                {\n                    "_text": "line one"\n                },\n                {\n                    "_text": "line2"\n                }\n            ]\n        }\n    }\n}');
-    });
-
-
-    it('should handle error', function () {
-       const notXml = 'this is not xml</body>';
-        const result = convert(notXml);
-
+        assert.strictEqual(result.text.body.line[0]._text, "line one");
     });
 });
 
@@ -27,7 +20,6 @@ describe('convert to JSON', function () {
     const result = convert(xml);
     const lines = getLines(result);
     const mapped = map(lines);
-
-    console.log(mapped);
+    assert.strictEqual(mapped[0]["_text"], 'To place myself in my grandmother\'s shoes,');
 });
 

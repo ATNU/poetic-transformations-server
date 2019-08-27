@@ -105,7 +105,6 @@ let spineIndexCounter = 1;
         // ----- if reach this point then no sentences in file  match the sentence from file 1, so just assign the next spine index to sentence one if it doesn't already have one
         if (!sentenceObjectOne.hasOwnProperty('spineIndex'))
         {
-            console.log("spine index is " + sentenceObjectOne.spineIndex + " new spine index is " + spineIndexCounter);
             sentenceObjectOne.spineIndex = spineIndexCounter;
             spineIndexCounter++;
         }

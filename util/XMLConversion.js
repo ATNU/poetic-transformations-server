@@ -6,8 +6,13 @@ const xmlToJson = require('xml-js');
  * @returns {string}
  */
 function parseXml(xml) {
+    try {
         const json= xmlToJson.xml2json(xml, {compact: true, spaces: 4});
         return JSON.parse(json);
+    }
+      catch (err) {
+        console.log(err);
+      }
 }
 
 

@@ -83,8 +83,16 @@ function getListOfVersions() {
 
 
 function extractFilename(versions) {
+
     const namesOnly = [];
     for (let i = 0; i < versions.length; i++) {
+
+        //if filename is undefined skip to next index
+        if (versions[i]["filename"] === undefined)
+        {
+            continue;
+        }
+
         const name = versions[i]["filename"].replace('\/db\/transformations\/', '');
         namesOnly.push({filename: name});
     }

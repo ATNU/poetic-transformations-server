@@ -28,5 +28,14 @@ describe('cosine-similarity for sentence comparison', function() {
 
         console.log("test 3 similarity = " + similarity);
         assert.ok(similarity <= 0.5);
+    });
+    it('should not match punctuation when no words at all', function () {
+            const sentenceOne = "!???,";
+            const sentenceTwo = "Pakistan? is a place far away";
+
+            const similarity = comparison(sentenceOne, sentenceTwo);
+
+            console.log("test 3 similarity = " + similarity);
+            assert.ok(similarity === 0);
 });
 });

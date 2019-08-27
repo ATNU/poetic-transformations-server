@@ -2,28 +2,39 @@ const comparisonList = require('../util/createSpineIndexForPoem').comparisonList
 const versionList = require('../util/createSpineIndexForPoem.js').versionList;
 const extract = require('../util/createSpineIndexForPoem.js').extractFilename;
 const generate = require('../util/createSpineIndexForPoem.js').generateSpineIndex;
+const assert = require('assert');
 
 describe('generating comparison list', function() {
-    it('should make list', function() {
-    const versionList = [
-        { filename: 'M1.xml' },
-        { filename: 'M2.xml' },
-        { filename: 'M3.xml' },
-        { filename: 'M4.xml' },
-        { filename: 'M5.xml' },
-        { filename: 'M6.xml' },
-        { filename: 'P1.xml' },
-        { filename: 'P2.xml' },
-        { filename: 'P3.xml' },
-        { filename: 'B.xml' }];
-    console.log(comparisonList(versionList));
-    });
-    it('should get list of versions', function() {
-        const result = versionList("Alvi1");
-        console.log(result);
+    it('should make list with correct initial value', function () {
+
+        const comparisons = comparisonList(8);
+        assert. strictEqual(comparisons[0]["i"], 0);
+        assert. strictEqual(comparisons[0]["ii"], 1);
     });
 
-    it('should extract filenames correctly', function() {
+    it('should make list with correct 12th value', function () {
+
+        const comparisons = comparisonList(8);
+        assert. strictEqual(comparisons[12]["i"], 1);
+        assert. strictEqual(comparisons[12]["ii"], 6);
+    });
+    it('should make empty list when list length is 0', function () {
+
+        const comparisons = comparisonList(0);
+       assert.strictEqual(comparisons.length, 0);
+    });
+
+    it('should make empty list when length is 1 as an item cannot be compared to itself', function () {
+
+        const comparisons = comparisonList(0);
+        assert.strictEqual(comparisons.length, 0);
+    });
+
+
+});
+
+describe('extracting file path', function() {
+    it('should extract filenames correctly', function () {
         const versionList = [
 
             {filename: '/db/transformations/B.xml'},
@@ -38,10 +49,49 @@ describe('generating comparison list', function() {
             {filename: '/db/transformations/P3.xml'}
         ];
 
-        console.log(extract(versionList));
-        });
+        const namesOnly = extract(versionList);
+        assert.strictEqual(namesOnly[0]["filename"], 'B.xml');
 
-    it('should generate correctly', function() {
-        generate("title");
-    })
+    });
+    it('should not make any changes in path not present', function () {
+        const versionList = [ {filename: "no path before name"}];
+        const namesOnly = extract(versionList);
+        assert.strictEqual(namesOnly[0]["filename"], 'no path before name');
+        console.log(namesOnly);
+    });
+    it('should return empty name when no text', function () {
+        const versionList = [ {filename: ""}];
+        const namesOnly = extract(versionList);
+        assert.strictEqual(namesOnly[0]["filename"], '');
+        console.log(namesOnly);
+    });
+
+    it('should return empty list when no filename field', function () {
+        const versionList = [ {name: ""}];
+        const namesOnly = extract(versionList);
+        assert.strictEqual(namesOnly.length, 0);
+        console.log(namesOnly);
+    });
+
+    it('should return empty list when version list is not a list', function () {
+        const versionList = {filename: ""};
+        const namesOnly = extract(versionList);
+        assert.strictEqual(namesOnly.length, 0);
+        console.log(namesOnly);
+    });
+    it('should return empty list when string is submitted rather than JSON', function () {
+        const versionList = "invalid";
+        const namesOnly = extract(versionList);
+        assert.strictEqual(namesOnly.length, 0);
+        console.log(namesOnly);
+    });
 });
+
+describe('generate spine index', function() {
+    it('should generate correctly', function () {
+        generate("title");
+    });
+});
+
+
+
