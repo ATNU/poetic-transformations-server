@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const {check, validationResult} = require('express-validator');
 const http = require('http');
 const URI = require('../util/connection.js').URINoDB;
 
@@ -12,25 +11,12 @@ const URI = require('../util/connection.js').URINoDB;
 router.get(
     '/:path',
 
-   // validate(),
     function(req, res) {
 
-        //testing
-    console.log("Get route reached");
-    console.log(req.params.path);
-/*
-    //------ Validate query
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) //there are errors
-    {
-        console.log('invalid parameter found');
-        res.status(400).json({errors: errors.array() });
-    }
-
-
-    else {*/
         const name = req.params.path;
-        const URL = URI + name;
+        const path = '/db/transformations/' + name;
+
+        const URL = URI + path;
         console.log(URL);
 
         //----- GET call and send response
@@ -59,21 +45,8 @@ router.get(
                 });
             });
 
-   // }
 });
 
 
-
-
-
-/**
- * Error checking to validate parameters
- * @returns {Array}
- */
-function validate() {
-    return [
-        check('filename', 'filename does not exist').not().isEmpty(),
-            ]
-}
 
 module.exports = router;
