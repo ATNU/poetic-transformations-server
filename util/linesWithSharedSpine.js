@@ -1,12 +1,17 @@
 const convert = require('../util/CSVToJSON.js').convert;
 const lodash = require('lodash');
 
+/**
+ * Return list of lines that have the same spine index as the one submitted as a parameter. Returns an empty list if the line is unique and undefined if the line ID cannot be found.
+ * @param lineID
+ * @returns {Array}
+ */
 function sharedSpine(lineID) {
     let spineIndex;
 
-    //get spine index for line
     const jsonFull = convert('./data/fullSpineIndex.csv');
 
+    //get spine index of key line
     for (let o of jsonFull) {
         if (o["xml:id"] === lineID) {
             spineIndex = o["spineIndex"];
@@ -14,7 +19,6 @@ function sharedSpine(lineID) {
     }
 
     if (spineIndex !== undefined) {
-        const spineIndexPlusOne = spineIndex--;
 
         //get all other lines for that spine index
         const jsonGrouped = convert('./data/groupedSpineIndex.csv');
@@ -24,10 +28,7 @@ function sharedSpine(lineID) {
             //make string into array
             const fullList = line["xml:id"].split(',');
             //remove requested line
-            const afterRemoval = lodash.filter(fullList, function(o) { return o !== lineID } );
-
-          return afterRemoval;
-
+            return lodash.filter(fullList, function(o) { return o !== lineID } );
         }
     }
 }
