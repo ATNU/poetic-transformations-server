@@ -5,8 +5,7 @@ const fs = require('fs');
 const indexQuery = fs.readFileSync('./queries/indexWithVersions.xq', 'UTF-8');
 const URI = require('../util/connection.js').URIQuery;
 const URINoDB = require('../util/connection.js').URINoDB;
-const xml2js = require('xml2js');
-const parser = new xml2js.Parser();
+
 
 /**
  * GET poem ID, author and number of versions for all poems stored in the database. Returns XML.

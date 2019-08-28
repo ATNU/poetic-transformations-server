@@ -2,12 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/groupedSpineIndex.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/spineIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/CSVToJSONTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/CSVToJSON.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/linesWithSharedSpine.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/saveGroupedListToCSV.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndpointList.md" beforeDir="false" afterPath="$PROJECT_DIR$/EndpointList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/getVersionIndex.xq" beforeDir="false" afterPath="$PROJECT_DIR$/queries/getVersionIndex.xq" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/spineIndex.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/fullSpineIndex.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/archived/getIndex.xql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/archived/indexWithVersionCountTrialData.xql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/queries/archived/spareGetInv.xql" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/search.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/XMLConversion.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/XMLConversion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/createSpineIndexForPoemTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/createSpineIndexForPoemTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/createSpineIndexForPoem.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/createSpineIndexForPoem.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/saveToCSV.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/saveFullListToCSV.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,83 +33,135 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EndpointList.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="128">
-                <caret line="71" column="306" selection-start-line="71" selection-start-column="306" selection-end-line="71" selection-end-column="306" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/createSpineIndexForPoem.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="87" column="63" selection-start-line="87" selection-start-column="63" selection-end-line="87" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/queries/getVersionIndex.xq">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/compareVersions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="647">
-              <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/cosine-similarityTest.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="459">
+                  <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/routes/spineIndex.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/routes/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/routes/resource.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/util/saveFullListToCSV.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/util/CSVToJSON.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="34">
+                  <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/createSpineIndexForPoemTest.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1249">
+                  <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/util/saveGroupedListToCSV.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="102">
+                  <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/data/fullSpineIndex.csv">
+              <provider selected="true" editor-type-id="csv-text-editor" />
+              <provider editor-type-id="csv-table-editor">
+                <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
+              <provider selected="true" editor-type-id="csv-text-editor">
+                <state relative-caret-position="170">
+                  <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="63" />
+                </state>
+              </provider>
+              <provider editor-type-id="csv-table-editor">
+                <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/CSVToJSONTest.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="68">
+                  <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,6 +179,7 @@
       <find>M1.21</find>
       <find>21</find>
       <find>console</find>
+      <find>xml2js</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -130,15 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/queries/getInventory.xql" />
-        <option value="$PROJECT_DIR$/routes/getInventory.js" />
-        <option value="$PROJECT_DIR$/queries/indexWithVersionCount.xql" />
-        <option value="$PROJECT_DIR$/routes/getResource.js" />
-        <option value="$PROJECT_DIR$/queries/getIndex.xql" />
-        <option value="$PROJECT_DIR$/queries/queries with comments/search.txt" />
-        <option value="$PROJECT_DIR$/queries/queries with comments/getVersionIndex.txt" />
-        <option value="$PROJECT_DIR$/queries/queries with comments/indexWithVersions.txt" />
-        <option value="$PROJECT_DIR$/queries/indexWithVersions.xq" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/util/compareSentences.js" />
         <option value="$PROJECT_DIR$/util/consine-similarity.js" />
@@ -163,24 +220,33 @@
         <option value="$PROJECT_DIR$/test/compareFilesTest.js" />
         <option value="$PROJECT_DIR$/util/compareFiles.js" />
         <option value="$PROJECT_DIR$/util/sentencesComparison.js" />
-        <option value="$PROJECT_DIR$/data/spineIndex.csv" />
         <option value="$PROJECT_DIR$/util/cosine-similarity.js" />
         <option value="$PROJECT_DIR$/util/saveToCSV.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/routes/comparison.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/resource.js" />
         <option value="$PROJECT_DIR$/queries/search.xql" />
         <option value="$PROJECT_DIR$/test/cosine-similarityTest.js" />
-        <option value="$PROJECT_DIR$/util/createSpineIndexForPoem.js" />
-        <option value="$PROJECT_DIR$/test/createSpineIndexForPoemTest.js" />
         <option value="$PROJECT_DIR$/util/compareVersions.js" />
         <option value="$PROJECT_DIR$/test/XMLConversionTest.js" />
         <option value="$PROJECT_DIR$/util/XMLConversion.js" />
         <option value="$PROJECT_DIR$/routes/search.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
         <option value="$PROJECT_DIR$/queries/getVersionIndex.xq" />
         <option value="$PROJECT_DIR$/EndpointList.md" />
+        <option value="$PROJECT_DIR$/data/spineIndex.csv" />
+        <option value="$PROJECT_DIR$/util/dedupeAndCombineSI.js" />
+        <option value="$PROJECT_DIR$/test/createSpineIndexForPoemTest.js" />
+        <option value="$PROJECT_DIR$/data/fullSpineIndex.csv" />
+        <option value="$PROJECT_DIR$/util/createSpineIndexForPoem.js" />
+        <option value="$PROJECT_DIR$/util/CSVToJSON.js" />
+        <option value="$PROJECT_DIR$/util/saveFullListToCSV.js" />
+        <option value="$PROJECT_DIR$/util/saveGroupedListToCSV.js" />
+        <option value="$PROJECT_DIR$/test/CSVToJSONTest.js" />
+        <option value="$PROJECT_DIR$/util/linesWithSharedSpine.js" />
+        <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" />
+        <option value="$PROJECT_DIR$/routes/spineIndex.js" />
       </list>
     </option>
   </component>
@@ -201,6 +267,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,28 +278,17 @@
             <path>
               <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
-              <item name="queries" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -243,7 +299,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ePRASE/server" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -252,7 +308,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -282,8 +338,44 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.convert to JSON">
-    <configuration name="convert to JSON" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Mocha.shared spine.should work">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="convert.works" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/CSVToJSONTest.js</test-file>
+      <test-names>
+        <name value="convert" />
+        <name value="works" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="shared spine" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -292,28 +384,13 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/XMLConversionTest.js</test-file>
+      <test-file>$PROJECT_DIR$/test/linesWithSharedSpineTest.js</test-file>
       <test-names>
-        <name value="convert to JSON" />
+        <name value="shared spine" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="parse XML" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/XMLConversionTest.js</test-file>
-      <test-names>
-        <name value="parse XML" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="parse XML.should handle error" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="shared spine.should work" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -322,52 +399,20 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/XMLConversionTest.js</test-file>
+      <test-file>$PROJECT_DIR$/test/linesWithSharedSpineTest.js</test-file>
       <test-names>
-        <name value="parse XML" />
-        <name value="should handle error" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="parse XML.should return correct string" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/XMLConversionTest.js</test-file>
-      <test-names>
-        <name value="parse XML" />
-        <name value="should return correct string" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="parse XML.should return undefined" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/XMLConversionTest.js</test-file>
-      <test-names>
-        <name value="parse XML" />
-        <name value="should return undefined" />
+        <name value="shared spine" />
+        <name value="should work" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.convert to JSON" />
-        <item itemvalue="Mocha.parse XML.should return undefined" />
-        <item itemvalue="Mocha.parse XML.should handle error" />
-        <item itemvalue="Mocha.parse XML.should return correct string" />
-        <item itemvalue="Mocha.parse XML" />
+        <item itemvalue="npm.dev" />
+        <item itemvalue="Mocha.shared spine.should work" />
+        <item itemvalue="npm.start" />
+        <item itemvalue="Mocha.shared spine" />
+        <item itemvalue="Mocha.convert.works" />
       </list>
     </recent_temporary>
   </component>
@@ -386,6 +431,8 @@
       <workItem from="1564492246091" duration="35614000" />
       <workItem from="1565175861962" duration="40569000" />
       <workItem from="1566209683991" duration="34035000" />
+      <workItem from="1566988072720" duration="3565000" />
+      <workItem from="1566991709741" duration="5884000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -569,43 +616,50 @@
       <option name="project" value="LOCAL" />
       <updated>1566909251377</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="added additional details to version index">
+      <created>1566920558299</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1566920558299</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="parse_XML_should_handle_error - 2019.08.27 at 13h 25m 02s.xml">
-      <configuration name="parse XML.should handle error" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 13h 54m 56s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="parse_XML_should_handle_error - 2019.08.27 at 13h 25m 46s.xml">
-      <configuration name="parse XML.should handle error" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 13h 55m 23s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="parse_XML_should_handle_error - 2019.08.27 at 13h 26m 00s.xml">
-      <configuration name="parse XML.should handle error" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 13h 55m 50s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="parse_XML_should_handle_error - 2019.08.27 at 13h 26m 51s.xml">
-      <configuration name="parse XML.should handle error" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine - 2019.08.28 at 13h 58m 01s.xml">
+      <configuration name="shared spine" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="parse_XML_should_handle_error - 2019.08.27 at 13h 27m 36s.xml">
-      <configuration name="parse XML.should handle error" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 13h 59m 05s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="parse_XML_should_return_undefined - 2019.08.27 at 13h 31m 44s.xml">
-      <configuration name="parse XML.should return undefined" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 03m 05s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="parse_XML_should_return_undefined - 2019.08.27 at 13h 31m 57s.xml">
-      <configuration name="parse XML.should return undefined" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 03m 26s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="convert_to_JSON - 2019.08.27 at 13h 32m 20s.xml">
-      <configuration name="convert to JSON" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 04m 28s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="convert_to_JSON - 2019.08.27 at 13h 32m 25s.xml">
-      <configuration name="convert to JSON" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 09m 18s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="convert_to_JSON - 2019.08.27 at 13h 33m 31s.xml">
-      <configuration name="convert to JSON" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 09m 53s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="181053000" />
+    <option name="totallyTimeSpent" value="197608000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -617,12 +671,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7905935" visible="true" weight="0.15831557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.787172" visible="true" weight="0.11804452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.2094065" side_tool="true" visible="true" weight="0.15831557" />
+      <window_info id="npm" order="2" sideWeight="0.212828" side_tool="true" visible="true" weight="0.11804452" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -630,13 +684,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.36788777" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.46531567" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.032502707" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.032502707" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.22291504" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.15978177" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32424006" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.248104" />
@@ -712,73 +766,10 @@
     <MESSAGE value="get resource takes filename from client and adds db path" />
     <MESSAGE value="search returns filename rather than complete path" />
     <MESSAGE value="tests updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests updated" />
+    <MESSAGE value="added additional details to version index" />
+    <option name="LAST_COMMIT_MESSAGE" value="added additional details to version index" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/getVersions.js" />
-    <entry file="file://$PROJECT_DIR$/queries/archived/indexWithVersionCountTrialData.xql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/queries with comments/search.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/poetic-transformations-server.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/archived/getIndex.xql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="45" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="34">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/queries with comments/indexWithVersions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="84" selection-start-line="16" selection-start-column="84" selection-end-line="16" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/archived/spareGetInv.xql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/indexWithVersions.xq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/compareSentences.js" />
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -838,13 +829,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/JSONParserTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/JSONParserTest.js" />
     <entry file="file://$PROJECT_DIR$/queries/queries with comments/getVersionIndex.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -859,13 +844,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/updateWithSpineIndexTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/updateWithSpineIndexTest.js" />
     <entry file="file://$PROJECT_DIR$/data/P4.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -881,38 +860,13 @@
         <state relative-caret-position="-3281" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/updateWithSpineIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="49" selection-start-line="37" selection-start-column="49" selection-end-line="37" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/getVersions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/JSONParser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/util/updateWithSpineIndex.js" />
+    <entry file="file://$PROJECT_DIR$/util/getVersions.js" />
+    <entry file="file://$PROJECT_DIR$/util/JSONParser.js" />
     <entry file="file://$PROJECT_DIR$/util/cosine-similarity.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/saveToCSV.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -926,36 +880,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/comparison.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/comparison.js" />
     <entry file="file://$PROJECT_DIR$/queries/search.xql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/spineIndex.csv">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test/compareVersionsTest.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -971,13 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/createSpineIndexForPoem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="91" column="9" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/compareVersions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
@@ -985,45 +909,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/createSpineIndexForPoemTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1494">
-          <caret line="92" column="7" lean-forward="true" selection-start-line="92" selection-start-column="7" selection-end-line="92" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/saveToCSVTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-444">
-          <caret column="58" selection-start-column="58" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/saveToCSVTest.js" />
     <entry file="file://$PROJECT_DIR$/test/XMLConversionTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
           <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="87" column="63" selection-start-line="87" selection-start-column="63" selection-end-line="87" selection-end-column="63" />
         </state>
       </provider>
     </entry>
@@ -1034,14 +924,146 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/dedupeAndCombineSI.js" />
+    <entry file="file://$PROJECT_DIR$/data/spineIndex.csv" />
     <entry file="file://$PROJECT_DIR$/EndpointList.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="128">
+          <first_editor relative-caret-position="179">
             <caret line="71" column="306" selection-start-line="71" selection-start-column="306" selection-end-line="71" selection-end-column="306" />
           </first_editor>
           <second_editor />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/csvtojson/v2/Converter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/saveGroupedListToCSV.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/createSpineIndexForPoemTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1249">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CSVToJSONTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/CSVToJSON.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/fullSpineIndex.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/saveFullListToCSV.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.15.3/core-modules/internal/modules/cjs/loader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="581" column="14" selection-start-line="581" selection-start-column="14" selection-end-line="581" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/createSpineIndexForPoem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/spineIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="63" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
   </component>

@@ -3,6 +3,7 @@ const versionList = require('../util/createSpineIndexForPoem.js').versionList;
 const extract = require('../util/createSpineIndexForPoem.js').extractFilename;
 const generate = require('../util/createSpineIndexForPoem.js').generateSpineIndex;
 const assert = require('assert');
+const groupBySpine = require('../util/createSpineIndexForPoem.js').groupBySpine;
 
 describe('generating comparison list', function() {
     it('should make list with correct initial value', function () {
@@ -85,6 +86,17 @@ describe('extracting file path', function() {
         assert.strictEqual(namesOnly.length, 0);
         console.log(namesOnly);
     });
+});
+
+describe('grouping by spine', function() {
+    it('should,,,', function () {
+        const data = " [[ { 'xml:id': 'M6.2',_text: 'But what was Pakistan?', spineIndex: 2 }" +
+            "   { 'xml:id': 'M6.18', text: 'and what was there couldn't be poured away',spineIndex: 13 }]," +
+            " [ { 'xml:id': 'M6.2',_text: 'But what was Pakistan?', spineIndex: 2 }" +
+            "   { 'xml:id': 'M6.18', text: 'and what was there couldn't be poured away',spineIndex: 13 }]]";
+        console.log(groupBySpine(data));
+    });
+
 });
 
 describe('generate spine index', function() {

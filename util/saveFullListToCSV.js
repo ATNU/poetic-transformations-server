@@ -1,12 +1,12 @@
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 
 const csvWriter = createCsvWriter({
-    append: 'true',
-    path: './data/spineIndex.csv',
+    path: './data/fullSpineIndex.csv',
     header: [
-        {id: 'spineIndex', title: 'SPINE INDEX'},
-        {id: 'xml:id', title: 'TARGET'}
-    ]
+        {id: 'spineIndex', title: 'spineIndex'},
+        {id: 'xml:id', title: 'xml:id'}
+    ],
+    fieldDelimiter: ';'
 });
 
 /**

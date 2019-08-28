@@ -9,6 +9,7 @@ require('dotenv').config();
 const resourceRouter = require('./routes/resource');
 const indexRouter = require('./routes');
 const searchRouter = require('./routes/search');
+const spineIndexRouter = require('./routes/spineIndex');
 
 var app = express();
 app.use(logger('dev'));
@@ -21,5 +22,6 @@ app.use(bodyParser.json());
 app.use('/doc', resourceRouter);
 app.use('/index', indexRouter);
 app.use('/search', searchRouter);
+app.use('/spine', spineIndexRouter);
 
 module.exports = app;

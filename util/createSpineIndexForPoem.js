@@ -3,14 +3,16 @@ const fs = require('fs');
 const parse = require('./XMLConversion').parseXml;
 const lines = require('./XMLConversion').getLines;
 const map = require('./XMLConversion').idTextMap;
-const save = require('./saveToCSV.js').saveToFile;
+const save = require('./saveFullListToCSV.js').saveToFile;
+const lodash = require('lodash');
+const saveGrouped = require('./saveGroupedListToCSV.js').saveToFile;
 
 /**
- * Compare all versions of a single poem using cosine-similarity to generate a CSV file describing each spine index and line ID. Creates a full automated spine index assignment.
+ * Compare all versions of a single poem using cosine-similarity to generate a CSV file describing each spine index and line ID. Also groups lines by spine index and creates a second CSV file.
  * @param title
  */
 function generateSpineIndex(title) {
-    //const comparisons = comparisonList(extractFilename(getListOfVersions()));
+    const fullList = [];
 
     //create list of a map for each file to update and retrieve from for comparisons
     const mapped = generateJSONObjects(getListOfVersions());
@@ -33,12 +35,71 @@ function generateSpineIndex(title) {
             one = results[0];
             two = results[1];
 
+            //create new JSON and add to new list
+
+            fullList.push(results[0]);
+            fullList.push(results[1]);
+
+
             //append to CSV file
-            save(results[0]);
-            save(results[1]);
+            //save(results[0]);
+            //save(results[1]);
         }
     }
+
+    //remove nesting in list
+    const finalList = removeNesting(fullList);
+    console.log(finalList);
+    save(finalList);
+
+    //create another CSV file with lines grouped by spine index
+    const grouped = groupBySpine(finalList);
+
+    saveGrouped(grouped);
 }
+
+function removeNesting(fullList) {
+    //create one long list of lines
+    const innerListsRemoved = [];
+    for (let group of fullList) {
+
+        for (let line of group) {
+
+            //check spine index and xml:id are defined
+            if (line.spineIndex === undefined || line["xml:id"] === undefined) {
+                continue;
+            } else {
+                innerListsRemoved.push({"xml:id": line["xml:id"], "spineIndex": line["spineIndex"]});
+            }
+        }
+    }
+    return innerListsRemoved;
+}
+
+function groupBySpine(list) {
+
+    //deduplicate
+    const deduplicated = lodash.uniqBy(list, 'xml:id');
+
+    const groupedBySpine = lodash.groupBy(deduplicated, 'spineIndex');
+    const upperSpine = lodash.size(groupedBySpine);
+    const groupedList = [];
+
+    //for each spine index in grouped list
+    for (let i = 1; i <= upperSpine; i++) {
+        const lineObjList = groupedBySpine[i];
+        //combine line ID's into list
+        const lineIDList = [];
+        for (let sentence of lineObjList) {
+            lineIDList.push(sentence["xml:id"]);
+        }
+        groupedList.push({"spineIndex": i, "lines": lineIDList});
+    }
+
+return groupedList;
+}
+
+
 
 /** Generate list of pairs of indexes so that each file in the list is compared to every other one once, e.g. 1 should be compared to 2, 1 should be compared to 3 etc.
  *
@@ -122,3 +183,4 @@ module.exports.extractFilename = extractFilename;
 module.exports.comparisonList = comparisonList;
 module.exports.versionList = getListOfVersions;
 module.exports.generateSpineIndex = generateSpineIndex;
+module.exports.groupBySpine = groupBySpine;
