@@ -2,25 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data/groupedSpineIndex.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/spineIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/CSVToJSONTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/CSVToJSON.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/linesWithSharedSpine.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/saveGroupedListToCSV.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/spineIndex.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/fullSpineIndex.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/archived/getIndex.xql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/archived/indexWithVersionCountTrialData.xql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/queries/archived/spareGetInv.xql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/createSpineIndexForPoemTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/createSpineIndexForPoemTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/createSpineIndexForPoem.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/createSpineIndexForPoem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/saveToCSV.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/saveFullListToCSV.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndpointList.md" beforeDir="false" afterPath="$PROJECT_DIR$/EndpointList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/spineIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/spineIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,7 +18,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.71924293">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -45,11 +30,23 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/routes/spineIndex.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/EndpointList.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="282">
+                    <caret line="170" selection-start-line="170" selection-end-line="170" />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -66,7 +63,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/routes/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
+                <state relative-caret-position="-391">
                   <caret line="7" selection-start-line="7" selection-end-line="7" />
                 </state>
               </provider>
@@ -106,8 +103,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+                <state relative-caret-position="102">
+                  <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
@@ -121,32 +118,12 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/util/saveGroupedListToCSV.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="102">
                   <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
                 </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/fullSpineIndex.csv">
-              <provider selected="true" editor-type-id="csv-text-editor" />
-              <provider editor-type-id="csv-table-editor">
-                <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
-              <provider selected="true" editor-type-id="csv-text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="63" />
-                </state>
-              </provider>
-              <provider editor-type-id="csv-table-editor">
-                <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
               </provider>
             </entry>
           </file>
@@ -232,7 +209,6 @@
         <option value="$PROJECT_DIR$/util/XMLConversion.js" />
         <option value="$PROJECT_DIR$/routes/search.js" />
         <option value="$PROJECT_DIR$/queries/getVersionIndex.xq" />
-        <option value="$PROJECT_DIR$/EndpointList.md" />
         <option value="$PROJECT_DIR$/data/spineIndex.csv" />
         <option value="$PROJECT_DIR$/util/dedupeAndCombineSI.js" />
         <option value="$PROJECT_DIR$/test/createSpineIndexForPoemTest.js" />
@@ -247,6 +223,7 @@
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" />
         <option value="$PROJECT_DIR$/routes/spineIndex.js" />
+        <option value="$PROJECT_DIR$/EndpointList.md" />
       </list>
     </option>
   </component>
@@ -284,6 +261,11 @@
               <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -408,8 +390,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev" />
         <item itemvalue="Mocha.shared spine.should work" />
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="Mocha.shared spine" />
         <item itemvalue="Mocha.convert.works" />
@@ -432,7 +414,7 @@
       <workItem from="1565175861962" duration="40569000" />
       <workItem from="1566209683991" duration="34035000" />
       <workItem from="1566988072720" duration="3565000" />
-      <workItem from="1566991709741" duration="5884000" />
+      <workItem from="1566991709741" duration="7214000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -623,16 +605,17 @@
       <option name="project" value="LOCAL" />
       <updated>1566920558299</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added spine index endpoint not tested">
+      <created>1566998429953</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1566998429953</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 13h 54m 56s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 13h 55m 23s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
     <history-entry file="shared_spine_should_work - 2019.08.28 at 13h 55m 50s.xml">
       <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
@@ -657,9 +640,15 @@
     <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 09m 53s.xml">
       <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
     </history-entry>
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 21m 59s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 24m 01s.xml">
+      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="197608000" />
+    <option name="totallyTimeSpent" value="198938000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -742,7 +731,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="GET a resource given filename working" />
     <MESSAGE value="tidy app.js" />
     <MESSAGE value="add Dockerfile and nodemon" />
     <MESSAGE value="search returns full text (but missing exist:match)" />
@@ -767,7 +755,8 @@
     <MESSAGE value="search returns filename rather than complete path" />
     <MESSAGE value="tests updated" />
     <MESSAGE value="added additional details to version index" />
-    <option name="LAST_COMMIT_MESSAGE" value="added additional details to version index" />
+    <MESSAGE value="added spine index endpoint not tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="added spine index endpoint not tested" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/bin/www">
@@ -933,27 +922,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/util/dedupeAndCombineSI.js" />
     <entry file="file://$PROJECT_DIR$/data/spineIndex.csv" />
-    <entry file="file://$PROJECT_DIR$/EndpointList.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="179">
-            <caret line="71" column="306" selection-start-line="71" selection-start-column="306" selection-end-line="71" selection-end-column="306" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/csvtojson/v2/Converter.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/saveGroupedListToCSV.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -976,13 +948,6 @@
         <state relative-caret-position="34">
           <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/fullSpineIndex.csv">
-      <provider selected="true" editor-type-id="csv-text-editor" />
-      <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/util/saveFullListToCSV.js">
@@ -1013,13 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1034,6 +992,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="468">
+          <caret line="142" column="20" lean-forward="true" selection-start-line="142" selection-start-column="20" selection-end-line="142" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-391">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -1041,29 +1017,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/spineIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
+    <entry file="file://$PROJECT_DIR$/data/fullSpineIndex.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="63" />
+        <state relative-caret-position="201">
+          <caret line="221" column="5" selection-start-line="221" selection-start-column="5" selection-end-line="221" selection-end-column="5" />
         </state>
       </provider>
       <provider editor-type-id="text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/saveGroupedListToCSV.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/spineIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EndpointList.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="282">
+            <caret line="170" selection-start-line="170" selection-end-line="170" />
+          </first_editor>
+          <second_editor />
+        </state>
       </provider>
     </entry>
   </component>

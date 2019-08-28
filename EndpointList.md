@@ -43,6 +43,9 @@ Get an index of all poems stored and how many versions of that poem are availabl
 ##URL
 /index
 
+## Method
+GET
+
 ##Success response
 Code: `200 OK`
 Content: XML file
@@ -73,6 +76,9 @@ Get an index of all versions of a particular poem (using poem ID from the poem i
 
 ##URL
 /index/title
+
+## Method
+GET
 
 ##Success response
 Code: `200 OK`
@@ -118,6 +124,9 @@ It is possible to use wildcards. In future this endpoint could be developed to c
 ##URL
 /search/searchphrase
 
+## Method
+GET
+
 ##Success response
 Code: `200 OK`
 Content: XML file
@@ -150,5 +159,29 @@ Likely to be caused by an invalid search term e.g. search/"
 Code: `404`
 Likely to be caused by a call to search/ with no search term
 
+---
+#Lines with shared spine index
+Get a list of lines that have the same spine index as the one submitted. If the line is unique then an empty array will be returned.
 
+##URL
+/spine?lineID={lineID}
 
+##Method
+GET
+
+##Success response
+Code: `200 OK`
+Content: `[]` 
+
+##Error response
+Code: `404`
+Indicates the line index is incorrect.
+
+##Sample response
+```
+[
+    "P1.2",
+    "P2.2",
+    "P3.2"
+]
+```
