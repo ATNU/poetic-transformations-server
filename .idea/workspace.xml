@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/linesWithSharedSpine.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/linesWithSharedSpine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,13 +16,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52944905">
+    <splitter split-orientation="horizontal" split-proportion="0.3008233">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
+                <state relative-caret-position="374">
                   <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
                 </state>
               </provider>
@@ -36,17 +35,47 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+                <state relative-caret-position="289">
+                  <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.env">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret column="17" selection-start-column="17" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="119">
+                    <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+                  </first_editor>
+                  <second_editor />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
               <provider selected="true" editor-type-id="csv-text-editor">
                 <state relative-caret-position="147">
-                  <caret line="128" column="8" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="8" />
+                  <caret line="128" column="20" lean-forward="true" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="20" />
                 </state>
               </provider>
               <provider editor-type-id="csv-table-editor">
@@ -158,9 +187,9 @@
         <option value="$PROJECT_DIR$/routes/spineIndex.js" />
         <option value="$PROJECT_DIR$/EndpointList.md" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" />
         <option value="$PROJECT_DIR$/util/linesWithSharedSpine.js" />
+        <option value="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -262,7 +291,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.shared spine.should return correct list">
+  <component name="RunManager" selected="Mocha.shared spine.should return undefined when the line does not exist">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -271,31 +300,6 @@
       </scripts>
       <node-interpreter value="project" />
       <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="shared spine" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options />
-      <test-kind>SUITE</test-kind>
-      <test-file>$PROJECT_DIR$/test/linesWithSharedSpineTest.js</test-file>
-      <test-names>
-        <name value="shared spine" />
-      </test-names>
       <method v="2" />
     </configuration>
     <configuration name="shared spine.should return correct list" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
@@ -311,6 +315,38 @@
       <test-names>
         <name value="shared spine" />
         <name value="should return correct list" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="shared spine.should return empty list where there is only one line for the spine index" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/linesWithSharedSpineTest.js</test-file>
+      <test-names>
+        <name value="shared spine" />
+        <name value="should return empty list where there is only one line for the spine index" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="shared spine.should return undefined when the line does not exist" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/linesWithSharedSpineTest.js</test-file>
+      <test-names>
+        <name value="shared spine" />
+        <name value="should return undefined when the line does not exist" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -332,11 +368,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Mocha.shared spine.should return undefined when the line does not exist" />
+        <item itemvalue="Mocha.shared spine.should return empty list where there is only one line for the spine index" />
         <item itemvalue="Mocha.shared spine.should return correct list" />
         <item itemvalue="Mocha.shared spine.should work" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="Mocha.shared spine" />
       </list>
     </recent_temporary>
   </component>
@@ -356,7 +392,7 @@
       <workItem from="1565175861962" duration="40569000" />
       <workItem from="1566209683991" duration="34035000" />
       <workItem from="1566988072720" duration="3565000" />
-      <workItem from="1566991709741" duration="11861000" />
+      <workItem from="1566991709741" duration="13151000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -582,43 +618,57 @@
       <option name="project" value="LOCAL" />
       <updated>1567158666282</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="corrected spine index to list index conversion">
+      <created>1567158922951</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1567158922951</updated>
+    </task>
+    <task id="LOCAL-00034" summary="lines with shared spine tests">
+      <created>1567159987904</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1567159987904</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 04m 28s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 09m 18s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 09m 53s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 21m 59s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 24m 01s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 41m 43s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 41m 50s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="shared_spine_should_work - 2019.08.28 at 14h 42m 21s.xml">
-      <configuration name="shared spine.should work" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="shared_spine_should_return_correct_list - 2019.08.30 at 10h 52m 58s.xml">
+    <history-entry file="shared_spine_should_return_correct_list - 2019.08.30 at 10h 57m 28s.xml">
       <configuration name="shared spine.should return correct list" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_correct_list - 2019.08.30 at 10h 54m 01s.xml">
-      <configuration name="shared spine.should return correct list" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 57m 50s.xml">
+      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 58m 01s.xml">
+      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 58m 21s.xml">
+      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 58m 56s.xml">
+      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 59m 04s.xml">
+      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 59m 20s.xml">
+      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 11h 00m 20s.xml">
+      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="shared_spine_should_return_undefined_when_the_line_does_not_exist - 2019.08.30 at 11h 00m 31s.xml">
+      <configuration name="shared spine.should return undefined when the line does not exist" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="shared_spine_should_return_undefined_when_the_line_does_not_exist - 2019.08.30 at 11h 12m 39s.xml">
+      <configuration name="shared spine.should return undefined when the line does not exist" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="203585000" />
+    <option name="totallyTimeSpent" value="204875000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -633,9 +683,9 @@
     <frame x="1912" y="57" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8661568" visible="true" weight="0.15831557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86633664" visible="true" weight="0.15831557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.13384321" side_tool="true" visible="true" weight="0.15831557" />
+      <window_info id="npm" order="2" sideWeight="0.13366337" side_tool="true" visible="true" weight="0.15831557" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -643,13 +693,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.43336946" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.43336946" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.032502707" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.15926327" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" visible="true" weight="0.3434453" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32424006" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.248104" />
@@ -701,8 +751,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="get inventory works but regex not being applied" />
-    <MESSAGE value="queries for index written" />
     <MESSAGE value="test push" />
     <MESSAGE value="added _howmany to query" />
     <MESSAGE value="finalise queries and notes" />
@@ -726,7 +774,9 @@
     <MESSAGE value="endpoint list updated" />
     <MESSAGE value="update package.json" />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="corrected spine index to list index conversion" />
+    <MESSAGE value="lines with shared spine tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="lines with shared spine tests" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/node_modules/mocha/node_modules/yargs/yargs.js">
@@ -782,23 +832,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/updateWithSpineIndexTest.js" />
     <entry file="file://$PROJECT_DIR$/data/P4.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/B.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -986,16 +1022,6 @@
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/CSVToJSON.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1003,17 +1029,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
+    <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        <state relative-caret-position="374">
+          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="147">
-          <caret line="128" column="8" selection-start-line="128" selection-start-column="4" selection-end-line="128" selection-end-column="8" />
+          <caret line="128" column="20" lean-forward="true" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="20" />
         </state>
       </provider>
       <provider editor-type-id="text-editor" />
@@ -1021,10 +1047,34 @@
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
+    <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+        <state relative-caret-position="289">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
