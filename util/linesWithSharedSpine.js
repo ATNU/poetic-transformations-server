@@ -20,9 +20,9 @@ function sharedSpine(lineID) {
 
     if (spineIndex !== undefined) {
 
-        //get all other lines for that spine index
+        //get all other lines for that spine index (decreased by one to correspond with list index)
         const jsonGrouped = convert('./data/groupedSpineIndex.csv');
-        const line = jsonGrouped[spineIndex];
+        const line = jsonGrouped[spineIndex-1];
 
         if (line !== undefined) {
             //make string into array
