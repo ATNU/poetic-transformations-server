@@ -142,3 +142,11 @@ function removePuncAndCombine(list) {
     }
     return whole;
 }
+
+function compareWholeVersions(text1, text2) {
+    console.log(text1);
+    console.log(text2);
+return similarity(text1, text2);
+}
+
+module.exports.compareWholeVersions = compareWholeVersions;

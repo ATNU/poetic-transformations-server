@@ -185,3 +185,26 @@ Indicates the line index is incorrect.
     "P3.2"
 ]
 ```
+
+---
+#Compare two poems
+Get the cosine similarity index between two versions of the poem as a decimal point between 0 and 1 to 2 decimal places, with 1 being identical texts.
+
+##URL
+/comp?one={filename1}&two={filename2}
+
+##Method
+GET
+
+##Success response
+Code: `200 OK`
+Content: `integer`
+
+##Error response
+Code:`500`
+Content:   `ENOENT: no such file or directory`
+
+Code: `500`
+Content: `error in calculating cosine similarity`
+
+---

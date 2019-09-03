@@ -10,7 +10,7 @@ const linesWithSharedSpine = require('../util/linesWithSharedSpine').sharedSpine
 router.get('/', function(req, res) {
     const index = req.query.lineID;
     const matchingLines = linesWithSharedSpine(index);
-let status;
+    let status;
 
     if (matchingLines === undefined) {
         status = 404;

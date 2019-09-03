@@ -7,5 +7,6 @@
     <orderEntry type="library" name="@types/express" level="application" />
     <orderEntry type="library" name="@types/mocha" level="application" />
     <orderEntry type="library" name="@types/chai" level="application" />
+    <orderEntry type="library" name="@types/request" level="application" />
   </component>
 </module>

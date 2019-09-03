@@ -3,7 +3,7 @@ const fs = require('fs');
 const convert = require('../util/XMLConversion').parseXml;
 const getLines = require('../util/XMLConversion').getLines;
 const map = require('../util/XMLConversion').idTextMap;
-
+const justText = require('../util/XMLConversion').justText;
 
 describe('parse XML', function () {
     it('should return correct string', function () {
@@ -21,5 +21,10 @@ describe('convert to JSON', function () {
     const lines = getLines(result);
     const mapped = map(lines);
     assert.strictEqual(mapped[0]["_text"], 'To place myself in my grandmother\'s shoes,');
+});
+
+describe('convert from xml to one long string', function() {
+    const xml = fs.readFileSync('./data/M1.xml', 'UTF-8');
+    console.log(justText(xml));
 });
 

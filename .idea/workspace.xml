@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/routes/comparison.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EndpointList.md" beforeDir="false" afterPath="$PROJECT_DIR$/EndpointList.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetic-transformations-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/poetic-transformations-server.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/spineIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/spineIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/XMLConversionTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/XMLConversionTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/compareVersionsTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/compareVersionsTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/XMLConversion.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/XMLConversion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/compareVersions.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/compareVersions.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,94 +25,38 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.3008233">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="289">
-                  <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="21" selection-start-line="21" selection-end-line="21" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.env">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="17" selection-start-column="17" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="119">
-                    <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-                  </first_editor>
-                  <second_editor />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
-              <provider selected="true" editor-type-id="csv-text-editor">
-                <state relative-caret-position="147">
-                  <caret line="128" column="20" lean-forward="true" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="20" />
-                </state>
-              </provider>
-              <provider editor-type-id="csv-table-editor">
-                <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/test/createSpineIndexForPoemTest.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1249">
-                  <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/util/saveGroupedListToCSV.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="102">
-                  <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="63" column="96" selection-start-line="63" selection-start-column="96" selection-end-line="63" selection-end-column="96" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EndpointList.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="480">
+                <caret line="209" column="3" selection-start-line="209" selection-start-column="3" selection-end-line="209" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/comparison.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -139,7 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/util/compareSentences.js" />
         <option value="$PROJECT_DIR$/util/consine-similarity.js" />
         <option value="$PROJECT_DIR$/util/sentenceComparison.js" />
         <option value="$PROJECT_DIR$/test/sentenceComparisonTest.js" />
@@ -162,15 +114,10 @@
         <option value="$PROJECT_DIR$/test/compareFilesTest.js" />
         <option value="$PROJECT_DIR$/util/compareFiles.js" />
         <option value="$PROJECT_DIR$/util/sentencesComparison.js" />
-        <option value="$PROJECT_DIR$/util/cosine-similarity.js" />
         <option value="$PROJECT_DIR$/util/saveToCSV.js" />
-        <option value="$PROJECT_DIR$/routes/comparison.js" />
         <option value="$PROJECT_DIR$/routes/resource.js" />
         <option value="$PROJECT_DIR$/queries/search.xql" />
         <option value="$PROJECT_DIR$/test/cosine-similarityTest.js" />
-        <option value="$PROJECT_DIR$/util/compareVersions.js" />
-        <option value="$PROJECT_DIR$/test/XMLConversionTest.js" />
-        <option value="$PROJECT_DIR$/util/XMLConversion.js" />
         <option value="$PROJECT_DIR$/routes/search.js" />
         <option value="$PROJECT_DIR$/queries/getVersionIndex.xq" />
         <option value="$PROJECT_DIR$/data/spineIndex.csv" />
@@ -183,13 +130,19 @@
         <option value="$PROJECT_DIR$/util/saveGroupedListToCSV.js" />
         <option value="$PROJECT_DIR$/test/CSVToJSONTest.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/spineIndex.js" />
-        <option value="$PROJECT_DIR$/EndpointList.md" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/util/linesWithSharedSpine.js" />
         <option value="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test/XMLConversionTest.js" />
+        <option value="$PROJECT_DIR$/util/compareVersions.js" />
+        <option value="$PROJECT_DIR$/util/cosine-similarity.js" />
+        <option value="$PROJECT_DIR$/test/compareVersionsTest.js" />
+        <option value="$PROJECT_DIR$/routes/spineIndex.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/util/XMLConversion.js" />
+        <option value="$PROJECT_DIR$/routes/comparison.js" />
+        <option value="$PROJECT_DIR$/EndpointList.md" />
       </list>
     </option>
   </component>
@@ -210,7 +163,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -242,7 +195,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -291,7 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.shared spine.should return undefined when the line does not exist">
+  <component name="RunManager" selected="Mocha.compare whole versions.should work for sampple texts">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -302,7 +255,7 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="shared spine.should return correct list" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="compare whole versions.should return 1 or higher for same poem" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -311,14 +264,14 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/linesWithSharedSpineTest.js</test-file>
+      <test-file>$PROJECT_DIR$/test/compareVersionsTest.js</test-file>
       <test-names>
-        <name value="shared spine" />
-        <name value="should return correct list" />
+        <name value="compare whole versions" />
+        <name value="should return 1 or higher for same poem" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="shared spine.should return empty list where there is only one line for the spine index" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="compare whole versions.should work for different texts" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -327,14 +280,14 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/linesWithSharedSpineTest.js</test-file>
+      <test-file>$PROJECT_DIR$/test/compareVersionsTest.js</test-file>
       <test-names>
-        <name value="shared spine" />
-        <name value="should return empty list where there is only one line for the spine index" />
+        <name value="compare whole versions" />
+        <name value="should work for different texts" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="shared spine.should return undefined when the line does not exist" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="compare whole versions.should work for sampple texts" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -343,14 +296,14 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/linesWithSharedSpineTest.js</test-file>
+      <test-file>$PROJECT_DIR$/test/compareVersionsTest.js</test-file>
       <test-names>
-        <name value="shared spine" />
-        <name value="should return undefined when the line does not exist" />
+        <name value="compare whole versions" />
+        <name value="should work for sampple texts" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="shared spine.should work" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="compare whole versions.should " type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -359,20 +312,20 @@
       <ui>bdd</ui>
       <extra-mocha-options />
       <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/linesWithSharedSpineTest.js</test-file>
+      <test-file>$PROJECT_DIR$/test/compareVersionsTest.js</test-file>
       <test-names>
-        <name value="shared spine" />
-        <name value="should work" />
+        <name value="compare whole versions" />
+        <name value="should " />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.shared spine.should return undefined when the line does not exist" />
-        <item itemvalue="Mocha.shared spine.should return empty list where there is only one line for the spine index" />
-        <item itemvalue="Mocha.shared spine.should return correct list" />
-        <item itemvalue="Mocha.shared spine.should work" />
         <item itemvalue="npm.dev" />
+        <item itemvalue="Mocha.compare whole versions.should work for sampple texts" />
+        <item itemvalue="Mocha.compare whole versions.should work for different texts" />
+        <item itemvalue="Mocha.compare whole versions.should " />
+        <item itemvalue="Mocha.compare whole versions.should return 1 or higher for same poem" />
       </list>
     </recent_temporary>
   </component>
@@ -392,7 +345,8 @@
       <workItem from="1565175861962" duration="40569000" />
       <workItem from="1566209683991" duration="34035000" />
       <workItem from="1566988072720" duration="3565000" />
-      <workItem from="1566991709741" duration="13151000" />
+      <workItem from="1566991709741" duration="13314000" />
+      <workItem from="1567435424776" duration="8167000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -632,43 +586,50 @@
       <option name="project" value="LOCAL" />
       <updated>1567159987904</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="update readme">
+      <created>1567160414953</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1567160414953</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="shared_spine_should_return_correct_list - 2019.08.30 at 10h 57m 28s.xml">
-      <configuration name="shared spine.should return correct list" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_return_1_or_higher_for_same_poem - 2019.09.03 at 08h 30m 55s.xml">
+      <configuration name="compare whole versions.should return 1 or higher for same poem" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 57m 50s.xml">
-      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_return_1_or_higher_for_same_poem - 2019.09.03 at 08h 31m 05s.xml">
+      <configuration name="compare whole versions.should return 1 or higher for same poem" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 58m 01s.xml">
-      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_return_1_or_higher_for_same_poem - 2019.09.03 at 08h 32m 36s.xml">
+      <configuration name="compare whole versions.should return 1 or higher for same poem" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 58m 21s.xml">
-      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_return_1_or_higher_for_same_poem - 2019.09.03 at 08h 33m 16s.xml">
+      <configuration name="compare whole versions.should return 1 or higher for same poem" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 58m 56s.xml">
-      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_ - 2019.09.03 at 08h 33m 48s.xml">
+      <configuration name="compare whole versions.should " configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 59m 04s.xml">
-      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_work_for_different_texts - 2019.09.03 at 08h 34m 08s.xml">
+      <configuration name="compare whole versions.should work for different texts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 10h 59m 20s.xml">
-      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_work_for_different_texts - 2019.09.03 at 08h 35m 11s.xml">
+      <configuration name="compare whole versions.should work for different texts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_empty_list_where_there_is_only_one_line_for_the_spine_index - 2019.08.30 at 11h 00m 20s.xml">
-      <configuration name="shared spine.should return empty list where there is only one line for the spine index" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_work_for_different_texts - 2019.09.03 at 08h 42m 37s.xml">
+      <configuration name="compare whole versions.should work for different texts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_undefined_when_the_line_does_not_exist - 2019.08.30 at 11h 00m 31s.xml">
-      <configuration name="shared spine.should return undefined when the line does not exist" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_work_for_sampple_texts - 2019.09.03 at 08h 44m 36s.xml">
+      <configuration name="compare whole versions.should work for sampple texts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="shared_spine_should_return_undefined_when_the_line_does_not_exist - 2019.08.30 at 11h 12m 39s.xml">
-      <configuration name="shared spine.should return undefined when the line does not exist" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="compare_whole_versions_should_work_for_sampple_texts - 2019.09.03 at 09h 38m 05s.xml">
+      <configuration name="compare whole versions.should work for sampple texts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="204875000" />
+    <option name="totallyTimeSpent" value="213205000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -683,9 +644,9 @@
     <frame x="1912" y="57" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.86633664" visible="true" weight="0.15831557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8621849" visible="true" weight="0.24360341" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.13366337" side_tool="true" visible="true" weight="0.15831557" />
+      <window_info id="npm" order="2" sideWeight="0.13781513" side_tool="true" visible="true" weight="0.24360341" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -693,13 +654,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.43336946" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.35536295" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.032502707" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" visible="true" weight="0.3434453" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.24707717" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32424006" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.248104" />
@@ -714,38 +675,6 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Database" order="8" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.79171896" visible="true" weight="0.1426868" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.20828106" side_tool="true" visible="true" weight="0.1426868" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.37879968" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.17381138" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3257989" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.248104" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32969603" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -773,31 +702,12 @@
     <MESSAGE value="added spine index endpoint not tested" />
     <MESSAGE value="endpoint list updated" />
     <MESSAGE value="update package.json" />
-    <MESSAGE value="update readme" />
     <MESSAGE value="corrected spine index to list index conversion" />
     <MESSAGE value="lines with shared spine tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="lines with shared spine tests" />
+    <MESSAGE value="update readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/mocha/node_modules/yargs/yargs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="1162" selection-start-line="1162" selection-end-line="1162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sampleXml/M1Lines.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sampleXml/B.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sampleXml/JSONForConversion">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -836,25 +746,12 @@
     <entry file="file://$PROJECT_DIR$/data/P4.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/B.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3281" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/updateWithSpineIndex.js" />
     <entry file="file://$PROJECT_DIR$/util/getVersions.js" />
     <entry file="file://$PROJECT_DIR$/util/JSONParser.js" />
-    <entry file="file://$PROJECT_DIR$/util/cosine-similarity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/connection.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/comparison.js" />
     <entry file="file://$PROJECT_DIR$/queries/search.xql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -862,46 +759,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/compareVersionsTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/cosine-similarityTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/compareVersions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/saveToCSVTest.js" />
-    <entry file="file://$PROJECT_DIR$/test/XMLConversionTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/queries/getVersionIndex.xq">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -911,13 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/createSpineIndexForPoemTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1249">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -949,13 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util/createSpineIndexForPoem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -963,62 +811,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-391">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/fullSpineIndex.csv">
+      <provider editor-type-id="text-editor" />
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="201">
           <caret line="221" column="5" selection-start-line="221" selection-start-column="5" selection-end-line="221" selection-end-column="5" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor" />
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/EndpointList.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="845">
-            <caret line="170" selection-start-line="170" selection-end-line="170" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/spineIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/CSVToJSONTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="39" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/saveGroupedListToCSV.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CSVToJSONTest.js" />
     <entry file="file://$PROJECT_DIR$/Dockerfile">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1027,24 +831,6 @@
         <state relative-caret-position="17">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="147">
-          <caret line="128" column="20" lean-forward="true" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor" />
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
@@ -1068,11 +854,148 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
+      <provider editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="2176">
+          <caret line="128" column="20" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="20" />
+        </state>
+      </provider>
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/createSpineIndexForPoemTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/saveGroupedListToCSV.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="119">
-            <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
+          <first_editor relative-caret-position="17">
+            <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/M1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/B.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/M2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/P1.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4383" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/cosine-similarityTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2304">
+          <caret line="136" selection-start-line="136" selection-end-line="136" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/cosine-similarity.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/XMLConversionTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/compareVersionsTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2414">
+          <caret line="208" column="60" selection-start-line="208" selection-start-column="60" selection-end-line="208" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/compareVersions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="144" lean-forward="true" selection-start-line="144" selection-end-line="144" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="63" column="96" selection-start-line="63" selection-start-column="96" selection-end-line="63" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/spineIndex.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/comparison.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EndpointList.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="480">
+            <caret line="209" column="3" selection-start-line="209" selection-start-column="3" selection-end-line="209" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>

@@ -3,7 +3,9 @@ const comparison = require('../util/compareVersions.js');
 const convert = require('../util/XMLConversion').parseXml;
 const getLines = require('../util/XMLConversion').getLines;
 const map = require('../util/XMLConversion').idTextMap;
+const justText = require('../util/XMLConversion').justText;
 const fs = require('fs');
+const compareWholeVersions = require('../util/compareVersions.js').compareWholeVersions;
 
 describe('sentences comparison with no previously assigned indexes', function () {
     it ('should label file 1 sentence 1 correctly', function () {
@@ -184,5 +186,27 @@ describe('sentences comparison with some previously assigned indexes', function 
         const labelledFiles = comparison(mapped1, mapped2);
         console.log(labelledFiles[0]);
 
+    });
+});
+
+describe('compare whole versions', function() {
+   it('should return 1 or higher for same poem', function()  {
+       const xml1 = fs.readFileSync('./data/M1.xml', 'UTF-8');
+       const text1 = justText(xml1);
+       const xml2 = fs.readFileSync('./data/M1.xml', 'UTF-8');
+       const text2 = justText(xml2);
+       assert.ok(compareWholeVersions(text1, text2) >= 1);
+    });
+    it('should work for different texts', function()  {
+        const xml1 = fs.readFileSync('./data/M1.xml', 'UTF-8');
+        const text1 = justText(xml1);
+        const xml2 = fs.readFileSync('./data/P1.xml', 'UTF-8');
+        const text2 = justText(xml2);
+       console.log(compareWholeVersions(text1, text2));
+    });
+    it('should work for sampple texts', function()  {
+        const text1 = "This is a sentence not very much like the next one, although there are a small number of overlaps, this sent4ence is much longer";
+        const text2 = "This is a sentencee far far shorter";
+        console.log(compareWholeVersions(text1, text2));
     });
 });
