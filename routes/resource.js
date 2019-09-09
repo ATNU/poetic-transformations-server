@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const http = require('http');
-const URI = require('../util/connection.js').URINoDB;
+const URI = require('../util/connection.js').URIQuery;
 
 /**
  *  GET a single version of a poem given it's filename as a query parameter. Returns XML.
@@ -13,9 +13,10 @@ router.get(
     function(req, res) {
 
         const name = req.params.path;
-        const path = '/db/transformations/' + name;
 
-        const URL = URI + path;
+        const query = 'xquery version "3.1"; declare default element namespace "http://www.tei-c.org/ns/1.0"; let $result := transform:transform(doc("xmldb:exist://db/transformations/' + name + '"), doc("xmldb:exist://db/transformations/transform2HTMLDiv.xsl"), ()) return $result';
+
+        const URL = URI + query;
         console.log(URL);
 
         //----- GET call and send response

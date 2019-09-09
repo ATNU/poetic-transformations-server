@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/comparison.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/queries/resource.xq" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EndpointList.md" beforeDir="false" afterPath="$PROJECT_DIR$/EndpointList.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetic-transformations-server.iml" beforeDir="false" afterPath="$PROJECT_DIR$/poetic-transformations-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/spineIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/spineIndex.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/XMLConversionTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/XMLConversionTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/compareVersionsTest.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/compareVersionsTest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/XMLConversion.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/XMLConversion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/compareVersions.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/compareVersions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/resource.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,20 +21,48 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="1071">
               <caret line="63" column="96" selection-start-line="63" selection-start-column="96" selection-end-line="63" selection-end-column="96" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EndpointList.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="480">
-                <caret line="209" column="3" selection-start-line="209" selection-start-column="3" selection-end-line="209" selection-end-column="3" />
+              <first_editor relative-caret-position="563">
+                <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/routes/resource.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/util/connection.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/transform2HTMLDiv.xsl">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/queries/resource.xq">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -50,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/comparison.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="578">
               <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
             </state>
           </provider>
@@ -92,7 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/util/consine-similarity.js" />
         <option value="$PROJECT_DIR$/util/sentenceComparison.js" />
         <option value="$PROJECT_DIR$/test/sentenceComparisonTest.js" />
         <option value="$PROJECT_DIR$/sampleXml/M1Lines.js" />
@@ -115,7 +134,6 @@
         <option value="$PROJECT_DIR$/util/compareFiles.js" />
         <option value="$PROJECT_DIR$/util/sentencesComparison.js" />
         <option value="$PROJECT_DIR$/util/saveToCSV.js" />
-        <option value="$PROJECT_DIR$/routes/resource.js" />
         <option value="$PROJECT_DIR$/queries/search.xql" />
         <option value="$PROJECT_DIR$/test/cosine-similarityTest.js" />
         <option value="$PROJECT_DIR$/routes/search.js" />
@@ -143,6 +161,8 @@
         <option value="$PROJECT_DIR$/util/XMLConversion.js" />
         <option value="$PROJECT_DIR$/routes/comparison.js" />
         <option value="$PROJECT_DIR$/EndpointList.md" />
+        <option value="$PROJECT_DIR$/queries/resource.xq" />
+        <option value="$PROJECT_DIR$/routes/resource.js" />
       </list>
     </option>
   </component>
@@ -153,17 +173,16 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1912" />
-    <option name="y" value="57" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="2576" />
+    <option name="height" value="1416" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,6 +194,11 @@
               <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
               <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
+              <item name="queries" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
@@ -195,6 +219,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -346,7 +371,8 @@
       <workItem from="1566209683991" duration="34035000" />
       <workItem from="1566988072720" duration="3565000" />
       <workItem from="1566991709741" duration="13314000" />
-      <workItem from="1567435424776" duration="8167000" />
+      <workItem from="1567435424776" duration="9413000" />
+      <workItem from="1568018290256" duration="1556000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -593,7 +619,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567160414953</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="add endpoint and functionality for cosine similarity comparison of two whole versions">
+      <created>1567501130107</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1567501130107</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -629,7 +662,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213205000" />
+    <option name="totallyTimeSpent" value="216007000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -641,12 +674,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="57" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8621849" visible="true" weight="0.24360341" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" sideWeight="0.13781513" side_tool="true" visible="true" weight="0.24360341" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.92347467" visible="true" weight="0.24562798" />
+      <window_info id="Structure" order="1" sideWeight="0.07652534" side_tool="true" weight="0.24562798" />
+      <window_info id="npm" order="2" sideWeight="0.1381295" side_tool="true" weight="0.24360341" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
@@ -654,13 +686,13 @@
       <window_info id="Favorites" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.35536295" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.35536295" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990647" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.032502707" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.24707717" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" visible="true" weight="0.24629775" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32424006" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" weight="0.248104" />
@@ -680,7 +712,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="test push" />
     <MESSAGE value="added _howmany to query" />
     <MESSAGE value="finalise queries and notes" />
     <MESSAGE value="update version index with PTpoem idno" />
@@ -705,23 +736,10 @@
     <MESSAGE value="corrected spine index to list index conversion" />
     <MESSAGE value="lines with shared spine tests" />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="add endpoint and functionality for cosine similarity comparison of two whole versions" />
+    <option name="LAST_COMMIT_MESSAGE" value="add endpoint and functionality for cosine similarity comparison of two whole versions" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sampleXml/JSONForConversion">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4965" selection-start-column="4965" selection-end-column="4965" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/JSONResultSample.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="9839" selection-start-column="9839" selection-end-column="9930" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sampleXml/M1.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306" />
@@ -749,9 +767,6 @@
     <entry file="file://$PROJECT_DIR$/util/updateWithSpineIndex.js" />
     <entry file="file://$PROJECT_DIR$/util/getVersions.js" />
     <entry file="file://$PROJECT_DIR$/util/JSONParser.js" />
-    <entry file="file://$PROJECT_DIR$/util/connection.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/queries/search.xql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -787,13 +802,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="52" column="18" selection-start-line="52" selection-start-column="18" selection-end-line="52" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -970,13 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="63" column="96" selection-start-line="63" selection-start-column="96" selection-end-line="63" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/spineIndex.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -984,9 +985,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1071">
+          <caret line="63" column="96" selection-start-line="63" selection-start-column="96" selection-end-line="63" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/comparison.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="578">
           <caret line="34" column="56" selection-start-line="34" selection-start-column="56" selection-end-line="34" selection-end-column="56" />
         </state>
       </provider>
@@ -994,10 +1002,30 @@
     <entry file="file://$PROJECT_DIR$/EndpointList.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="480">
-            <caret line="209" column="3" selection-start-line="209" selection-start-column="3" selection-end-line="209" selection-end-column="3" />
+          <first_editor relative-caret-position="563">
+            <caret line="195" column="8" selection-start-line="195" selection-start-column="8" selection-end-line="195" selection-end-column="8" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/transform2HTMLDiv.xsl">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/queries/resource.xq">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/connection.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/resource.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
