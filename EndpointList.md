@@ -99,6 +99,7 @@ Content: XML file
         <source>Alvi (Moniza) Archive, Newcastle University Special Collections, GB 186 MA/5.</source>
         <type>Manuscript</type>
 		<filename>B.xml</filename>
+		<changes>0</changes>
 	</version>
 	<version>
 		<poemID><idno xmlns="http://www.tei-c.org/ns/1.0" type="PTpoem">Alvi1</idno></poemID>
@@ -109,6 +110,7 @@ Content: XML file
         </source>
         <type>Manuscript</type>
 		<filename>M1.xml</filename>
+		<changes>s14</changes>
 	</version>
 </exist:result>
 ```
