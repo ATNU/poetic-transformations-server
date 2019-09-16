@@ -11,11 +11,14 @@ const fs = require('fs');
  */
 router.get('/', function(req,res) {
     const filename1 = req.query.one;
+    console.log(filename1);
     const filename2 = req.query.two;
+    let text1;
+    let text2;
 
     try {
-        const text1 = xmlConversion(fs.readFileSync('./data/' + filename1));
-        const text2 = xmlConversion(fs.readFileSync('./data/' + filename2));
+        text1 = xmlConversion(fs.readFileSync('./data/' + filename1));
+        text2 = xmlConversion(fs.readFileSync('./data/' + filename2));
     }
 catch (error) {
         res.status(500);

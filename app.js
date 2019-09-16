@@ -11,6 +11,7 @@ const indexRouter = require('./routes');
 const searchRouter = require('./routes/search');
 const spineIndexRouter = require('./routes/spineIndex');
 const comparisonRouter = require('./routes/comparison');
+const lineRouter = require('./routes/line');
 
 var app = express();
 app.use(logger('dev'));
@@ -25,5 +26,6 @@ app.use('/index', indexRouter);
 app.use('/search', searchRouter);
 app.use('/spine', spineIndexRouter);
 app.use('/comp', comparisonRouter);
+app.use('/line', lineRouter);
 
 module.exports = app;
