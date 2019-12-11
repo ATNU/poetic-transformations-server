@@ -4,12 +4,12 @@
  */
 
 
-const IP = process.env.IP;
+const DB_CONNECTION_STRING = process.env.DB_CONNECTION_STRING;
 
 module.exports = {
 
 
-        URINoDB: 'http://' + IP + ':8080/exist/rest',
-        URI: 'http://' + IP + ':8080/exist/rest/db/transformations/',
-        URIQuery: 'http://' + IP + ':8080/exist/rest/db/transformations?_query=',
+        URINoDB: DB_CONNECTION_STRING,
+        URI: DB_CONNECTION_STRING + '/db/transformations/',
+        URIQuery: DB_CONNECTION_STRING + '/db/transformations?_query=',
 };
