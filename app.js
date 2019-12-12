@@ -21,11 +21,11 @@ app.use(cookieParser());
 app.use(bodyParser.json());
 
 //Set routes
-app.use('/doc', resourceRouter);
-app.use('/index', indexRouter);
-app.use('/search', searchRouter);
-app.use('/spine', spineIndexRouter);
-app.use('/comp', comparisonRouter);
-app.use('/line', lineRouter);
+app.use('/api/doc', resourceRouter);
+app.use('/api/index', indexRouter);
+app.use('/api/search', searchRouter);
+app.use('/api/spine', spineIndexRouter);
+app.use('/api/comp', comparisonRouter);
+app.use('/api/line', lineRouter);
 
 module.exports = app;
