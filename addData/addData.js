@@ -49,7 +49,7 @@ async function addData() {
 
                 //config files
                 const configUrl = process.env.DB_CONNECTION_STRING + '/system/config/db/transformations/'
-                await attemptToPutFile('config/collection.xconf', configUrl).then(async () => {
+                await attemptToPutFile('collection.xconf', configUrl).then(async () => {
 console.log('done');
                     // filter for xml extension
                     const xmlFilenames = files.filter(function(file) {

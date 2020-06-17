@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addData/addData.js" beforeDir="false" afterPath="$PROJECT_DIR$/addData/addData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/config/transform2HTMLDiv.xsl" beforeDir="false" afterPath="$PROJECT_DIR$/data/transform2HTMLDiv.xsl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config/collection.xconf" beforeDir="false" afterPath="$PROJECT_DIR$/data/collection.xconf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/resource.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/resource.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/search.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +221,7 @@
       <workItem from="1576071016716" duration="619000" />
       <workItem from="1589287010671" duration="745000" />
       <workItem from="1590503692238" duration="3027000" />
-      <workItem from="1592380677738" duration="9337000" />
+      <workItem from="1592380677738" duration="15006000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -520,7 +524,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592390861595</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="all data and config entered">
+      <created>1592391704310</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1592391704310</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TodoView">
@@ -563,7 +574,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="added spine index to sentenceComparison.js" />
     <MESSAGE value="generate CSV" />
     <MESSAGE value="generate spine index first v works" />
     <MESSAGE value="Merge branch 'cosine-similarity'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json" />
@@ -588,37 +598,42 @@
     <MESSAGE value="version index cards to table" />
     <MESSAGE value="checks db is up" />
     <MESSAGE value="read data dir successfully" />
-    <option name="LAST_COMMIT_MESSAGE" value="read data dir successfully" />
+    <MESSAGE value="all data and config entered" />
+    <option name="LAST_COMMIT_MESSAGE" value="all data and config entered" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="-992" key="CommitChangelistDialog2" timestamp="1592390861111">
+    <state x="421" y="-992" key="CommitChangelistDialog2" timestamp="1592391703821">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
-    <state x="421" y="-992" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592390861111" />
+    <state x="421" y="-992" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592391703821" />
     <state x="747" y="-806" key="FileChooserDialogImpl" timestamp="1589288489030">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
     <state x="747" y="-806" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1589288489030" />
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1592391595632">
+    <state width="1877" height="398" key="GridCell.Tab.0.bottom" timestamp="1592401904935">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592391595632" />
-    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1592391595632">
+    <state width="1877" height="398" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592401904935" />
+    <state width="1877" height="398" key="GridCell.Tab.0.center" timestamp="1592401904935">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592391595632" />
-    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1592391595632">
+    <state width="1877" height="398" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592401904935" />
+    <state width="1877" height="398" key="GridCell.Tab.0.left" timestamp="1592401904935">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592391595632" />
-    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1592391595632">
+    <state width="1877" height="398" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592401904935" />
+    <state width="1877" height="398" key="GridCell.Tab.0.right" timestamp="1592401904935">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592391595632" />
+    <state width="1877" height="398" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592401904935" />
     <state x="349" y="-940" key="new project wizard" timestamp="1592382821781">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
     <state x="349" y="-940" key="new project wizard/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592382821781" />
+    <state x="623" y="-299" key="run.anything.popup" timestamp="1592392214732">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="623" y="-299" key="run.anything.popup/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592392214732" />
   </component>
   <component name="masterDetails">
     <states>
