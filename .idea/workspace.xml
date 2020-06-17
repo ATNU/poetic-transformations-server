@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/addData/addData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/config/collection.xconf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/config/transform2HTMLDiv.xsl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addData/addData.js" beforeDir="false" afterPath="$PROJECT_DIR$/addData/addData.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,6 +77,7 @@
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
@@ -238,7 +233,7 @@
       <workItem from="1576071016716" duration="619000" />
       <workItem from="1589287010671" duration="745000" />
       <workItem from="1590503692238" duration="3027000" />
-      <workItem from="1592380677738" duration="7184000" />
+      <workItem from="1592380677738" duration="8487000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -527,7 +522,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568645634970</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="checks db is up">
+      <created>1592388750693</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1592388750693</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -570,7 +572,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="comparison on 2 lists of sentence objects works and is tested (apart from maintaining uniqueness of spine indices)" />
     <MESSAGE value="XML conversion" />
     <MESSAGE value="added spine index to sentenceComparison.js" />
     <MESSAGE value="generate CSV" />
@@ -595,29 +596,34 @@
     <MESSAGE value="search puts each text in &lt;text&gt; tag" />
     <MESSAGE value="correct versionId in version index query" />
     <MESSAGE value="version index cards to table" />
-    <option name="LAST_COMMIT_MESSAGE" value="version index cards to table" />
+    <MESSAGE value="checks db is up" />
+    <option name="LAST_COMMIT_MESSAGE" value="checks db is up" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="421" y="-992" key="CommitChangelistDialog2" timestamp="1592388750138">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="421" y="-992" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592388750138" />
     <state x="747" y="-806" key="FileChooserDialogImpl" timestamp="1589288489030">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
     <state x="747" y="-806" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1589288489030" />
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1592388700239">
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom" timestamp="1592390482589">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592388700239" />
-    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1592388700239">
+    <state width="1877" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592390482589" />
+    <state width="1877" height="277" key="GridCell.Tab.0.center" timestamp="1592390482589">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592388700239" />
-    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1592388700239">
+    <state width="1877" height="277" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592390482589" />
+    <state width="1877" height="277" key="GridCell.Tab.0.left" timestamp="1592390482589">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592388700239" />
-    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1592388700239">
+    <state width="1877" height="277" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592390482589" />
+    <state width="1877" height="277" key="GridCell.Tab.0.right" timestamp="1592390482589">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
-    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592388700239" />
+    <state width="1877" height="277" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592390482589" />
     <state x="349" y="-940" key="new project wizard" timestamp="1592382821781">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>

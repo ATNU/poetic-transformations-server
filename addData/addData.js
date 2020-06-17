@@ -3,6 +3,8 @@
 const fetch = require('node-fetch');
 const URI = require('../util/connection.js').URIQuery;
 const dbConnection = require('../util/connection.js');
+const path = require('path');
+const fs = require('fs');
 
 
 async function addData() {
@@ -24,18 +26,19 @@ async function addData() {
 
         //
         // // todo before deployment remove confirmatory console logs?
-        //
-        // let readDir = false;
-        // try {
-        //     const resourcesDir = path.join(__dirname, '../resources');
-        //     console.log('look for resources directory: ' + __dirname + '../resources');
-        //     fs.readFileSync(path.join(__dirname, '../resources/obj769.xml'));
-        //     readDir = true;
-        // } catch(error) {
-        //     console.log('error in try catch block reading file ' + error);
-        //     throw new Error('Cannot read data file');
-        // }
-        //
+
+        let readDir = false;
+        try {
+            const resourcesDir = path.join(__dirname, '../data');
+            console.log('look for resources directory: ' + __dirname + '../data');
+            fs.readFileSync(path.join(__dirname, '../data/B.xml'));
+            readDir = true;
+            console.log(readDir);
+        } catch(error) {
+            console.log('error in try catch block reading file ' + error);
+            throw new Error('Cannot read data file');
+        }
+
         // if (readDir) {
         //     const resourcesDir = path.join(__dirname, '../resources');
         //     // if have successfully read the directory, loop through each xml file
