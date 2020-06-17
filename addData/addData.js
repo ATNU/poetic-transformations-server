@@ -39,63 +39,45 @@ async function addData() {
             throw new Error('Cannot read data file');
         }
 
-        // if (readDir) {
-        //     const resourcesDir = path.join(__dirname, '../resources');
-        //     // if have successfully read the directory, loop through each xml file
-        //     fs.readdir(resourcesDir, async (err, files) => {
-        //         if (err) {
-        //             console.log('error with readdir' + err);
-        //         }
-        //
-        //         //config files
-        //         const configUrl = this.dbConnection.getURINoDB() + '/system/config/db/warden/'
-        //         await this.attemptToPutFile('config/collection.xconf', configUrl).then(async () => {
-        //
-        //             // filter for xml extension
-        //             const xmlFilenames = files.filter(function(file) {
-        //                 return path.extname(file).toLowerCase() === '.xml';
-        //             });
-        //
-        //             for (const xml of xmlFilenames) {
-        //                 await this.attemptToPutFile(xml, this.dbConnection.getURI());
-        //             }
-        //
-        //             // filter for xsl extension
-        //             const xslFilenames = files.filter(function(file) {
-        //                 return path.extname(file).toLowerCase() === '.xsl';
-        //             });
-        //
-        //             for (const xsl of xslFilenames) {
-        //                 await this.attemptToPutFile(xsl, this.dbConnection.getURI());
-        //             }
-        //
-        //
-        //
-        //             // collection files
-        //             fs.readdir(resourcesDir + '/collections', async (err, collectionFiles) => {
-        //                 if (err) {
-        //                     console.log('error with collections readdir ' + err);
-        //                 }
-        //
-        //                 const xmlCollectionFilenames = collectionFiles.filter(function(collFile) {
-        //                     return path.extname(collFile).toLowerCase() === '.xml';
-        //                 });
-        //
-        //
-        //                 const uriForCollections = this.dbConnection.getURINoDB() + '/db/';
-        //                 for (const coll of xmlCollectionFilenames) {
-        //                     await this.attemptToPutFile('collections/' + coll, uriForCollections);
-        //                 }
-        //
-        //             })
-        //
-        //         })
-        //
-        //
-        //     });
-        // }
+        if (readDir) {
+            const resourcesDir = path.join(__dirname, '../data');
+            // if have successfully read the directory, loop through each xml file
+            fs.readdir(resourcesDir, async (err, files) => {
+                if (err) {
+                    console.log('error with readdir' + err);
+                }
+
+                //config files
+                const configUrl = process.env.DB_CONNECTION_STRING + '/system/config/db/transformations/'
+                await attemptToPutFile('config/collection.xconf', configUrl).then(async () => {
+console.log('done');
+                    // filter for xml extension
+                    const xmlFilenames = files.filter(function(file) {
+                        return path.extname(file).toLowerCase() === '.xml';
+                    });
+
+                    for (const xml of xmlFilenames) {
+                        await attemptToPutFile(xml, process.env.DB_CONNECTION_STRING + '/db/transformations/');
+                    }
+
+                    // filter for xsl extension
+                    const xslFilenames = files.filter(function(file) {
+                        return path.extname(file).toLowerCase() === '.xsl';
+                    });
+
+                    for (const xsl of xslFilenames) {
+                        await attemptToPutFile(xsl, process.env.DB_CONNECTION_STRING + '/db/transformations/');
+                    }
+
+
+                })
+
+
+            });
+        }
     }
 }
+
 
 module.exports.addData = addData;
 
@@ -157,54 +139,56 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-//
-// async attemptToPutFile(filename,baseUrl) {
-//
-//     const attemptsLeft = this.dbConnection.getConnectionAttempts();
-//     const attemptTimeout = this.dbConnection.getConnectionAttemptTimeout();
-//
-//     // ----- setup query and url
-//     const URLWithFile = baseUrl + filename;
-//     console.log('going to try to put request using this url: ' + URLWithFile);
-//
-//     const fetchOptions = {
-//         headers: {
-//             "Content-Type": "application/xml",
-//             "Accept": "*/*"
-//         },
-//         method: "PUT",
-//         body: fs.readFileSync(path.join(__dirname, '../resources/' + filename))
-//     };
-//
-//
-//     const fetchRetry = async (url, options, attempt) => {
-//         try {
-//             const response = await fetch(url, options);
-//
-//             //expect 201 confirmation
-//             if (response.status === 201) {
-//                 console.log('successfully entered file ' + filename);
-//             }
-//
-//             if(response.status != 201) {
-//                 console.log(fetchOptions.body);
-//                 // something has gone wrong as db is up but not responding as expected
-//                 console.error("ERROR: Unexpected response entering file " + filename + ' with response: ' + response);
-//                 console.log(response);
-//             }
-//             return response;
-//
-//         } catch (error) {
-//             console.log('attempt to connect has failed entering file ' + filename + ', retrying in 10 seconds, ' + (attempt -1) + ' attempts left')
-//             if (attempt <= 1) {
-//                 console.error('Error: Final attempt to connect to database has failed entering file ' + filename);
-//             }
-//             await this.sleep(attemptTimeout);
-//             return fetchRetry(url, options, attempt - 1);
-//         }
-//     };
-//     return await fetchRetry(URLWithFile, fetchOptions, attemptsLeft);
-// }
+
+async function attemptToPutFile(filename,baseUrl) {
+
+    const attemptsLeft = process.env.DB_CONNECTION_ATTEMPTS;
+    console.log('Attempt to connect ' + attemptsLeft + ' times to the db');
+    const attemptTimeout = process.env.DB_CONNECTION_TIMEOUT;
+    console.log('Leave ' + attemptTimeout + ' ms between attempts');
+
+    // ----- setup query and url
+    const URLWithFile = baseUrl + filename;
+    console.log('going to try to put request using this url: ' + URLWithFile);
+
+    const fetchOptions = {
+        headers: {
+            "Content-Type": "application/xml",
+            "Accept": "*/*"
+        },
+        method: "PUT",
+        body: fs.readFileSync(path.join(__dirname, '../data/' + filename))
+    };
+
+
+    const fetchRetry = async (url, options, attempt) => {
+        try {
+            const response = await fetch(url, options);
+
+            //expect 201 confirmation
+            if (response.status === 201) {
+                console.log('successfully entered file ' + filename);
+            }
+
+            if(response.status != 201) {
+                console.log(fetchOptions.body);
+                // something has gone wrong as db is up but not responding as expected
+                console.error("ERROR: Unexpected response entering file " + filename + ' with response: ' + response);
+                console.log(response);
+            }
+            return response;
+
+        } catch (error) {
+            console.log('attempt to connect has failed entering file ' + filename + ', retrying in 10 seconds, ' + (attempt -1) + ' attempts left')
+            if (attempt <= 1) {
+                console.error('Error: Final attempt to connect to database has failed entering file ' + filename);
+            }
+            await sleep(attemptTimeout);
+            return fetchRetry(url, options, attempt - 1);
+        }
+    };
+    return await fetchRetry(URLWithFile, fetchOptions, attemptsLeft);
+}
 
 
 
