@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +215,7 @@
       <workItem from="1576071016716" duration="619000" />
       <workItem from="1589287010671" duration="745000" />
       <workItem from="1590503692238" duration="3027000" />
-      <workItem from="1592380677738" duration="18612000" />
+      <workItem from="1592380677738" duration="19873000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -541,7 +539,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592405250007</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="sentry env variable">
+      <created>1592465332558</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1592465332558</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TodoView">
@@ -584,7 +589,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="Merge branch 'cosine-similarity'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json" />
     <MESSAGE value="comparison failing due to counter" />
     <MESSAGE value="documented spine index files" />
     <MESSAGE value=" version index removes path from filename" />
@@ -609,32 +613,38 @@
     <MESSAGE value="all data and config entered" />
     <MESSAGE value="config enters and readme details manual steps to enable searching" />
     <MESSAGE value="sentry errors on 500 and when can't put data in db" />
-    <option name="LAST_COMMIT_MESSAGE" value="sentry errors on 500 and when can't put data in db" />
+    <MESSAGE value="sentry env variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="sentry env variable" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="-992" key="CommitChangelistDialog2" timestamp="1592405249535">
+    <state x="421" y="-992" key="CommitChangelistDialog2" timestamp="1592465332083">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
+    <state x="421" y="-992" key="CommitChangelistDialog2/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592465332083" />
     <state x="421" y="-992" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405249535" />
     <state x="747" y="-806" key="FileChooserDialogImpl" timestamp="1589288489030">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
     <state x="747" y="-806" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1589288489030" />
-    <state width="1877" height="398" key="GridCell.Tab.0.bottom" timestamp="1592405177846">
+    <state width="1877" height="398" key="GridCell.Tab.0.bottom" timestamp="1592466653708">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
+    <state width="1877" height="398" key="GridCell.Tab.0.bottom/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592466653708" />
     <state width="1877" height="398" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405177846" />
-    <state width="1877" height="398" key="GridCell.Tab.0.center" timestamp="1592405177846">
+    <state width="1877" height="398" key="GridCell.Tab.0.center" timestamp="1592466653708">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
+    <state width="1877" height="398" key="GridCell.Tab.0.center/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592466653708" />
     <state width="1877" height="398" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405177846" />
-    <state width="1877" height="398" key="GridCell.Tab.0.left" timestamp="1592405177846">
+    <state width="1877" height="398" key="GridCell.Tab.0.left" timestamp="1592466653708">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
+    <state width="1877" height="398" key="GridCell.Tab.0.left/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592466653708" />
     <state width="1877" height="398" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405177846" />
-    <state width="1877" height="398" key="GridCell.Tab.0.right" timestamp="1592405177846">
+    <state width="1877" height="398" key="GridCell.Tab.0.right" timestamp="1592466653708">
       <screen x="7" y="-1080" width="1920" height="1040" />
     </state>
+    <state width="1877" height="398" key="GridCell.Tab.0.right/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592466653708" />
     <state width="1877" height="398" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405177846" />
     <state x="349" y="-940" key="new project wizard" timestamp="1592382821781">
       <screen x="7" y="-1080" width="1920" height="1040" />
