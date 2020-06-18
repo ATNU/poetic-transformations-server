@@ -5,6 +5,7 @@ const fs = require('fs');
 const indexQuery = fs.readFileSync('./queries/indexWithVersions.xq', 'UTF-8');
 const URI = require('../util/connection.js').URIQuery;
 const URINoDB = require('../util/connection.js').URINoDB;
+var parseString = require('xml2js').parseString;
 
 
 /**
@@ -43,13 +44,19 @@ router.get('/', function(req, res) {
 
             //can find document
             else {
-                let json;
-                /*//convert data to JSON
-                     parser.parseString(data, function (err, result) {
-                    json=result;
-                }); */
+
+                // check if no data has been found which indicates problem as database should not be empty.
+
+                parseString(data, (err, result) => {
+                    const count = result['exist:result']['$']['exist:count'];
+                    if (count === '0') {
+                        console.error('database is empty');
+                    }
+
+                })
+
+
                 res.status(200);
-                console.log(data);
                 res.send(data);
             }
         });
@@ -102,6 +109,7 @@ router.get('/:title', function(req, res) {
                 parser.parseString(data, function (err, result) {
                     json=result;
                 });*/
+                console.log(data);
                 res.status(200);
                 res.send(data);
             }
