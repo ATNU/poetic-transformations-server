@@ -19,7 +19,7 @@ const lineRouter = require('./routes/line');
 var app = express();
 
 Sentry.init({
-    dsn: 'https://8f3811e97e9b4dc193ce7674b0ab5489@o395609.ingest.sentry.io/5280143',
+    dsn: process.env.SENTRY_DSN,
     integrations: [
         new CaptureConsole({levels: ['error']})
     ],

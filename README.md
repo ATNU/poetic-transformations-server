@@ -41,6 +41,7 @@ DB_CONNECTION_STRING = 'http://admin:@172.17.0.2:8080/exist/rest'
 
 DB_CONNECTION_ATTEMPTS = 10
 DB_CONNECTION_TIMEOUT = 10000
+SENTRY_DSN
 
 ### Adding data to exist-db
 On startup the server tries to put data files into the database and errors if the database is not up or does not return 
