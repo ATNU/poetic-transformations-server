@@ -16,7 +16,7 @@ router.get(
 
         const query = 'xquery version "3.1"; declare default element namespace "http://www.tei-c.org/ns/1.0"; let $result := transform:transform(doc("xmldb:exist://db/transformations/' + name + '"), doc("xmldb:exist://db/transformations/transform2HTMLDiv.xsl"), ()) return $result';
 
-        const URL = URI + query;
+        const URL = process.env.DB_CONNECTION_STRING + '/db/transformations?_query=' + query;
         console.log(URL);
 
         //----- GET call and send response

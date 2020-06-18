@@ -5,6 +5,7 @@ const fs = require('fs');
 const indexQuery = fs.readFileSync('./queries/indexWithVersions.xq', 'UTF-8');
 const URI = require('../util/connection.js').URIQuery;
 const URINoDB = require('../util/connection.js').URINoDB;
+var parseString = require('xml2js').parseString;
 
 
 /**
@@ -19,7 +20,7 @@ router.get('/', function(req, res) {
     //URL encode query
     const encodedQuery = encodeURI(indexQuery);
 
-    const URL = URI + encodedQuery;
+    const URL = process.env.DB_CONNECTION_STRING + '/db/transformations?_query=' + encodedQuery;
 
     console.log(URL);
 
@@ -43,13 +44,19 @@ router.get('/', function(req, res) {
 
             //can find document
             else {
-                let json;
-                /*//convert data to JSON
-                     parser.parseString(data, function (err, result) {
-                    json=result;
-                }); */
+
+                // check if no data has been found which indicates problem as database should not be empty.
+
+                parseString(data, (err, result) => {
+                    const count = result['exist:result']['$']['exist:count'];
+                    if (count === '0') {
+                        console.error('database is empty');
+                    }
+
+                })
+
+
                 res.status(200);
-                console.log(data);
                 res.send(data);
             }
         });
@@ -75,7 +82,7 @@ router.get('/:title', function(req, res) {
     const query = 'xquery version "3.1"; declare default element namespace "http://www.tei-c.org/ns/1.0"; let $versions :=collection(/db/transformations)/TEI/teiHeader/fileDesc/publicationStmt[idno ="' + title +'"] for $version in $versions let $path := base-uri($version) let $document := doc($path) let $name := replace($path, "/db/transformations/", "") let $changes :=  count($document/TEI/text/body/div/lg/l/descendant::*[not(self::hi or self::note)]) return (<version><poemID>{$version//idno[@type="PTpoem"]}</poemID><versionID>{$version//idno[@type="PTid"]}</versionID><versionTitle>{$document//title/text()}</versionTitle><author>{$document//author/text()}</author> <authority>{$document//authority/text()}</authority><source>{$document//sourceDesc/p/text()}</source><type>{$document//keywords/term/text()}</type><filename>{$name}</filename><changes>{$changes}</changes></version>)';
     //full address to call
     const encodedQuery = encodeURI(query);
-    const URL = URI + encodedQuery;
+    const URL = process.env.DB_CONNECTION_STRING + '/db/transformations?_query=' + encodedQuery;
     console.log(URL);
 
     http.get(URL, (resp) => {
@@ -102,6 +109,7 @@ router.get('/:title', function(req, res) {
                 parser.parseString(data, function (err, result) {
                     json=result;
                 });*/
+                console.log(data);
                 res.status(200);
                 res.send(data);
             }

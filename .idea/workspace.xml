@@ -3,19 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/util/connection.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/connection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -34,93 +32,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="62" lean-forward="true" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/search.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/connection.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/cosine-similarity.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util/compareVersions.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2448">
-              <caret line="144" selection-start-line="144" selection-end-line="144" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dockerfile">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/fullSpineIndex.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="3757">
-              <caret line="221" column="5" selection-start-line="221" selection-start-column="5" selection-end-line="221" selection-end-column="5" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
-          <provider selected="true" editor-type-id="csv-text-editor">
-            <state relative-caret-position="2176">
-              <caret line="128" column="20" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="20" />
-            </state>
-          </provider>
-          <provider editor-type-id="csv-table-editor">
-            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -129,87 +40,13 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>m2.13</find>
-      <find>13</find>
-      <find>1,M1</find>
-      <find>1,M</find>
-      <find>M1.21</find>
-      <find>21</find>
-      <find>console</find>
-      <find>xml2js</find>
-      <find>b.31</find>
-      <find>spi</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/sampleXml/M1Lines.js" />
-        <option value="$PROJECT_DIR$/util/JSONSentences.js" />
-        <option value="$PROJECT_DIR$/test/JSONSentencesTest.js" />
-        <option value="$PROJECT_DIR$/test/XMLParserTest.js" />
-        <option value="$PROJECT_DIR$/test/sentencesComparisonTest.js" />
-        <option value="$PROJECT_DIR$/util/XMLParser.js" />
-        <option value="$PROJECT_DIR$/util/updateWithSpineIndex.js" />
-        <option value="$PROJECT_DIR$/util/JSONParser.js" />
-        <option value="$PROJECT_DIR$/JSONResultSample.xml" />
-        <option value="$PROJECT_DIR$/sampleXml/JSONForConversion" />
-        <option value="$PROJECT_DIR$/test/JSONParserTest.js" />
-        <option value="$PROJECT_DIR$/test/updateWithSpineIndexTest.js" />
-        <option value="$PROJECT_DIR$/test/saveToCSVTest.js" />
-        <option value="$PROJECT_DIR$/routes/getIndex.js" />
-        <option value="$PROJECT_DIR$/util/getVersions.js" />
-        <option value="$PROJECT_DIR$/test/compareFilesTest.js" />
-        <option value="$PROJECT_DIR$/util/compareFiles.js" />
-        <option value="$PROJECT_DIR$/util/sentencesComparison.js" />
-        <option value="$PROJECT_DIR$/util/saveToCSV.js" />
-        <option value="$PROJECT_DIR$/test/cosine-similarityTest.js" />
-        <option value="$PROJECT_DIR$/data/spineIndex.csv" />
-        <option value="$PROJECT_DIR$/util/dedupeAndCombineSI.js" />
-        <option value="$PROJECT_DIR$/test/createSpineIndexForPoemTest.js" />
-        <option value="$PROJECT_DIR$/data/fullSpineIndex.csv" />
-        <option value="$PROJECT_DIR$/util/createSpineIndexForPoem.js" />
-        <option value="$PROJECT_DIR$/util/CSVToJSON.js" />
-        <option value="$PROJECT_DIR$/util/saveFullListToCSV.js" />
-        <option value="$PROJECT_DIR$/util/saveGroupedListToCSV.js" />
-        <option value="$PROJECT_DIR$/test/CSVToJSONTest.js" />
-        <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/util/linesWithSharedSpine.js" />
-        <option value="$PROJECT_DIR$/test/linesWithSharedSpineTest.js" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/test/XMLConversionTest.js" />
-        <option value="$PROJECT_DIR$/util/compareVersions.js" />
-        <option value="$PROJECT_DIR$/util/cosine-similarity.js" />
-        <option value="$PROJECT_DIR$/test/compareVersionsTest.js" />
-        <option value="$PROJECT_DIR$/routes/spineIndex.js" />
-        <option value="$PROJECT_DIR$/util/XMLConversion.js" />
-        <option value="$PROJECT_DIR$/queries/resource.xq" />
-        <option value="$PROJECT_DIR$/routes/resource.js" />
-        <option value="$PROJECT_DIR$/queries/getVersionIndex.xq" />
-        <option value="$PROJECT_DIR$/EndpointList.md" />
-        <option value="$PROJECT_DIR$/queries/search.xql" />
-        <option value="$PROJECT_DIR$/routes/search.js" />
-        <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/app.js" />
-        <option value="$PROJECT_DIR$/routes/line.js" />
-        <option value="$PROJECT_DIR$/routes/comparison.js" />
-        <option value="$PROJECT_DIR$/util/connection.js" />
-        <option value="$PROJECT_DIR$/.env" />
-      </list>
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -217,55 +54,26 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="2576" />
-    <option name="height" value="1416" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="poetic-transformations-server" type="b2602c69:ProjectViewProjectNode" />
-              <item name="poetic-transformations-server" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1bo8Igm8WpUbNvSR8qMU54ihzJ4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="javascript.nodejs.core.library.configured.version" value="10.15.3" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -277,32 +85,20 @@
     <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\data" />
-      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\sampleXml" />
-      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\sample xml" />
-      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries\queries with comments" />
-      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\nkc124\Documents\GitHub\poetic-transformations\poetic-transformations-server\data" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries\archived" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries\queries with comments" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\util" />
-      <recent name="C:\Users\nkc124\GitHub\transformations-server-express" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nkc124\Documents\GitHub\poetic-transformations\poetic-transformations-server\data" />
+      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\data" />
+      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\sampleXml" />
+      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\sample xml" />
+      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries\queries with comments" />
+    </key>
   </component>
   <component name="RunManager" selected="Mocha.sentences comparison with some previously assigned indexes.should label file 2 sentence 3 correctly (same line as first sentence in file 1">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -420,6 +216,9 @@
       <workItem from="1574155948461" duration="14000" />
       <workItem from="1574251641836" duration="655000" />
       <workItem from="1576071016716" duration="619000" />
+      <workItem from="1589287010671" duration="745000" />
+      <workItem from="1590503692238" duration="3027000" />
+      <workItem from="1592380677738" duration="20813000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -708,43 +507,57 @@
       <option name="project" value="LOCAL" />
       <updated>1568645634970</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="checks db is up">
+      <created>1592388750693</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1592388750693</updated>
+    </task>
+    <task id="LOCAL-00043" summary="read data dir successfully">
+      <created>1592390861595</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1592390861595</updated>
+    </task>
+    <task id="LOCAL-00044" summary="all data and config entered">
+      <created>1592391704310</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1592391704310</updated>
+    </task>
+    <task id="LOCAL-00045" summary="config enters and readme details manual steps to enable searching">
+      <created>1592402799660</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1592402799660</updated>
+    </task>
+    <task id="LOCAL-00046" summary="sentry errors on 500 and when can't put data in db">
+      <created>1592405250007</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1592405250007</updated>
+    </task>
+    <task id="LOCAL-00047" summary="sentry env variable">
+      <created>1592465332558</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1592465332558</updated>
+    </task>
+    <task id="LOCAL-00048" summary="sentry env variable">
+      <created>1592466790669</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1592466790669</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="compare_whole_versions_should_ - 2019.09.03 at 08h 33m 48s.xml">
-      <configuration name="compare whole versions.should " configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="compare_whole_versions_should_work_for_different_texts - 2019.09.03 at 08h 34m 08s.xml">
-      <configuration name="compare whole versions.should work for different texts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="compare_whole_versions_should_work_for_different_texts - 2019.09.03 at 08h 35m 11s.xml">
-      <configuration name="compare whole versions.should work for different texts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="compare_whole_versions_should_work_for_different_texts - 2019.09.03 at 08h 42m 37s.xml">
-      <configuration name="compare whole versions.should work for different texts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="compare_whole_versions_should_work_for_sampple_texts - 2019.09.03 at 08h 44m 36s.xml">
-      <configuration name="compare whole versions.should work for sampple texts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="compare_whole_versions_should_work_for_sampple_texts - 2019.09.03 at 09h 38m 05s.xml">
-      <configuration name="compare whole versions.should work for sampple texts" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="sentences_comparison_with_no_previously_assigned_indexes - 2019.09.13 at 09h 16m 48s.xml">
-      <configuration name="sentences comparison with no previously assigned indexes" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="compare_whole_versions - 2019.09.13 at 09h 19m 15s.xml">
-      <configuration name="compare whole versions" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="sentences_comparison_with_some_previously_assigned_indexes_should_cope_with_real_data - 2019.09.13 at 09h 19m 25s.xml">
-      <configuration name="sentences comparison with some previously assigned indexes.should cope with real data" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-    <history-entry file="sentences_comparison_with_some_previously_assigned_indexes_should_label_file_2_sentence_3_correctly_(same_line_as_first_sentence_in_file_1 - 2019.09.13 at 09h 19m 30s.xml">
-      <configuration name="sentences comparison with some previously assigned indexes.should label file 2 sentence 3 correctly (same line as first sentence in file 1" configurationId="mocha-javascript-test-runner" />
-    </history-entry>
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="262434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -755,65 +568,15 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7647059" visible="true" weight="0.21581876" />
-      <window_info id="Structure" order="1" sideWeight="0.07652534" side_tool="true" weight="0.24562798" />
-      <window_info id="npm" order="2" sideWeight="0.23529412" side_tool="true" visible="true" weight="0.21581876" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Designer" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32969603" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.6002167" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990647" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.032502707" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" sideWeight="0.4989339" visible="true" weight="0.31098986" />
-      <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32424006" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5010661" side_tool="true" weight="0.35536295" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32969603" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Capture Analysis" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Database" order="8" side_tool="true" weight="0.32995737" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -832,15 +595,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="comparison on 2 lists of sentence objects works and is tested (apart from maintaining uniqueness of spine indices)" />
-    <MESSAGE value="XML conversion" />
-    <MESSAGE value="added spine index to sentenceComparison.js" />
-    <MESSAGE value="generate CSV" />
-    <MESSAGE value="generate spine index first v works" />
-    <MESSAGE value="Merge branch 'cosine-similarity'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;package-lock.json&#10;#&#9;package.json" />
     <MESSAGE value="comparison failing due to counter" />
     <MESSAGE value="documented spine index files" />
     <MESSAGE value=" version index removes path from filename" />
@@ -860,314 +618,52 @@
     <MESSAGE value="search puts each text in &lt;text&gt; tag" />
     <MESSAGE value="correct versionId in version index query" />
     <MESSAGE value="version index cards to table" />
-    <option name="LAST_COMMIT_MESSAGE" value="version index cards to table" />
+    <MESSAGE value="checks db is up" />
+    <MESSAGE value="read data dir successfully" />
+    <MESSAGE value="all data and config entered" />
+    <MESSAGE value="config enters and readme details manual steps to enable searching" />
+    <MESSAGE value="sentry errors on 500 and when can't put data in db" />
+    <MESSAGE value="sentry env variable" />
+    <option name="LAST_COMMIT_MESSAGE" value="sentry env variable" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/util/JSONParser.js" />
-    <entry file="file://$PROJECT_DIR$/test/saveToCSVTest.js" />
-    <entry file="file://$PROJECT_DIR$/util/dedupeAndCombineSI.js" />
-    <entry file="file://$PROJECT_DIR$/data/spineIndex.csv" />
-    <entry file="file://$PROJECT_DIR$/node_modules/csvtojson/v2/Converter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/saveFullListToCSV.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/10.15.3/core-modules/internal/modules/cjs/loader.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="581" column="14" selection-start-line="581" selection-start-column="14" selection-end-line="581" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/CSVToJSONTest.js" />
-    <entry file="file://$PROJECT_DIR$/util/CSVToJSON.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/linesWithSharedSpineTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/createSpineIndexForPoemTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/saveGroupedListToCSV.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/M1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/B.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/M2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1357" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/P1.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4383" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/cosine-similarityTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/XMLConversionTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/XMLConversion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" column="96" selection-start-line="63" selection-start-column="96" selection-end-line="63" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/joint-docker-compose.yml" />
-    <entry file="file://$PROJECT_DIR$/transform2HTMLDiv.xsl" />
-    <entry file="file://$PROJECT_DIR$/queries/getVersionIndex.xq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/resource.xq">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/search.xql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/queries/indexWithVersions.xq">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="457" column="12" selection-start-line="457" selection-start-column="12" selection-end-line="457" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/express/lib/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="216" column="6" selection-start-line="216" selection-start-column="6" selection-end-line="216" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/line.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="224" selection-start-line="11" selection-start-column="224" selection-end-line="11" selection-end-column="224" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/spineIndex.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/compareVersionsTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="169" column="46" selection-start-line="169" selection-start-column="46" selection-end-line="169" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/M3.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/P2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="135" column="23" selection-start-line="135" selection-start-column="23" selection-end-line="135" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/createSpineIndexForPoem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="884">
-          <caret line="52" column="20" selection-start-line="52" selection-start-column="20" selection-end-line="52" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/linesWithSharedSpine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/comparison.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" selection-start-line="11" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/resource.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EndpointList.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="585">
-            <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/cosine-similarity.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/compareVersions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/fullSpineIndex.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="3757">
-          <caret line="221" column="5" selection-start-line="221" selection-start-column="5" selection-end-line="221" selection-end-column="5" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/groupedSpineIndex.csv">
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="2176">
-          <caret line="128" column="20" selection-start-line="128" selection-start-column="15" selection-end-line="128" selection-end-column="20" />
-        </state>
-      </provider>
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/www">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-397" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util/connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="62" lean-forward="true" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="421" y="-992" key="CommitChangelistDialog2" timestamp="1592466790261">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="421" y="-992" key="CommitChangelistDialog2/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592466790261" />
+    <state x="421" y="-992" key="CommitChangelistDialog2/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405249535" />
+    <state x="747" y="-806" key="FileChooserDialogImpl" timestamp="1589288489030">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="747" y="-806" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1589288489030" />
+    <state width="1877" height="398" key="GridCell.Tab.0.bottom" timestamp="1592467349743">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="398" key="GridCell.Tab.0.bottom/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592467349743" />
+    <state width="1877" height="398" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405177846" />
+    <state width="1877" height="398" key="GridCell.Tab.0.center" timestamp="1592467349743">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="398" key="GridCell.Tab.0.center/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592467349743" />
+    <state width="1877" height="398" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405177846" />
+    <state width="1877" height="398" key="GridCell.Tab.0.left" timestamp="1592467349743">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="398" key="GridCell.Tab.0.left/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592467349743" />
+    <state width="1877" height="398" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405177846" />
+    <state width="1877" height="398" key="GridCell.Tab.0.right" timestamp="1592467349743">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="398" key="GridCell.Tab.0.right/-1920.-1072.1920.1040/7.-1080.1920.1040/0.0.1920.1040@7.-1080.1920.1040" timestamp="1592467349743" />
+    <state width="1877" height="398" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592405177846" />
+    <state x="349" y="-940" key="new project wizard" timestamp="1592382821781">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="349" y="-940" key="new project wizard/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592382821781" />
+    <state x="623" y="-299" key="run.anything.popup" timestamp="1592392214732">
+      <screen x="7" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="623" y="-299" key="run.anything.popup/0.0.1920.1040/-1920.-1072.1920.1040/7.-1080.1920.1040@7.-1080.1920.1040" timestamp="1592392214732" />
   </component>
   <component name="masterDetails">
     <states>
