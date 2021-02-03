@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/util/Coopers/XMLConversion.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/util/Coopers/compareToA.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/Coopers/XMLConversion.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/Coopers/XMLConversion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/util/Coopers/compareToA.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/Coopers/compareToA.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,7 +222,7 @@
       <workItem from="1611560761872" duration="625000" />
       <workItem from="1611919055121" duration="1364000" />
       <workItem from="1612167206131" duration="3061000" />
-      <workItem from="1612340325418" duration="4435000" />
+      <workItem from="1612340325418" duration="5266000" />
     </task>
     <task id="LOCAL-00001" summary="GET a resource given filename working">
       <created>1564561030633</created>
@@ -560,7 +560,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592466790669</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="add xml field to json line object list">
+      <created>1612345496047</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1612345496047</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView">
@@ -603,7 +610,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="comparison failing due to counter" />
     <MESSAGE value="documented spine index files" />
     <MESSAGE value=" version index removes path from filename" />
     <MESSAGE value="get resource takes filename from client and adds db path" />
@@ -628,13 +634,18 @@
     <MESSAGE value="config enters and readme details manual steps to enable searching" />
     <MESSAGE value="sentry errors on 500 and when can't put data in db" />
     <MESSAGE value="sentry env variable" />
-    <option name="LAST_COMMIT_MESSAGE" value="sentry env variable" />
+    <MESSAGE value="add xml field to json line object list" />
+    <option name="LAST_COMMIT_MESSAGE" value="add xml field to json line object list" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2627" y="313" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1612341174479">
       <screen x="1926" y="-8" width="1920" height="1040" />
     </state>
     <state x="2627" y="313" key="#com.intellij.fileTypes.FileTypeChooser/1920.1072.1920.1040/0.0.1920.1040/1926.-8.1920.1040@1926.-8.1920.1040" timestamp="1612341174479" />
+    <state x="2340" y="99" key="CommitChangelistDialog2" timestamp="1612345495396">
+      <screen x="1926" y="-8" width="1920" height="1040" />
+    </state>
+    <state x="2340" y="99" key="CommitChangelistDialog2/1920.1072.1920.1040/0.0.1920.1040/1926.-8.1920.1040@1926.-8.1920.1040" timestamp="1612345495396" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1611562701625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

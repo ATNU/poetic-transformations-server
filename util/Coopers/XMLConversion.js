@@ -25,7 +25,6 @@ function parseXml(xml) {
 function getLines(json) {
     try {
         // const parsed = JSON.parse(json);
-        // todo cope with lines that contain a tag at the beginning rather than leaving these as undefined
         const lines = json["TEI"]["text"]["body"]["div"]["lg"];
         return lines;
     } catch(err) {
@@ -50,7 +49,13 @@ const idTextMap = (lines) => {
         for (let m = 0; m < block.length; m++) {
             const line = block[m];
             const xmlId = line._attributes["xml:id"];
-            const text = line._text;
+            let text = line._text;
+
+            // if text is undefined, this indicates there's a tag ta the start of the line, so keep
+            // moving through tags until we find _text
+            if (text === undefined) {
+               lookIntoTagsUntilFindText(line)
+            }
 
             // recreate xml for this line to preserve
             const xmlObject = {
@@ -67,6 +72,35 @@ const idTextMap = (lines) => {
 
     return map;
 };
+
+/**
+ * Handle lines that begin with a tag to pull out text as these would otherwise return undefined
+ * @param line
+ */
+function lookIntoTagsUntilFindText(line) {
+    let tags = Object.keys(line);
+
+    // exclude _attributes
+    tags = _.filter(tags, (o) => {
+        return o !== '_attributes';
+    })
+
+    // for each tag, look at _text and capture
+    let text = '';
+
+    tags.forEach((tag) => {
+        let t = line[tag]._text;
+
+        // if this is also undefined, keep unpacking nested layers
+        if (t === undefined) {
+            lookIntoTagsUntilFindText(line.tag)
+        }
+        text= text + t
+    })
+
+    console.log(text)
+}
+
 
 /**
  * Extract only the text from the poem as one long string (no punctuation or undefined sections)
