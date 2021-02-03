@@ -24,8 +24,12 @@ function parseXml(xml) {
  */
 function getLines(json) {
     try {
-        // const parsed = JSON.parse(json);
+
+        // poetic-trans use this:
         const lines = json["TEI"]["text"]["body"]["div"]["lg"];
+
+        // todo change for coopers
+
         return lines;
     } catch(err) {
         console.log(err);
@@ -41,6 +45,8 @@ function getLines(json) {
 const idTextMap = (lines) => {
     const map = [];
 
+    // todo change for coopers
+
     //each text block
     for (let k = 0; k < lines.length ; k++) {
         const block = lines[k]["l"];
@@ -49,13 +55,10 @@ const idTextMap = (lines) => {
         for (let m = 0; m < block.length; m++) {
             const line = block[m];
             const xmlId = line._attributes["xml:id"];
-            let text = line._text;
 
-            // if text is undefined, this indicates there's a tag ta the start of the line, so keep
-            // moving through tags until we find _text
-            if (text === undefined) {
-              text = lookIntoTagsUntilFindText(line)
-            }
+            // to get all text, look for _text and look for text hidden within any other tags
+            let text = getTextIncludingTags(line)
+
 
             // recreate xml for this line to preserve
             const xmlObject = {
@@ -74,31 +77,70 @@ const idTextMap = (lines) => {
 };
 
 /**
- * Handle lines that begin with a tag to pull out text as these would otherwise return undefined
+ * Handle lines that begin with a tag to pull out text as these would otherwise return undefined. Also look beyond
+ * first text to check for any additional text hidden in tags later in the line
  * @param line
  */
-function lookIntoTagsUntilFindText(line) {
-    let tags = Object.keys(line);
+function getTextIncludingTags(line) {
+    let text = line._text;
 
-    // exclude _attributes
+    // if there is a tag at the start of the line, we have undefined here which we don't want so replace with empty
+    // string for now
+    if (text === undefined) {
+        text = ''
+    }
+
+    // look for any tags, other than _attributes
+    let tags = Object.keys(line);
+    // exclude _attributes and _text
     tags = _.filter(tags, (o) => {
         return o !== '_attributes';
     })
-
-    // for each tag, look at _text and capture
-    let text = '';
-
-    tags.forEach((tag) => {
-        let t = line[tag]._text;
-
-        // if this is also undefined, keep unpacking nested layers
-        if (t === undefined) {
-            lookIntoTagsUntilFindText(line.tag)
-        }
-        text= text + t
+    tags = _.filter(tags, (o) => {
+        return o !== '_text';
     })
-return text
+
+    // if there are tags, add the text from them to text string
+    if (tags.length > 0) {
+        tags.forEach((tag) => {
+
+            let t = line[tag]._text;
+
+            if ( t !== undefined) {
+                text = text + t
+            } else  {
+                // look at one more nested layer - could go further?
+                // look for any tags, other than _attributes
+                let tagsWithin = Object.keys(line[tag]);
+                // exclude _attributes
+                tagsWithin = _.filter(tagsWithin, (o) => {
+                    return o !== '_attributes';
+                })
+
+                if (tagsWithin.length > 0) {
+                    tagsWithin.forEach((tagWithin) => {
+
+                        let tWithin = line[tag][tagWithin]._text;
+
+                        if (tWithin !== undefined) {
+                            t = tWithin
+                            text = text + t
+                        } else {
+                            t = ''
+                        }
+                    })
+                }
+
+            }
+
+
+        })
+    }
+    return text
+
 }
+
+
 
 
 /**

@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7754f016-ff9a-4b8d-a19b-27faf247afc0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data/Coopers_hill_1642.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/testingForCooperM1M2.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/Coopers/compareVersionToArch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/Coopers/cosine-similarity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/util/Coopers/saveGroupedListToCSV.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/Coopers/XMLConversion.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/Coopers/XMLConversion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util/Coopers/compareToA.js" beforeDir="false" afterPath="$PROJECT_DIR$/util/Coopers/compareToA.js" afterDir="false" />
@@ -66,7 +71,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/util/Coopers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,11 +90,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\nkc124\Documents\GitHub\poetic-transformations\poetic-transformations-server\util\Coopers" />
       <recent name="C:\Users\nkc124\Documents\GitHub\poetic-transformations\poetic-transformations-server\data" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\data" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\sampleXml" />
       <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\sample xml" />
-      <recent name="C:\Users\nkc124\GitHub\poetic-transformations-server\queries\queries with comments" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\nkc124\Documents\GitHub\poetic-transformations\poetic-transformations-server\util\Coopers Hill" />
@@ -222,14 +227,7 @@
       <workItem from="1611560761872" duration="625000" />
       <workItem from="1611919055121" duration="1364000" />
       <workItem from="1612167206131" duration="3061000" />
-      <workItem from="1612340325418" duration="5688000" />
-    </task>
-    <task id="LOCAL-00002" summary="tidy app.js">
-      <created>1564561163481</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1564561163481</updated>
+      <workItem from="1612340325418" duration="20181000" />
     </task>
     <task id="LOCAL-00003" summary="add Dockerfile and nodemon">
       <created>1564757187443</created>
@@ -567,7 +565,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612346337026</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="function to look into lines that are undefined indicating a tag at the beginning">
+      <created>1612346721049</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1612346721049</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView">
@@ -642,10 +647,10 @@
       <screen x="1926" y="-8" width="1920" height="1040" />
     </state>
     <state x="2627" y="313" key="#com.intellij.fileTypes.FileTypeChooser/1920.1072.1920.1040/0.0.1920.1040/1926.-8.1920.1040@1926.-8.1920.1040" timestamp="1612341174479" />
-    <state x="2340" y="99" key="CommitChangelistDialog2" timestamp="1612346336480">
+    <state x="2340" y="99" key="CommitChangelistDialog2" timestamp="1612346720572">
       <screen x="1926" y="-8" width="1920" height="1040" />
     </state>
-    <state x="2340" y="99" key="CommitChangelistDialog2/1920.1072.1920.1040/0.0.1920.1040/1926.-8.1920.1040@1926.-8.1920.1040" timestamp="1612346336480" />
+    <state x="2340" y="99" key="CommitChangelistDialog2/1920.1072.1920.1040/0.0.1920.1040/1926.-8.1920.1040@1926.-8.1920.1040" timestamp="1612346720572" />
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1611562701625">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
