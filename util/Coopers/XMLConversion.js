@@ -54,7 +54,7 @@ const idTextMap = (lines) => {
             // if text is undefined, this indicates there's a tag ta the start of the line, so keep
             // moving through tags until we find _text
             if (text === undefined) {
-               lookIntoTagsUntilFindText(line)
+              text = lookIntoTagsUntilFindText(line)
             }
 
             // recreate xml for this line to preserve
@@ -97,8 +97,7 @@ function lookIntoTagsUntilFindText(line) {
         }
         text= text + t
     })
-
-    console.log(text)
+return text
 }
 
 

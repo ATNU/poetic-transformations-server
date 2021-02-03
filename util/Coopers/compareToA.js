@@ -17,7 +17,7 @@ function getLines() {
         const mapped = map(lines(parse(xml)));
         mappedList.push(mapped);
 
-    // console.log(mappedList);
+     console.log(mappedList);
 
 
     //get xml and convert
