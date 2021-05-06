@@ -22,7 +22,7 @@
     "morgan": "~1.9.1",
     "node-fetch": "^2.6.0",
     "pug": "2.0.0-beta11",
-    "underscore": "^1.9.1",
+    "underscore": "^1.12.1",
     "xml-js": "^1.6.11",
     "xml2js": "^0.4.23"
   },
